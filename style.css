@@ -177,15 +177,17 @@ width: 30em;
 /* rodapé */
 footer {
     background: rgb(49, 49, 49);
+
     bottom: 0;
     width: 100%;
-    height: auto;
 }
+
 .img-pagamento {
-    position: absolute;
-    width: 34%;
-    margin:0.5em 0 0 1em;
-    height: auto;
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    
 }
 .texto-pagamento {
 font-family: 'Open Sans', sans-serif;
@@ -194,7 +196,7 @@ font-family: 'Open Sans', sans-serif;
     display: inline-block;
     position: relative;
 
-    top: 2em;
+    top: 0em;
     
     font-size: 1.2em;
 
@@ -244,12 +246,14 @@ font-family: 'Open Sans', sans-serif;
 
 /* copyright no rodapé */
 .copyright {
-    width: 100%;
     background: rgba(97, 97, 97, 0.308);
+    width: 100%;
+    height: auto;
 
     text-align: center;
-    padding: 1em;
+    padding:1em;
 }
+
 .copyright p {
     font-family: 'Open Sans', sans-serif;
 
