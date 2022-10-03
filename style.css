@@ -16,15 +16,10 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .img-cabeçalho {
     width: 6em;
     margin: 1em 1em 1em 3em;
 }
-.titulo-cabeçalho {
-    
-}
-
 .cabeçalho-nav {
     display: flex;
     background: goldenrod;
@@ -37,7 +32,7 @@
 .cabeçalho-nav a {
     margin-right: 1em;
 }
-.cabecalhoPrincipal-nav-link, .titulo-cabeçalho {
+.cabecalhoPrincipal-nav-link, .titulo-cabeçalho{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size:1.3em;
@@ -45,7 +40,6 @@
     
     color: #4d4c4c;
 }
-
 .cabecalhoPrincipal-nav-link:hover {
     text-decoration:underline;
     color: #ffffff;
@@ -53,7 +47,7 @@
     transition: 0.5s;
     cursor: pointer;
 }
-/* ------------ */
+/* fim cabeçalho ------------ */
 
 /* Corpo site */
 main {
