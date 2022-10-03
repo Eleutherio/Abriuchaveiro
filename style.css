@@ -1,39 +1,56 @@
-/* cabeçalho */
-header {
-    background: goldenrod;
-    width: 100%;
-    height: 6em;
-}
 *{
     box-sizing: border-box;
 }
+
+/* cabeçalho */
 .recurso-cabeçalho {
-    padding: 1em 0 1em 15em;
+    background: #cecece;
+    
 }
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.recurso-cabeçalho .container, .logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .img-cabeçalho {
-    position: absolute;
     width: 6em;
-    top: 0.5%;
+    margin: 1em 1em 1em 3em;
 }
-nav {
-    text-align: right;
-    padding: 0.5em 2em 0 0;
+.titulo-cabeçalho {
+    
 }
-nav li {
+
+.cabeçalho-nav {
+    display: flex;
+    background: goldenrod;
+    padding: 0 3em 0 2em;
+    height: 4em;
+    align-items: center;
+    border:1em solid inherit;
+    border-radius: 60em 0 0 1em;
+}
+.cabeçalho-nav a {
+    margin-right: 1em;
+}
+.cabecalhoPrincipal-nav-link, .titulo-cabeçalho {
     font-family: 'Open Sans', sans-serif;
-
-    display: inline-block;
-
-    padding: 1em;
-    font-size:1.2em;
-
+    text-decoration: none;
+    font-size:1.3em;
+    font-weight: bold;
+    
     color: #4d4c4c;
 }
 
-nav li:hover {
+.cabecalhoPrincipal-nav-link:hover {
     text-decoration:underline;
     color: #ffffff;
-    font-size: 1.3em;
+    
+    transition: 0.5s;
     cursor: pointer;
 }
 /* ------------ */
@@ -54,13 +71,13 @@ main {
 
 .texto-principal {
     font-family: 'Open Sans', sans-serif;
-
+    
     position: relative;
     text-align: center;
     top: 1em;
     font-size: 5em;
     line-height: 2em;
-
+    
     color: #cecece;
 }
 
@@ -76,10 +93,10 @@ main {
 
 /* Celular e perguntas */
 .celular-main {   
-position: relative;
-margin-top: 20%;
-width: 30em;
-
+    position: relative;
+    margin-top: 20%;
+    width: 30em;
+    
 }
 
 .celular-main:hover {
@@ -90,13 +107,14 @@ width: 30em;
 .divisao-perguntas {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     color: rgb(46, 46, 46);
-
-
+    
+    
     font-size: 2em;
     line-height: 2.5em;
     margin: 0 0 0 2em;
-
+    
     vertical-align: top;
     margin-top: 20%;
 }
@@ -109,7 +127,7 @@ width: 30em;
 /* ------------ */
 
 .bloco-carrossel {
-
+    
     width: auto;
     height:30em;
 }
@@ -155,9 +173,9 @@ width: 30em;
 .textos {
     background: rgb(253, 253, 253);
     text-align: center;
-
+    
     font-family: 'Open Sans', sans-serif;
-
+    
     color: rgb(0, 0, 0);
     font-size: 2em;
     padding: 0.5em;
@@ -177,7 +195,7 @@ width: 30em;
 /* rodapé */
 footer {
     background: rgb(49, 49, 49);
-
+    
     bottom: 0;
     width: 100%;
 }
@@ -190,16 +208,16 @@ footer {
     
 }
 .texto-pagamento {
-font-family: 'Open Sans', sans-serif;
-
-
+    font-family: 'Open Sans', sans-serif;
+    
+    
     display: inline-block;
     position: relative;
-
+    
     top: 0em;
     
     font-size: 1.2em;
-
+    
     color: #ffffff;
 }
 .botoes-rodape {
@@ -225,7 +243,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .texto-ligue-ja {
     font-family: 'Open Sans', sans-serif;
-
+    
     color: rgba(255, 255, 255, 0.84);
     font-size: 1.5em;
 }
@@ -239,7 +257,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .texto-whats-rodape {
     font-family: 'Open Sans', sans-serif;
-
+    
     color: rgba(255, 255, 255, 0.84);
     font-size: 1.5em;
 }
@@ -249,14 +267,14 @@ font-family: 'Open Sans', sans-serif;
     background: rgba(97, 97, 97, 0.308);
     width: 100%;
     height: auto;
-
+    
     text-align: center;
     padding:1em;
 }
 
 .copyright p {
     font-family: 'Open Sans', sans-serif;
-
+    
     color: #ffffff;
     font-size: 1em;
     line-height: 1.5em;
