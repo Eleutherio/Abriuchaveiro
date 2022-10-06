@@ -3,7 +3,7 @@ Site Abriu Chaaveiro
 
 
 
-- Primeiro site criado por mim
+- Primeiro site SENDO construido por mim,
 - 
 - É um projeto para um conhecido, onde me desafiei reformular um site pré existente e aplicar meus conhecimentos e testar recursos novos.
 - 
