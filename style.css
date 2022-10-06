@@ -7,14 +7,15 @@
 .recurso-cabeçalho {
     background: #f1f1f1;
 }
-.container {
+.container-cabeçalho {
     width: 100%;
-    margin: 0 auto;
+    height: auto; 
 }
-.recurso-cabeçalho .container, .logo-titulo {
+.recurso-cabeçalho .container-cabeçalho, .logo-titulo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .img-cabeçalho {
     width: 6em;
@@ -80,7 +81,7 @@ section .banner {
     -moz-background-size: cover;
     filter: blur(2px);
 }
-.container-texto {
+.container-texto-banner {
     position: absolute;
     width: 100%;
     top: 30%;
@@ -103,23 +104,29 @@ section .banner {
 
 /* Celular e perguntas */
 
-.celular-perguntas .container1 {
+.celular-perguntas .container {
     display: flex;
-    justify-content:center;
-    padding: 10% 5% 0 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
-.container1 {
-    background: goldenrod;
+.container {
     width: 100%;
+    padding: 10em 0 0 0;
+    
 }
 .celular-main {
     width: 30em;
-    
+    display: inline-block;  
 }
 
 .celular-main:hover {
     opacity: 80%;
     cursor: pointer;
+}
+.container-perguntas {
+    width: fit-content;
+    height: 100%;
 }
 
 .divisao-perguntas {
@@ -129,38 +136,49 @@ section .banner {
     
     font-size: 2.1em;
     line-height: 3em;
+    margin: 0 1em 0 1em;
 }
-
+.divisao-perguntas p {
+    
+    margin-top: 10%;
+}
 .botoes-perguntas {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    position: absolute;
-    top: 90em;
-    left: 15em;
-    padding: 0 2em;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 100%;
+
+  
 }
 .botoes-perguntas a {
     text-decoration: none;
 }
+/* ---------------- */
 
-
+/* botoes flutuantes email e whatsapp */
 .box-whats {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 1em;
+    flex-flow: column;
     width: 30em;
-    height: 20em;
+    margin-right: 5em;
+    height:15em;
 
-    border: 5em solid transparent;
+    border: 5% solid transparent;
     border-radius: 1em;
     background: rgba(255, 255, 255, 0.63);
     box-shadow:  20px 10px 30px rgba(52, 175, 35, 0.74);
 }
-.botao-whatsapp-listaPerguntas {
+.texto-box-whats {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 1.5em;
+}
+.botao-whatsapp-boxwhats {
     margin: 2em 0;
     width: 30em;
     height: 5em;
@@ -172,16 +190,26 @@ section .banner {
     box-shadow: 0px 0px 30px rgba(52, 175, 35, 0.45);
     cursor: pointer;
 }
+.texto-botao-whatsapp {
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.5em;
+}
 .icon-whats {
     width: 3em;
     margin: 0px 10px 0px 0px;
     vertical-align: middle;
 }
+
 .box-whats:hover {
     background: #70c934;
     font-style: oblique;
 }
-.box-whats:hover .botao-whatsapp-listaPerguntas {
+.box-whats:hover .texto-box-whats {
+    color: #ffffff;
+}
+.box-whats:hover .botao-whatsapp-boxwhats {
     font-style: oblique;
 }
 
@@ -191,50 +219,23 @@ section .banner {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 1em;
     width: 30em;
-    height: 20em;
+    height:15em;
+    margin:0 1em 0 5em;
 
-    border: 5em solid transparent;
+
+    border: 5% solid transparent;
     border-radius: 1em;
     background: rgba(255, 255, 255, 0.63);
     box-shadow:  20px 10px 30px rgba(255, 68, 0, 0.74);
 }
-.box-email:hover {
-    transition: 1s;
-    background: #f12f29ce;
-}
-.box-email:hover .botao-email-listaPerguntas {
-        transition: 1s;
-        background: #ffffff;
-}
-.box-email:hover .texto-botao-box {
-    color: 	#ffdd1c;
-    font-style: oblique;
-}  
-.box-email:hover .texto-botao-inicial {
-    color: rgba(49, 49, 49, 0.84);  
-    font-style: oblique;
-}
-
-.texto-botao-inicial {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.84);
-    font-size: 1.5em;
-}
-.texto-botao-box {
+.texto-box-email {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.84);
     font-size: 1.5em;
 }
-.icon-mail {
-    width: 2em;
-    margin: 0px 15px 0px 0px;
-    vertical-align: middle;
-}
-.botao-email-listaPerguntas {
+.botao-email-boxmail {
     margin: 2em 0;
     width: 30em;
     height: 5em;
@@ -245,8 +246,35 @@ section .banner {
     border-radius: 4em;
     box-shadow: 0px 0px 30px rgba(255, 68, 0, 0.74);
     cursor: pointer;
-} 
+}
+.texto-botao-email {
+    font-family: 'Open Sans', sans-serif;
 
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.5em;
+}
+.icon-mail {
+    width: 2em;
+    margin: 0px 15px 0px 0px;
+    vertical-align: middle;
+}
+
+.box-email:hover {
+    transition: 1s;
+    background: #f12f29ce;
+}
+.box-email:hover .texto-box-email {
+    color: rgba(255, 255, 255, 0.84);  
+    font-style: oblique;
+}
+.box-email:hover .texto-botao-email {
+    color: 	#0068ca;
+    font-style: oblique;
+}  
+.box-email:hover .botao-email-boxmail {
+        transition: 1s;
+        background: #ffffff;
+}
 /* ------------ */
 
 /* carrossel */
@@ -292,7 +320,6 @@ section .banner {
     75%{left: -2400px}
     100%{left: -3200px}
 }
-
 /* ------------ */
 
 /* G maps */
@@ -338,6 +365,7 @@ section .banner {
 }
 
 /* Blog */
+
 .blog {
     margin:0;
     width:100%;
@@ -361,8 +389,6 @@ section .banner {
     padding: 5% 0;
 }
 
-
-
 /* rodapé */
 
 .container-rodape {
@@ -370,6 +396,7 @@ section .banner {
     flex-direction: row;
     align-items:center;
     justify-content: center;
+    flex-wrap: wrap;
 
     background: rgb(49, 49, 49);
     border-style: solid;
@@ -380,13 +407,14 @@ section .banner {
     bottom: 0 !important;
     width: 100%;
     height: 20em;
-    padding: 0 4em;
 }
 
 .box-pagamento {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%;
+    margin: 0 0.5em;
 }
 .img-pagamento {
     width: 100%;
