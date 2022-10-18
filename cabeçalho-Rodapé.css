@@ -1,0 +1,227 @@
+
+*{
+  box-sizing: border-box;
+  transition: 1s;
+}
+/* cabeçalho */
+.container-cabeçalho {
+  width: 100%;
+  height: auto;
+  background: rgb(66, 66, 66);
+}
+.recurso-cabeçalho .container-cabeçalho, .logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.img-cabeçalho {
+  width: 6em;
+  margin: 0.5em 1em 0.5em 3em;
+}
+.titulo-cabeçalho {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size:1.3em;
+  font-weight: bold;
+  
+  color: #ffffff;
+}
+
+
+.icones-container {
+  display: flex;
+  /*flex-grow: 1;*/
+  
+
+  width: 30%;
+  height: auto;
+}
+.icones-redes {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+
+}
+.icon-cabeçalho {
+  width: 3.5em;
+  margin-right: 2em;
+}
+
+.cabeçalho-nav-container {
+  background: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35%;
+  height: 6.5em;
+}
+.cabeçalho-menu {
+  width: 100%;
+  height: 3em;
+  display: flex; 
+}
+.cabeçalho-nav-container a:hover {
+  background: rgb(66, 66, 66);
+  
+}
+.cabecalho-navegaçao-itens {
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  
+   
+  color: #272727;
+}
+.cabecalho-navegaçao-itens:hover,.cabeçalho-nav-container a:last-child:hover {
+  
+  color: goldenrod;
+  font-weight: bolder;
+  
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.cabeçalho-superior{
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+
+}
+.cabeçalho-superior p {
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  font-size:1em;
+  
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+.cabeçalho-superior p:nth-child(3) {
+  margin: 0 2em;
+}
+.img-cabeçalho-superior {
+  width: 1.5%;
+  margin: 0.5% 1%;
+}
+/* fim cabeçalho ------------ */
+
+
+
+
+
+
+/* rodapé */
+
+.container-rodape {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background: rgb(49, 49, 49);
+  border-style: solid;
+  border-color: goldenrod;
+  border-width:  0 0 6px 0;
+  
+  
+  bottom: 0 !important;
+  width: 100%;
+  height: 20em;
+}
+
+.box-pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 0.5em;
+}
+.img-pagamento {
+  width: 100%;
+  margin: 5% 0;
+}
+.texto-pagamento {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.botao-telefone {
+  margin-top: 2.5%;
+  width: 20em;
+  height: 4em;
+  background: rgb(255 70 0);
+  border: transparent;
+  border-radius: 4em;
+  box-shadow: 0px 0px 30px rgba(255, 68, 0, 0.74);
+
+}
+.botao-telefone:hover,.whatsapp-rodape:hover {
+  filter: brightness(70%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.texto-ligue-ja {
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.5em;
+}
+.whatsapp-rodape {
+  width: 20em;
+  height: 4em;
+  background: rgb(52, 175, 35);
+  border: transparent;
+  border-radius: 4em;
+  box-shadow: 0px 0px 30px rgba(52, 175, 35, 0.45); 
+}
+.texto-whats-rodape {
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.5em;
+}
+.whatsapp-button {
+  width: 8%;
+  bottom: 8.5em;
+  padding: 1em;
+  position: sticky;
+
+  margin-left: 92%;
+}
+/* fim do rodapé */
+
+
+/* copyright no rodapé */
+
+.copyright {
+  background: rgba(97, 97, 97, 0.664);
+  width: 100%;
+  height: auto;
+  
+  text-align: center;
+  padding:2.5em;
+}
+
+.copyright p {
+  font-family: 'Open Sans', sans-serif;
+  
+  color: #000000;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 2em;
+}
