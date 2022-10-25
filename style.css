@@ -13,6 +13,16 @@ main {
 /* ------------ */
 
 /* Banner */
+.container {
+    width: 100%;
+    height: auto;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
 section .banner {
     width: 100%;
     height: auto;
@@ -60,62 +70,90 @@ line-height: 2em;
 
 /* Celular e perguntas */
 
-.celular-perguntas{
+.celular-botoes-container{
+    margin:5% 0;
     width: 100%;
-    height: auto;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-    padding: 10em 0 0 0;
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-flow: row wrap;
 }
-
+.divisao-celular {
+    width: 50%;
+    display: flex;
+}
 .celular-main {
-    width: 30em;
-    display: inline-block;  
-}
+    width: 75%;
+    background: center no-repeat;
 
+}
 .celular-main:hover {
     opacity: 80%;
     cursor: pointer;
 }
-.container-perguntas {
-    width: fit-content;
-    height: 100%;
-}
 
-.divisao-perguntas {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgb(46, 46, 46);
-    
-    font-size: 2.1em;
-    line-height: 3em;
-    margin: 0 1em 0 1em;
-}
-.divisao-perguntas p {
-    
-    margin-top: 10%;
-}
-.botoes-perguntas {
+.divisao-botoes {    /* Para ajuste da prorpiedade dos botões verificar seção 'botoes flutuantes email e whatsapp' abaixo */
+    width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 50vh;
 
-  
+
 }
-.botoes-perguntas a {
+
+.botoes-container {   
+    display: flex;
+    flex-flow: column wrap;
+    align-items:flex-start;
+    width: 100%;
+}
+.botoes-container .box-email {   
+    margin-bottom: 20%;
+}
+
+.botoes-container a {
     text-decoration: none;
 }
+
+.celular-botoes {
+    width: 50%;
+    height: auto;
+}
+.container-perguntas {
+    background: goldenrod;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.divisao-perguntas {
+    
+    display: flex;
+    flex-grow: 1;
+    margin-left: 2%;
+}
+.divisao-perguntas li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: rgb(46, 46, 46);
+    
+    font-size: 2.0em;
+    line-height: 3em;
+}
+.divisao-perguntas li:nth-child(5) {
+    margin-top:2.5%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.divisao-perguntas li:nth-child(6) {
+    
+    font-size: 1.8em;
+    text-align: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+
+
+
 /* ---------------- */
 
 /* botoes flutuantes email e whatsapp */
@@ -126,7 +164,6 @@ line-height: 2em;
     text-align: center;
     flex-flow: column;
     width: 30em;
-    margin-right: 5em;
     height:15em;
 
     border: 5% solid transparent;
@@ -183,7 +220,6 @@ line-height: 2em;
     text-align: center;
     width: 30em;
     height:15em;
-    margin:0 1em 0 5em;
 
 
     border: 5% solid transparent;
@@ -242,19 +278,68 @@ line-height: 2em;
 /* carrossel */
 .seção-serviços-carrossel {
     width: 100%;
-    height:fit-content;
-    margin: 5% 0;
 }
-.serviços-grid {
-    display: grid;
-    grid-template-areas: "serviços";
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 50vh;
-}
-.Serviços {
-    background: #0068ca;
-    grid-area: "serviços";
+.comentarios-container {
+    background: goldenrod;
+    display: flex;
+    flex-flow: column wrap;
 
+}
+
+.titulo-container {
+    background: rgba(32,33,36,255);
+    display: flex;
+
+    width: 100%;
+    padding: 2%;
+
+    border: solid goldenrod;
+    border-width: 5px 0 0 0;
+}
+
+.avaliaçao-titulo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    align-items:center;
+    order: 1;
+
+    margin-right: 2%;
+
+}
+.avaliaçao-titulo p {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: goldenrod;
+    
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+.imagem-titulo-container {
+    display: flex;
+
+}
+.header-avaliaçao {
+    width: 20em;
+}
+
+
+
+.imagens-avaliaçao-container {
+    display: flex;
+    flex-flow: column wrap;
+
+
+}
+.Avaliaçao-imagens {
+background: rgba(32,33,36,255);
+width:35em;
+height: auto;
+
+padding-left: 1.5em; 
 }
 
 
