@@ -20,55 +20,48 @@
     
     <header class="recurso-cabeçalho">  
 
-        <section class="cabeçalho-superior">
-            <img src="img/phone.png" alt="icone telefone" class="img-cabeçalho-superior">
-            <p>51 98232-3232 / 51 99945-6045</p>
-            <p>|</p>
-            <img src="img/gmail.png" alt="icone gmail" class="img-cabeçalho-superior">
-            <p>abriuchaveiro@yahoo.com.br</p>
-        </section>
-
         <section class="container-cabeçalho">
-            <section class="logo-titulo">
-                <img src="img/logo.png" alt="logo Abriu Chaveiro" class="img-cabeçalho">
-                <p class="titulo-cabeçalho">Abriu Chaveiro - 24h</p>
-            </section>
 
-            <section class="icones-container">
-                <div class="icones-redes">
-                    <div>
-                    <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"><img src="img/whatsapp-circle.png" alt="whatsapp" class="icon-cabeçalho"></a>
-                    </div>
-                    <div>
-                    <a href="#"><img src="img/instagram-circle.png" alt="instagram" class="icon-cabeçalho"></a>
+            <div class="logo-container">
+
+                <div class="img-cabeçalho-container">
+                    <img src="img/logo.png" alt="logo Abriu Chaveiro" class="img-cabeçalho">
                 </div>
+
+                <div class="titulo-cabeçalho-container">
+                    <p class="titulo-cabeçalho">briu Chaveiro - 24h</p>
                 </div>
-            </section>
+            </div>
             
-            <section class="cabeçalho-nav-container">
-                    <div class="cabeçalho-menu">
-                        <a class="cabecalho-navegaçao-itens" href="#">Início</a>
-                        <a class="cabecalho-navegaçao-itens" href="#">Serviços</a>
-                        <a class="cabecalho-navegaçao-itens" href="#">Contato</a>
-                        <a class="cabecalho-navegaçao-itens" href="#">Sobre</a>             
-                    </div>
-            </section>
+            <nav class="cabeçalho-nav-container">
+                        <ul class="cabeçalho-menu">
+                            <li class="cabecalho-navegaçao-itens">
+                                <a href="#"> Início > </a>
+                                    <ul>
+                                        <li class="pulo"><a  href="#avaliaçao1">Avaliação</a></li>
+                                        <li class="pulo"><a  href="#orçamento1">Orçamento / Contato</a></li>
+                                        <li class="pulo"><a  href="#localizaçao1">Localização</a></li>
+                                        <li class="pulo"><a  href="#blog1">Blog</a></li>
+                                    </ul>
+                            </li>
+                            <li class="cabecalho-navegaçao-itens"><a href="#">Serviços</a></li>
+                            <li class="cabecalho-navegaçao-itens"><a href="#">Contato</a></li>
+                            <li class="cabecalho-navegaçao-itens"><a href="#">Sobre a empresa</a></li>
+                        </ul>             
+            </nav>
         </section>
 
     </header>
     
     <main>
-        <section>         <!-- Banner e titulo sobre o banner-->
-            <div class="banner-container"> 
-            <img src="img/banner.png" alt="banner principal"  class="banner">
-            </div>   
+        <section class="banner-container">         <!-- Banner e titulo sobre o banner-->
             <div  class="container-texto-banner">
-                    <h1 class="texto-principal">Abriu Chaveiro</h1> 
-                    <h2>Atendimento técnico e especializado <br>24 horas a domicílio</h2>
+                <h1 class="texto-principal">Abriu Chaveiro</h1> 
+                <h2>Atendimento técnico e especializado <br>24 horas a domicílio</h2>
             </div>
         </section> 
 
-        <section name="celular-perguntas"> <!-- celular e perguntas-->
+        <section name="celular e perguntas"> <!-- celular e perguntas-->
             <div class="container">
                 <div class="container-perguntas">
                     <div class="divisao-perguntas">
@@ -77,16 +70,18 @@
                             <li>✔ - Precisa abrir a porta de sua casa ou de seu carro?</li>
                             <li>✔ - Quer trocar o segredo de sua fechadura?</li>
                             <li>✔ - Precisa de mais segurança, quer instalar novas fechaduras?</li>
-                            <li>Solicite já o seu orçamento!</li>
-                            <li>Aqui na Abriu Chaveiro estamos 24 horas pronto para lhe atender</li>
                         </ol>
                     </div>
-                </div>  
+                </div>
 
+                <div class="orçamento-titulo-container">
+                    <p>Solicite já o seu orçamento!</p>
+                    <p> Estamos <span class="horas">24 horas</span> pronto para lhe atender</p>
+                 </div>
             </div>
 
 
-            <div class="celular-botoes-container">
+            <div id="orçamento1" class="celular-botoes-container">
                 <div class="divisao-celular">
                     <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
                         <img src="img/celular.png" alt="banner telefone com contato" class="celular-main">                        </a>
@@ -114,55 +109,76 @@
   
         </section>
 
-        <section class="seção-serviços-carrossel"><!-- carrossel-->
-            <div class="comentarios-container">
+        <!-- <section name="carrossel">
+            <div class="bloco-carrossel">
+                <p class="texto-carrossel">Trabalhamos com as principais marcas presentes no mercado:</p>
+                    <div class="container-carrossel">
+                        <div class="carrossel">
+                            <ul>
+                                <li><img src="img/chevrolet.png" alt="logo chevrolet"></li>
+                                <li><img src="img/fiat.png" alt="logo fiat"></li>
+                                <li><img src="img/ford.png" alt="logo ford"></li>
+                                <li><img src="img/marca1.png" alt="logo aliança"></li>
+                                <li><img src="img/marca2.png" alt="logo haga"></li>
+                                <li><img src="img/marca3.png" alt="logo arouca"></li>
+                                <li><img src="img/marca4.png" alt="logo imab"></li>
+                                <li><img src="img/marca5.png" alt="logo la fonte"></li>
+                                <li><img src="img/marca6.png" alt="logo pado"></li>
+                                <li><img src="img/marca7.png" alt="logo papaiz"></li>
+                                <li><img src="img/marca8.png" alt="logo soprano"></li>
+                                <li><img src="img/marca9.png" alt="logo stam"></li>  
+                            </ul> 
+                        </div>
+                    </div>
+            </div>
+        </section>  -->
 
-                <div class="titulo-container">
-
+        <section id="avaliação1" class="seção-avaliaçao">  <!-- carrossel-->
+            
+            <div class="titulo-container">
                     <div class='avaliaçao-titulo'>
-                        <p>Aqui na Abriu Chaveiro, a qualidade e profissionalismo é levado a sério. </p>
+                        <p>Aqui na Abriu Chaveiro, prezamos por <span>qualidade</span>: </p>
                     </div>
 
                     <div class="imagem-titulo-container">
                         <img src="img/header_avaliaçao.PNG" alt="avaliação Abriu Chaveiro no Google" class="header-avaliaçao">
                     </div>
                 </div>
-            
+
+            <div class="comentarios-container">
+
+                <div class="background-seçao-comentarios">
+                        <div class="box-comentarios">
+                            <p>Tem alguma sugestão ou quer deixar seu feedback?</p>
+                                <p>Todos os comentários são analizados,</p> 
+                                    <p>
+                                        <a href="https://www.google.com/maps/place/Abriu+Chaveiros+Tauros+%26+Cia/@-30.0995611,-51.2446475,17z/data=!4m7!3m6!1s0x951982135552003b:0xf89b3fc591c7ae14!8m2!3d-30.0995611!4d-51.2424588!9m1!1b1">
+                                            deixar o seu comentário.
+                                        </a>
+                                    </p>
+
+                            <div class="box-link">
+                                <div class="hover-exclusao"><p>Tem alguma duvida ou deseja solicitar um orçamento?</p></div>
+                                    <div class="hover-link">
+                                        <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
+                                            <p>Entre em contato pelo WhatsApp agora mesmo</p>
+                                            <p>Responderemos o mais breve possível</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                 <div class="imagens-avaliaçao-container">
-                   
                         <img src="img/avaliaçao2.PNG" alt="feedback da empresa" class="Avaliaçao-imagens">
                         <img src="img/avaliaçao3.PNG" alt="feedback da empresa" class="Avaliaçao-imagens">
                         <img src="img/avaliaçao4.PNG" alt="feedback da empresa" class="Avaliaçao-imagens">
-
                 </div>
-            </div>
 
-            <div class="bloco-carrossel">
-            <p class="texto-carrossel">Trabalhamos com as principais marcas presentes no mercado:</p>
-            <div class="container-carrossel">
-                    <div class="carrossel">
-                        <ul>
-                            <li><img src="img/chevrolet.png" alt="logo chevrolet"></li>
-                            <li><img src="img/fiat.png" alt="logo fiat"></li>
-                            <li><img src="img/ford.png" alt="logo ford"></li>
-                            <li><img src="img/marca1.png" alt="logo aliança"></li>
-                            <li><img src="img/marca2.png" alt="logo haga"></li>
-                            <li><img src="img/marca3.png" alt="logo arouca"></li>
-                            <li><img src="img/marca4.png" alt="logo imab"></li>
-                            <li><img src="img/marca5.png" alt="logo la fonte"></li>
-                            <li><img src="img/marca6.png" alt="logo pado"></li>
-                            <li><img src="img/marca7.png" alt="logo papaiz"></li>
-                            <li><img src="img/marca8.png" alt="logo soprano"></li>
-                            <li><img src="img/marca9.png" alt="logo stam"></li>  
-                        </ul> 
-                    </div>
             </div>
-            </div>
-
         </section>
 
-        <section class="container-mapa-fotos"> <!-- Gmaps-->
+        <section id="localizaçao1" class="container-mapa-fotos"> <!-- Gmaps-->
         <div class="primeira-seção">
                 <div class="container-onde-estamos-localizados">
                     <p>Onde estamos localizados?</p>
@@ -187,7 +203,7 @@
         </div>
         </section>
 
-        <section> <!-- blog-->
+        <section id="blog1"> <!-- blog-->
                 <div class="containerBlog">
                     <div class="container-textoBlog">
                         <p>Abriu Chaveiro se preocupa com você!</p>
