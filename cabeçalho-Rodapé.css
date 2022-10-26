@@ -1,7 +1,9 @@
 
 *{
   box-sizing: border-box;
-  transition: 1.5s;
+  transition: 1s;
+  scroll-behavior: smooth;
+
 }
 /* cabeçalho */
 .recurso-cabeçalho .container-cabeçalho {
@@ -52,98 +54,116 @@
   color: goldenrod;
 }
 
-
 .cabeçalho-nav-container {
-  background: goldenrod;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-  width: 35%;
+  width: 37%;
 }
 .cabeçalho-menu {
-  width: 100%;
-  height: 2.96em;
-  
-  display: flex; 
-}
-.cabeçalho-nav-container li:hover {
-  background: rgb(66, 66, 66);
-}
-
-
-.cabecalho-navegaçao-itens {
-
   display: flex;
-  flex-flow: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.cabecalho-navegaçao-itens {
+  display: flex;
+  width: 100%;
+  height: 3em;
+}
+
+.cabecalho-navegaçao-itens a {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-}
-.cabecalho-navegaçao-itens > a {
+
   font-family: 'Noto Sans', sans-serif;
-  text-decoration: none;
   font-weight: lighter;
-  font-size:1.0em;
+  text-decoration: none;
+
+  
+  font-size:0.9em;
+  padding: 2% 5%;
 
   color: rgb(66, 66, 66);
 }
-.cabecalho-navegaçao-itens a:hover,.cabeçalho-nav-container a:last-child:hover {
-  
-  color: goldenrod;
-  font-weight: bolder;
-  
-  transition: 0.5s;
-  cursor: pointer;
+.cabecalho-navegaçao-itens a > p {
+  margin-left: 10%;
 }
+.cabecalho-navegaçao-itens a:hover {
+  background: rgb(66, 66, 66) ;
+  color: goldenrod;
+}
+
 
 /* sub menu inicio ----- */
 
-.cabeçalho-menu ol li a, .cabecalho-navegaçao-itens ol li a{
+.cabeçalho-menu ol li a{    /* sub menu letras ----- */
   font-family: 'Noto Sans', sans-serif;
   font-weight: lighter;
+  text-decoration: none;
 
-  color: rgb(12, 132, 238);
-  font-size:0.8em;
+  color: rgb(66, 66, 66);
+  font-size:0.9em;
   padding: 2% 5%;
   
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   
-
-
-
   font-weight: lighter;
   line-height: 3.5em;
+
+}
+.cabeçalho-menu ol li a:hover {
+  color: goldenrod;
+}
+.cabecalho-navegaçao-itens li:hover{
+
+  background: #333333;
+  
+}
+/* fim sub menu letras ----- */
+
+
+.cabeçalho-menu ol p {  /* texto inicio sub menu */
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: lighter;
+
+  background: rgb(66, 66, 66);
+  color: goldenrod;;
+  font-size:0.9em;
+  padding: 2% 5%;
+  
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  
+  font-weight: lighter;
+  line-height: 2em;
 }
 
-.cabeçalho-menu li  ol{
-  transition: 2s;
-
+.cabeçalho-menu li ol{     /* fundo do sub menu */
+  
+  
   position: absolute;
-  margin-top: 17.9em;
-  margin-left: 4.7em;
+  margin-top: 3em;
   
 
-  width: 11em;
-  height:15em;
+  width: 10em;
+  height:14em;
 
-  background-color: rgb(66, 66, 66);
+  background-color: #cecece;
+  border-bottom: solid rgb(66, 66, 66);
+  border-radius: 0 0 10px 10px;
 
   display:none;
+  overflow: hidden;
+  
   }
 
-  .cabeçalho-menu li:hover ol, .menu li.hover ol{
+  .cabeçalho-menu li:hover ol {
     display: block;
-    
   }
-
-  .cabeçalho-menu li ol li{
-
-    display:block;
-    
-    }
 /* ----*/
 
 /* fim cabeçalho ------------ */
@@ -227,12 +247,12 @@
   font-size: 1.5em;
 }
 .whatsapp-button {
-  width: 8%;
-  bottom: 8.5em;
+  width: 7%;
+  bottom: 5.5em;
   padding: 1em;
   position: sticky;
-
-  margin-left: 92%;
+  margin-left: 93%;
+  
 }
 /* fim do rodapé */
 

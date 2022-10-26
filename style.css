@@ -39,35 +39,45 @@ main {
 .container-texto-banner {
     background: rgba(199, 199, 199, 0.514);
     width: 100%;
-    padding: 2em 0;
+    padding: 1em 0;
 
 }
 .texto-principal {
     font-family: 'Noto Sans', sans-serif;
-    color: #ffffff;
+    color: #fefefe;
     text-align: center;
     top: 1em;
     font-size: 5em;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 .container-texto-banner h2 {
-font-family: 'Noto Sans', sans-serif;
-color: rgb(51, 51, 51);
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(51, 51, 51);
 
-font-weight: bold;
-text-align: center;
-top: 1em;
-font-size: 3em;
-line-height: 2em;
+    font-weight: bold;
+    text-align: center;
+    top: 1em;
+    font-size: 3em;
+    line-height: 2em;
 }
 
+.container-texto-banner p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #fefefe;
+
+    font-weight: bold;
+    text-align: center;
+    top: 1em;
+    font-size: 1.5em;
+    line-height: 2em;
+}
 /* ------------ */
 
 
 /* Celular e perguntas */
 
 .celular-botoes-container{
-    margin:5% 0;
+    margin:5% 0 0 0;
     width: 100%;
 
     display: flex;
@@ -160,10 +170,84 @@ line-height: 2em;
 .horas {
     color:#cecece;
 }
+/* ----------------- */
 
+/* seção ligue já */
+.ligue-ja-container {
+    width: 100%;
+    
+} 
+.ligue-ja-flex {
+    padding: 2.5% 0;
+    width: 100%;
+    
+    background: goldenrod;
 
+    border-top: 5px dotted rgb(66, 66, 66);
+    border-bottom: 5px dotted rgb(66, 66, 66);
+    
+}
+.ligue-ja-texto p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 
+    
+    color: #fefefe;
+    
+    font-size: 2.0em;
+    line-height: 2em;
+}
+.ligue-ja-texto p:nth-child(2) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 
+    margin-left: 1%;
+    color: rgba(32,33,36,255);
+}
+
+.ligue-ja-texto {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    
+
+}
+.ligue-ja-numeros {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ligue-ja-numeros p:nth-child(3){
+    margin:0 1%;
+}
+.ligue-ja-numeros a {
+    text-decoration: none;
+}
+.ligue-ja-numeros p:hover {
+    
+    color: #fefefe;
+    
+}
+
+.ligue-ja-numeros p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    
+    color: rgba(32,33,36,255);
+    
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.ligue-ja-img {
+    width: 5%;
+    padding-right: 1%;
+}
 /* ---------------- */
 
 /* botoes flutuantes email e whatsapp */
@@ -299,8 +383,6 @@ line-height: 2em;
     width: 100%;
     padding: 2%;
 
-    border: solid goldenrod;
-    border-width: 5px 0 0 0;
 }
 .avaliaçao-titulo {
     display: flex;
@@ -516,7 +598,7 @@ border: 2px solid rgb(0, 0, 0);
     flex-flow: row wrap;
 }
 
-.container-onde-estamos-localizados, .primeira-seção, .container-textoBlog {
+.container-onde-estamos-localizados, .primeira-seção {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -529,14 +611,14 @@ border: 2px solid rgb(0, 0, 0);
     padding: 5% 0 0 0;
     height: 100vh;
 }
-.container-onde-estamos-localizados p, .containerBlog p {
+.container-onde-estamos-localizados p{
     font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 2em;
     line-height: 2.5em;
 }
-.container-onde-estamos-localizados p:nth-child(2), .containerBlog p:nth-child(2), .texto-carrossel {
+.container-onde-estamos-localizados p:nth-child(2), .texto-carrossel {
     font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -545,7 +627,7 @@ border: 2px solid rgb(0, 0, 0);
     font-size: 1.5em;
 }
 .container-gmaps-fotos{
-    padding: 2.5% 0;
+    margin: 10% 0 5% 0;
     width: 100%;
     display: flex;
     
@@ -565,7 +647,9 @@ border: 2px solid rgb(0, 0, 0);
     text-align: center;
 
     line-height:2.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
+
+    
 }
 
 .icone-localizaçao {
@@ -614,6 +698,29 @@ border: 2px solid rgb(0, 0, 0);
 }
 .container-textoBlog {
     margin: 5vh 0;
+}
+
+.container-textoBlog p:first-child {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: rgba(32,33,36,255);
+    
+    font-size: 2em;
+    line-height: 3em;
+}
+.container-textoBlog p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: rgba(32,33,36,255);
+    
+    font-size: 1.5em;
+    line-height: 3em;
 }
 
 .blog-frame {
