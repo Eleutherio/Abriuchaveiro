@@ -73,55 +73,7 @@ main {
 }
 /* ------------ */
 
-
-/* Celular e perguntas */
-
-.celular-botoes-container{
-    margin:5% 0 0 0;
-    width: 100%;
-
-    display: flex;
-    flex-flow: row wrap;
-}
-.divisao-celular {
-    width: 50%;
-    display: flex;
-    flex-wrap: nowrap;
-}
-.celular-main {
-    width: 75%;
-    background: center no-repeat;
-
-}
-.celular-main:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
-.divisao-botoes {    /* Para ajuste da prorpiedade dos botões verificar seção 'botoes flutuantes email e whatsapp' abaixo */
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.botoes-container {   
-    display: flex;
-    flex-flow: column wrap;
-    align-items:flex-start;
-    width: 100%;
-}
-.botoes-container .box-email {   
-    margin-bottom: 20%;
-}
-
-.botoes-container a {
-    text-decoration: none;
-}
-
-.celular-botoes {
-    width: 50%;
-    height: auto;
-}
+/* Perguntas e Orçamento */
 .container-perguntas {
     background: goldenrod;
     display: flex;
@@ -171,6 +123,169 @@ main {
     color:#cecece;
 }
 /* ----------------- */
+
+/* Celular e perguntas */
+
+.celular-botoes-container{
+    margin:5% 0 0 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.divisao-celular {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.celular-main {
+    width: 75%;
+    background: center no-repeat;
+
+}
+.celular-main:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.botoes-container {   
+    display: flex;
+    flex-flow: column;
+    align-items:flex-start;
+}
+.botoes-container .box-email {   
+    margin-bottom: 20%;
+}
+
+.botoes-container a {
+    text-decoration: none;
+}
+
+.celular-botoes {
+    width: 50%;
+    height: auto;
+}
+
+/* botoes flutuantes email e whatsapp */
+.box-whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    width: 30em;
+    height: 15em;
+
+    border: 5% solid transparent;
+    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.63);
+    box-shadow:  20px 10px 30px rgba(52, 175, 35, 0.74);
+}
+.texto-box-whats {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 1.5em;
+}
+.botao-whatsapp-boxwhats {
+    margin: 2em 0;
+    width: 30em;
+    height: 5em;
+
+    background: rgb(52, 175, 35);
+
+    border: transparent;
+    border-radius: 4em;
+    box-shadow: 0px 0px 30px rgba(52, 175, 35, 0.45);
+    cursor: pointer;
+}
+.texto-botao-whatsapp {
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.5em;
+}
+.icon-whats {
+    width: 3em;
+    margin: 0px 10px 0px 0px;
+    vertical-align: middle;
+}
+
+.box-whats:hover {
+    background: #70c934;
+    font-style: oblique;
+}
+.box-whats:hover .texto-box-whats {
+    color: #ffffff;
+}
+.box-whats:hover .botao-whatsapp-boxwhats {
+    font-style: oblique;
+}
+
+.box-email{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+   
+    width: 30em;
+    height: 15em;
+
+
+    border: 5% solid transparent;
+    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.63);
+    box-shadow:  20px 10px 30px rgba(255, 68, 0, 0.74);
+}
+.texto-box-email {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 1.5em;
+}
+.botao-email-boxmail {
+    margin: 2em 0;
+    width: 30em;
+    height: 5em;
+
+    background: rgb(255 70 0);
+
+    border: transparent;
+    border-radius: 4em;
+    box-shadow: 0px 0px 30px rgba(255, 68, 0, 0.74);
+    cursor: pointer;
+}
+.texto-botao-email {
+    font-family: 'Open Sans', sans-serif;
+
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.5em;
+}
+.icon-mail {
+    width: 2em;
+    margin: 0px 15px 0px 0px;
+    vertical-align: middle;
+}
+
+.box-email:hover {
+    transition: 1s;
+    background: #f12f29ce;
+}
+.box-email:hover .texto-box-email {
+    color: rgba(255, 255, 255, 0.84);  
+    font-style: oblique;
+}
+.box-email:hover .texto-botao-email {
+    color: 	#0068ca;
+    font-style: oblique;
+}  
+.box-email:hover .botao-email-boxmail {
+        transition: 1s;
+        background: #ffffff;
+}
+/* ------------ */
 
 /* seção ligue já */
 .ligue-ja-container {
@@ -250,125 +365,6 @@ main {
 }
 /* ---------------- */
 
-/* botoes flutuantes email e whatsapp */
-.box-whats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-flow: column;
-    width: 30em;
-    height:15em;
-
-    border: 5% solid transparent;
-    border-radius: 1em;
-    background: rgba(255, 255, 255, 0.63);
-    box-shadow:  20px 10px 30px rgba(52, 175, 35, 0.74);
-}
-.texto-box-whats {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.84);
-    font-size: 1.5em;
-}
-.botao-whatsapp-boxwhats {
-    margin: 2em 0;
-    width: 30em;
-    height: 5em;
-
-    background: rgb(52, 175, 35);
-
-    border: transparent;
-    border-radius: 4em;
-    box-shadow: 0px 0px 30px rgba(52, 175, 35, 0.45);
-    cursor: pointer;
-}
-.texto-botao-whatsapp {
-    font-family: 'Open Sans', sans-serif;
-    
-    color: rgba(255, 255, 255, 0.84);
-    font-size: 1.5em;
-}
-.icon-whats {
-    width: 3em;
-    margin: 0px 10px 0px 0px;
-    vertical-align: middle;
-}
-
-.box-whats:hover {
-    background: #70c934;
-    font-style: oblique;
-}
-.box-whats:hover .texto-box-whats {
-    color: #ffffff;
-}
-.box-whats:hover .botao-whatsapp-boxwhats {
-    font-style: oblique;
-}
-
-.box-email{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 30em;
-    height:15em;
-
-
-    border: 5% solid transparent;
-    border-radius: 1em;
-    background: rgba(255, 255, 255, 0.63);
-    box-shadow:  20px 10px 30px rgba(255, 68, 0, 0.74);
-}
-.texto-box-email {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.84);
-    font-size: 1.5em;
-}
-.botao-email-boxmail {
-    margin: 2em 0;
-    width: 30em;
-    height: 5em;
-
-    background: rgb(255 70 0);
-
-    border: transparent;
-    border-radius: 4em;
-    box-shadow: 0px 0px 30px rgba(255, 68, 0, 0.74);
-    cursor: pointer;
-}
-.texto-botao-email {
-    font-family: 'Open Sans', sans-serif;
-
-    color: rgba(255, 255, 255, 0.84);
-    font-size: 1.5em;
-}
-.icon-mail {
-    width: 2em;
-    margin: 0px 15px 0px 0px;
-    vertical-align: middle;
-}
-
-.box-email:hover {
-    transition: 1s;
-    background: #f12f29ce;
-}
-.box-email:hover .texto-box-email {
-    color: rgba(255, 255, 255, 0.84);  
-    font-style: oblique;
-}
-.box-email:hover .texto-botao-email {
-    color: 	#0068ca;
-    font-style: oblique;
-}  
-.box-email:hover .botao-email-boxmail {
-        transition: 1s;
-        background: #ffffff;
-}
-/* ------------ */
-
 /* avaliação */
 
 .seção-avaliaçao {
@@ -414,15 +410,12 @@ main {
 }
 
 
-
-
 .comentarios-container {
     background: goldenrod;
     display: flex;
     width: 100%;
     flex-flow: row wrap;
 }
-
 .background-seçao-comentarios {
     background: url(img/banca2.PNG);
     display: flex;
@@ -433,7 +426,6 @@ main {
     background-size: cover;
     overflow: hidden;
 }
-
 .box-comentarios {
     background: rgba(0, 0, 0, 0.7);
 
@@ -473,7 +465,6 @@ main {
 
     font-size: 1.2em;
 }
-
 .box-link {
     display: flex;
     justify-content: center;
@@ -491,7 +482,6 @@ main {
     font-size: 1.1em;
     line-height: 3em;
 }
-
 .box-link:hover{
     transition: 1.5s;
     background: rgba(52, 175, 35, 0.74);
@@ -515,7 +505,6 @@ main {
 
     text-align:  center;
 }
-
 .hover-exclusao {
     display: block;
 }
