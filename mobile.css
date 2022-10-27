@@ -1,0 +1,41 @@
+@media screen and (min-width: 412px) {
+  
+.logo-container {
+  width: 45%;
+}
+.titulo-cabeçalho {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.cabeçalho-nav-container {
+  width: 50%;
+}
+.cabecalho-navegaçao-itens a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+
+  
+  font-size:0.7em;
+  padding: 2%;
+
+  color: rgb(66, 66, 66);
+}
+
+
+
+.botao-whatsapp-boxwhats, .botao-email-boxmail {
+    width: 25em;
+}
+.icon-mail {
+  width:10%;
+}
+.texto-botao-email {
+  font-size: 1.4em;
+}
+}

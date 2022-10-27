@@ -258,6 +258,7 @@ main {
 }
 
 .celular-botoes-container{
+    
     width: 100%;
     height: auto;
 
@@ -265,14 +266,21 @@ main {
     flex-wrap: wrap;
 
 }
-.divisao-celular {
+
+.divisao-celular-botoes {
     width: 100%;
+    height: auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
+}
+.container-celular {
+    width:60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .celular-main {
     width: 75%;
-    background: center no-repeat;
 
 }
 .celular-main:hover {
@@ -280,33 +288,33 @@ main {
     cursor: pointer;
 }
 
-.botoes-container {   
+.botoes-container {  
+    
     display: flex;
     flex-flow: column;
     align-items:flex-start;
+    padding:5%;
 }
-.botoes-container .box-email {   
-    margin-bottom: 20%;
-}
+
 
 .botoes-container a {
     text-decoration: none;
 }
 
-.celular-botoes {
-    width: 50%;
-    height: auto;
-}
 
 /* botoes flutuantes email e whatsapp */
 .box-whats {
+  
     display: flex;
+    
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-
-    width: 30em;
+   
+    width: 100%;
     height: 15em;
+    padding:5%;
+    margin-bottom: 5%;
 
     border: 5% solid transparent;
     border-radius: 1em;
@@ -314,15 +322,16 @@ main {
     box-shadow:  20px 10px 30px rgba(52, 175, 35, 0.74);
 }
 .texto-box-whats {
+
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.84);
     font-size: 1.5em;
 }
 .botao-whatsapp-boxwhats {
-    margin: 2em 0;
     width: 30em;
     height: 5em;
+    margin: 2em 1em;
 
     background: rgb(52, 175, 35);
 
@@ -355,14 +364,17 @@ main {
 }
 
 .box-email{
+    
     display: flex;
+    
     flex-flow: column;
     align-items: center;
     justify-content: center;
    
-    width: 30em;
+    width: 100%;
     height: 15em;
-
+    margin: 5;
+    
 
     border: 5% solid transparent;
     border-radius: 1em;
@@ -376,9 +388,10 @@ main {
     font-size: 1.5em;
 }
 .botao-email-boxmail {
-    margin: 2em 0;
+    
     width: 30em;
     height: 5em;
+    margin: 2em 1em;
 
     background: rgb(255 70 0);
 
@@ -536,7 +549,7 @@ main {
 
 }
 .header-avaliaçao {
-    width: 22em;
+    width: 100%;
     height: auto;
 }
 
@@ -652,7 +665,7 @@ main {
 }
 .Avaliaçao-imagens {
 background: rgba(32,33,36,255);
-width:37em;
+width:100%;
 height: auto;
 }
 
