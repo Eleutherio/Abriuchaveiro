@@ -73,7 +73,8 @@ main {
 }
 /* ------------ */
 
-/* Perguntas e Orçamento */
+/* Perguntas */
+
 .container-perguntas {
     background: goldenrod;
     display: flex;
@@ -85,7 +86,7 @@ main {
     
     display: flex;
     flex-grow: 1;
-    margin: 2.5% 2%;
+    margin: 2.5% 5%;
 }
 .divisao-perguntas li {
     font-family: 'Open Sans', sans-serif;
@@ -97,12 +98,145 @@ main {
     line-height: 3em;
 }
 
+/* ----------------- */
+.bloco-serviços-container {
+    width: 100%;
+
+}
+
+.serviços-container{
+    width: 100%;
+    background: #cecece;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+ 
+}
+.serviços-titulo-container{
+    width: 100%;
+
+    background: rgba(32,33,36,255);
+
+    text-align: center;
+}
+.serviços-titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: #fefefe;
+    
+    font-size: 2.0em;
+    line-height: 3em;
+}
+
+.serviços-box-container1, .serviços-box-container2 {
+    padding: 2.5%;
+    background:#fefefe;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap-reverse;
+    align-items:flex-end;
+
+    
+}
+.serviços-box-container2 {
+    border-top: 5px dotted rgba(32,33,36,255);
+}
+.serviços-box-container1 ul, .serviços-box-container2 ul {
+    
+    width:60%
+}
+.serviços-box-container1 li, .serviços-box-container2 li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: rgba(32,33,36,255);
+    
+    font-size: 1.5em;
+    line-height: 2.5em;
+
+    display: flex;
+ 
+}
+.serviços-box-container1 p:first-child, .serviços-box-container2 p:first-child {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+    color: rgba(32,33,36,255);
+    background: goldenrod;
+    
+    font-size: 1.5em;
+    line-height: 2.5em;
+    text-align: center;
+
+
+}
+
+.serviços-box1, .serviços-box2  {
+    width: 15em;
+    height: 19.5em;
+    text-decoration: none;
+    background: goldenrod;
+    
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.serviços-box1 a, .serviços-box2 a{
+    text-decoration: none;
+}
+
+.serviços-box1 img:hover, .serviços-box2 img:hover {
+    filter: blur(4px);
+}
+.legenda-serviços1:hover, .legenda-serviços2:hover {
+    transition: 0.5s;
+    color: goldenrod;
+    background-color: rgba(20, 20, 20, 0.74);
+}
+
+.legenda-serviços1, .legenda-serviços2 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    color: rgb(51, 51, 51);
+    background-color: rgba(78, 78, 78, 0.411);
+    
+    
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+
+.img-serviços {
+    padding: 5%;
+    width: 15em;
+}
+.img-janela {
+    
+    margin-left: 1em;
+    width: 1em;
+}
+
+
+/* Celular, botões e Orçamento */
+
 .orçamento-titulo-container {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 2.5%;
     height: 15em;
     background: rgba(32,33,36,255);
 }
@@ -122,12 +256,8 @@ main {
 .horas {
     color:#cecece;
 }
-/* ----------------- */
-
-/* Celular e perguntas */
 
 .celular-botoes-container{
-    margin:5% 0 0 0;
     width: 100%;
     height: auto;
 
@@ -396,6 +526,7 @@ main {
     
     font-size: 2em;
     line-height: 3em;
+    margin-left: 5%;
 }
 .avaliaçao-titulo p span {
     color: goldenrod;
@@ -527,54 +658,9 @@ height: auto;
 
 /* ------------ */
 
-/* carrossel */
+/* marcas */
 
-.bloco-carrossel {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 0;
-}
-.container-carrossel {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    margin: 5% 0;
 
-}
-.carrossel {
-    background: #0068ca;
-    width: fit-content;  
-}
-.carrossel ul {
-    background: #f1f1f1;
-
-    display: flex;
-
-    list-style: none;
-    overflow: hidden; 
-
-    width: 1200px;
-    height: 250px;
- 
-    border:none;
-    box-shadow: 0 0 10em rgba(255, 255, 255, 0.74);
-}
-.carrossel li {
-    position: relative;  
-    animation: slide 20s infinite ease-in-out alternate 2s; 
-}
-.carrossel li img {
-border: 2px solid rgb(0, 0, 0);
-}
-@keyframes slide {
-    0%{left: 0px}
-
-    100%{left: -3632px}
-}
 /* ------------ */
 
 /* G maps */
@@ -586,19 +672,25 @@ border: 2px solid rgb(0, 0, 0);
     display: flex;
     flex-flow: row wrap;
 }
-
-.container-onde-estamos-localizados, .primeira-seção {
+.primeira-seçao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2.5% 0 5% 0;
+    border-bottom: 5px dotted black;
+}
+.container-onde-estamos-localizados {
+    padding: 0 0 2.5% 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-.container-onde-estamos-localizados {
-    padding: 0 0 5% 0;
-}
-.primeira-seção {
-    padding: 5% 0 0 0;
-    height: 100vh;
+.icone-localizaçao {
+    width: 10%;
+    height: auto;
 }
 .container-onde-estamos-localizados p{
     font-family: 'Open Sans', sans-serif;
@@ -607,61 +699,13 @@ border: 2px solid rgb(0, 0, 0);
     font-size: 2em;
     line-height: 2.5em;
 }
-.container-onde-estamos-localizados p:nth-child(2), .texto-carrossel {
+.container-onde-estamos-localizados p:nth-child(2) {
     font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
 
     line-height:1.5em;
     font-size: 1.5em;
-}
-.container-gmaps-fotos{
-    margin: 10% 0 5% 0;
-    width: 100%;
-    display: flex;
-    
-}
-
-.endereço {
-    width: 50%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;   
-}
-.endereço p {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: center;
-
-    line-height:2.5em;
-    font-size: 1.3em;
-
-    
-}
-
-.icone-localizaçao {
-    width: 25%;
-    height: auto;
-}
-
-.container-fotos-banca {
-    width: 50%;
-    height:fit-content;
-    display: flex;
-    flex-flow: column wrap;
-
-}
-.g-imagens {
-    width: 45%;
-    margin: 2.5% 0;
-    height: 100%;
-
-    box-shadow:  20px 10px 20px rgba(5, 5, 5, 0.74);
-}
-.g-imagens:nth-child(1) {
-    margin-left: 35%;
 }
 
 .container-mapa {
@@ -673,6 +717,49 @@ border: 2px solid rgb(0, 0, 0);
     width: 100%;
     height: 30em;
 }
+
+.container-fotos-banca {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.g-imagens {
+    width: 33.3%;
+    height: auto;
+}
+
+.endereço {
+    background: rgba(32,33,36,255);
+
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;   
+}
+.endereço p {
+    font-family: 'Open Sans', sans-serif;
+    color: goldenrod;
+    font-weight: bold;
+    text-align: center;
+
+    line-height:2em;
+    font-size: 1.5em;  
+}
+.endereço p:nth-child(2) {
+    font-family: 'Open Sans', sans-serif;
+    color: #fefefe;
+    font-weight: bold;
+    text-align: center;
+
+    line-height:2em;
+    font-size: 1.5em;  
+}
+
+
+
+
 /* ------------ */
 
 /* Blog */
