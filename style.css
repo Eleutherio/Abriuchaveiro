@@ -39,7 +39,7 @@ main {
 .container-texto-banner {
     background: rgba(199, 199, 199, 0.514);
     width: 100%;
-    padding: 1em 0;
+    padding: 0;
 
 }
 .texto-principal {

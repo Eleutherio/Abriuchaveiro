@@ -1,5 +1,15 @@
 @media screen and (min-width: 412px) {
-  
+  main {
+    overflow: hidden;
+  }
+  /* Header */
+
+#hidden {
+  display: none;
+}
+.adiçao-menu-mobile{
+  display: block;
+}
 .logo-container {
   width: 45%;
 }
@@ -26,9 +36,39 @@
 
   color: rgb(66, 66, 66);
 }
+.cabeçalho-menu li ol {
+  overflow: visible;
+  height:25em;
+}
+/* ---------------- */
+/* Banner */
+.texto-principal {
+  top: 0;
+  font-size: 2em;
+}
+
+.container-texto-banner h2 {
+  font-size: 2em;
+  top: 0;
+}
+.container-texto-banner p {
+  font-size: 1em;
+  top: 0;
+}
+.banner-container {
+  background: url(img/banner.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  
+}
 
 
-
+/* Celular Botoes */
 .botao-whatsapp-boxwhats, .botao-email-boxmail {
     width: 25em;
 }
@@ -38,4 +78,8 @@
 .texto-botao-email {
   font-size: 1.4em;
 }
+/* ------------------ */
+
+
+
 }
