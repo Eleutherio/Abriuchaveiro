@@ -25,7 +25,7 @@ main {
 }
 
 .banner-container {
-    background: url(./assets/img/banner.png);
+    background: url('/assets/img/banner.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,7 +560,7 @@ main {
     flex-flow: row wrap;
 }
 .background-seçao-comentarios {
-    background: url(img/banca2.PNG);
+    background: url('/assets/img/banca2.PNG');
     display: flex;
     justify-content: center;
     align-items: center;
