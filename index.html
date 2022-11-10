@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9K54W3" height=0 width=0 style="display:none;visibility:menu__mobile"></iframe></noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9K54W3" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
         
         <header class="cabeçalho__container">  
 
@@ -33,7 +33,7 @@
             
             <nav class="nav__container">
                 <ul class="nav__container__menu">
-                    <li class="nav__menu__itens"><a href="#" class="nav__hover">Início <p>☰</p></a>
+                    <li class="nav__menu__itens"><a href="#" class="nav__menu__itens__link">Início <p>☰</p></a>
                         <ol>                        
                             <li><a  href="#avaliaçao1">Avaliação</a></li>                                       
                             <li><a  href="#orçamento1">Orçamento / Contato</a></li>
@@ -47,229 +47,225 @@
                             </div>                                        
                         </ol>
                     </li>
-                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__hover">Serviços</a></li>
-                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__hover">Contato</a></li>
-                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__hover">Sobre a empresa</a></li>
+                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__menu__itens__link">Serviços</a></li>
+                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__menu__itens__link">Contato</a></li>
+                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__menu__itens__link">Sobre a empresa</a></li>
                 </ul>             
             </nav>
         </header>
         
         <main>
-            <section class="banner-container">         <!-- Banner e titulo sobre o banner-->
+            <section class="seçao__banner__container">         <!-- Seção Banner -->
                 
-                <div  class="container-texto-banner">
-                    <h1 class="texto-principal">Abriu Chaveiro</h1> 
+                <div  class="texto__banner__container">
+                    <h1 class="texto__banner">Abriu Chaveiro</h1> 
                     <h2>Atendimento técnico e especializado <br> 24 horas a domicílio</h2>
                     <p>Técnico responsável: Tauros Machado</p>
                 </div>
             </section> 
 
-            <section class="container"> <!-- perguntas -->
-                    <div class="container-perguntas">
-                        <div class="divisao-perguntas">
-                            <ol>
-                                <li>✔ Perdeu suas Chaves?</li>
-                                <li>✔ Precisa abrir a porta de sua casa ou de seu carro?</li>
-                                <li>✔ Quer trocar o segredo de sua fechadura?</li>
-                                <li>✔ Precisa de mais segurança, quer instalar novas fechaduras?</li>
-                            </ol>
-                        </div>
-                    </div>
+            <section class="seçao__perguntas__container"> <!-- Seção Perguntas -->
+
+                <div class="lista__perguntas">
+                    <ol>
+                        <li>✔ Perdeu suas Chaves?</li>
+                        <li>✔ Precisa abrir a porta de sua casa ou de seu carro?</li>
+                        <li>✔ Quer trocar o segredo de sua fechadura?</li>
+                        <li>✔ Precisa de mais segurança, quer instalar novas fechaduras?</li>
+                    </ol>
+                </div>
             </section>
 
-            <section class="bloco-serviços-container">
+            <section class="seçao__serviços__container"> <!-- Seção Serviços -->
 
-                <div class="serviços-titulo-container">
-                    <p class="serviços-titulo">Nossos Serviços:</p> 
+                <div class="serviços__titulo__container">
+                    <p class="serviços__titulo">Nossos Serviços:</p> 
                 </div>
 
-                    <div class="serviços-container">
+                <div class="blocos__serviços__container">
                             
-                        <div class="serviços-box-container1">
-        
+                        <div class="primeiro__bloco">  <!-- bloco de serviços residenciais-->
+    
+                            <ul>
+                                <p>Serviços residenciais:</p>
+                                <li>- Cópias residenciais</li>
+                                <li>- Instalação de fechaduras e olho mágico</li>
+                                <li>- Abertura de cofres</li>
+                                <li>- Abertura de veículos</li>
+                                <li>- Conserto e substituição de fechaduras e cilindros</li>
+                            </ul>
 
-                                <ul>
-                                    <p>Serviços residenciais:</p>
-                                    <li>- Cópias residenciais</li>
-                                    <li>- Instalação de fechaduras e olho mágico</li>
-                                    <li>- Abertura de cofres</li>
-                                    <li>- Abertura de veículos</li>
-                                    <li>- Conserto e substituição de fechaduras e cilindros</li>
-                                </ul>
-
-                                <div class="serviços-box1">
+                            <div class="ver-mais__container--primeiro-bloco">
 
                                 <a href="serviços.html">
-                                    <img src="./assets/img/home.svg" alt="foto do serviço x" class="img-serviços">
-                                    <p class="legenda-serviços1"> Ver todos<img src="./assets/img/janela.svg" class="img-janela"></p>
+                                    <img src="./assets/img/home.svg" alt="ilustração de icone de residencia" class="serviços__img">
+                                    <p class="legenda--primeiro-bloco"> Ver todos<img src="./assets/img/janela.svg" class="icone__abrir-pagina"></p>
                                 </a>
                             </div>
 
                         </div>
 
-                        <div class="serviços-box-container2">
+                        <div class="segundo__bloco"> <!-- bloco de serviços empresariais-->
 
-                                <ul>
-                                    <p>Serviços empresariais:</p>
-                                    <li>- Cópias de controles de alarme e portão</li>
-                                    <li>- Afiações em geral</li>
-                                    <li>- Capas para telecomando</li>
-                                    <li>- Fechaduras para portas de vidro</li>
-                                </ul>
+                            <ul>
+                                <p>Serviços empresariais:</p>
+                                <li>- Cópias de controles de alarme e portão</li>
+                                <li>- Afiações em geral</li>
+                                <li>- Capas para telecomando</li>
+                                <li>- Fechaduras para portas de vidro</li>
+                            </ul>
 
-                                <div class="serviços-box2">
+                            <div class="ver-mais__container--segundo-bloco">
 
-                                    <a href="serviços.html" class="serviços-link2">
-                                        <img src="./assets/img/business.svg" alt="foto do serviço x" class="img-serviços">                      
-                                        <p class="legenda-serviços2"> Ver todos<img src="./assets/img/janela.svg" class="img-janela"></p>
-                                    </a>
-                                </div>
-                            </div>     
-                    </div>
+                                <a href="serviços.html" class="serviços-link2">
+                                    <img src="./assets/img/business.svg" alt="foto do serviço x" class="serviços__img">                      
+                                    <p class="legenda--segundo-bloco"> Ver todos<img src="./assets/img/janela.svg" class="icone__abrir-pagina"></p>
+                                </a>
+                            </div>
+                        </div>     
+                </div>
             </section> 
 
-            <section class="celular-botoes-container"> <!-- celular, botões e orçamento-->
+            <section class="seçao__orçamento__container"> <!-- Seção Orçamento e Contato -->
                 
-                <div id="orçamento1" class="orçamento-titulo-container">
-                    <p>Solicite já o seu orçamento!</p>
-                    <p> Estamos <span class="horas">24 horas</span> pronto para lhe atender</p>
+                <div id="orçamento1" class="orçamento__titulo__container">
+
+                    <p class="orçamento__titulo">Solicite agora o seu orçamento!</p>
+                    <p class="orçamento__titulo">Estamos <span class="orçamento__titulo--horas">24 horas</span> pronto para lhe atender</p>
                 </div>
-
-
-                    <div class="divisao-celular-botoes">
+                    <div class="orçamento__container">
                         
-                        <div class="container-celular">
+                        <div class="celular__container">
                             <address>
                                 <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
-                                    <img src="./assets/img/celular.png" alt="banner telefone com contato" class="celular-main">
+                                    <img src="./assets/img/celular.png" alt="banner telefone com contato" class="celular__img">
                                 </a>
                             </address>
                         </div>
 
-                        <div class="botoes-container">
+                        <div class="botoes__container">
 
-                            <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
-                                <div class=box-whats>
-                                    <p class="texto-box-whats">Envie-nos uma mensagem:</p>
-                                    <address><button type="text" class='botao-whatsapp-boxwhats'><p class="texto-botao-whatsapp"><img src="./assets/img/whatsapp.png" alt="" class="icon-whats">Mande Uma Mensagem</p></button></address>
-                                </div>
-                            </a>
-
-                                <a href="mailto:abriuchaveiro@yahoo.com.br">
-                                    <div class=box-email>
-                                        <p class="texto-box-email">Envie-nos um email:</p>
-                                        <address><button type="text" class="botao-email-boxmail"><p class="texto-botao-email"><img src="./assets/img/gmail.png" alt="" class="icon-mail">abriuchaveiro@yahoo.com.br</p></button></address>
+                            <address> <!-- WhatsApp -->
+                                <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
+                                    <div class="botao__whatsapp__container">
+                                        <p class="whatsapp__texto">Envie-nos uma mensagem:</p>
+                                        <button type="text" class="botao__whatsapp"><p class="botao__whatsapp__texto"><img src="./assets/img/whatsapp.png" alt="" class="icone__whatsapp__botao">Mande Uma Mensagem</p></button>
                                     </div>
                                 </a>
+                            </address>
+
+                            <address> <!-- Email -->
+                                <a href="mailto:abriuchaveiro@yahoo.com.br">
+                                    <div class=botao__email__container>
+                                        <p class="email__texto">Envie-nos um email:</p>
+                                        <button type="text" class="botao__email"><p class="botao__email__texto"><img src="./assets/img/gmail.png" alt="" class="icone__email__botao">abriuchaveiro@yahoo.com.br</p></button>
+                                    </div>
+                                </a>
+                            </address>
                         </div>
                     </div>
 
-                    <div class="ligue-ja-container">
-                        <div class="ligue-ja-flex">
-                            <div class="ligue-ja-texto">
-                                <p>Ou se preferir,</p> <p>ligue já:</p>
-                            </div>
-                            <address>
-                            <div class="ligue-ja-numeros">
-                                <img src="./assets/img/phone.png" alt="icon telefone" class="ligue-ja-img">
-                                <a href="tel:+51982323232"><p>(51) 98232.3232</p></a>
-                                <p>-</p>
-                                <a href="tel:+51999456045"><p>(51) 99945.6045</p></a>          
-                            </div>
-                        </address>
+                    <div class="ligue-ja__container">
+
+                        <div class="ligue-ja__texto__container">
+                            <p class="ligue-ja__texto">Ou se preferir,</p> <p class="ligue-ja__texto">ligue já:</p>
                         </div>
+
+                
+                        <div class="ligue-ja__telefones__container">
+
+                            <img src="./assets/img/phone.png" alt="icon telefone" class="ligue-ja__img">
+                            <address><a href="tel:+51982323232" class="ligue-ja__telefones__link"><p class="ligue-ja__telefones">(51) 98232.3232</p></a></address>
+                                <p class="ligue-ja__telefones">-</p>
+                            <address><a href="tel:+51999456045" class="ligue-ja__telefones__link"><p class="ligue-ja__telefones">(51) 99945.6045</p></a></address>          
+                        </div>     
                     </div>
             </section> 
 
-            <section id="avaliaçao1" class="seção-avaliaçao">  <!-- avaliações e comentários-->
+            <section id="avaliaçao1" class="seçao__avaliaçao__container">  <!-- avaliações e comentários-->
                 
-                <div class="titulo-container">
-                        <div class='avaliaçao-titulo'>
-                            <p>Aqui na Abriu Chaveiro, prezamos por <span>qualidade</span>: </p>
-                        </div>
+                <div class="titulo__avaliaçao__container">
+                        
+                    <p class="titulo__texto">Aqui na Abriu Chaveiro, prezamos por <span class="titulo__texto--destaque">qualidade</span>:</p>
 
-                        <div class="imagem-titulo-container">
-                            <img src="./assets/img/header_avaliaçao.PNG" alt="avaliação Abriu Chaveiro no Google" class="header-avaliaçao">
+                    <div class="titulo__imagem__container">
+                        <img src="./assets/img/header_avaliaçao.PNG" alt="avaliação Abriu Chaveiro no Google" class="titulo__img">
+                    </div>
+                </div>
+
+                <div class="avaliaçao__container"> 
+
+                    <div class="avaliaçao__comentario__container"> 
+                        <div class="fazer-comentario__container">
+                            <p class="comentarios__texto">Tem alguma sugestão ou quer deixar seu feedback?</p>
+                                <p class="comentarios__texto--subtitulo">Todos os comentários são analizados,</p>                                   
+                                    <address>
+                                        <a href="https://www.google.com/maps/place/Abriu+Chaveiros+Tauros+%26+Cia/@-30.0995611,-51.2446475,17z/data=!4m7!3m6!1s0x951982135552003b:0xf89b3fc591c7ae14!8m2!3d-30.0995611!4d-51.2424588!9m1!1b1" class="comentarios__link">
+                                            deixar o seu comentário.
+                                        </a>
+                                    </address>
+                                    
+                            <div class="comentarios__orçamento__container">
+                                <div class="comentarios__orçamento--block"><p class="comentarios__texto">Tem alguma duvida ou deseja solicitar um orçamento?</p></div>
+                                    <div class="comentarios__orçamento--on">
+                                        <address>
+                                        <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
+                                            <p class="comentarios__texto--subtitulo">Entre em contato pelo WhatsApp agora mesmo</p>
+                                            <p  class="comentarios__texto--subtitulo">Responderemos o mais breve possível</p>
+                                        </a>
+                                        </address>
+                                    </div>
+                            </div>
                         </div>
                     </div>
 
-                <div class="comentarios-container">
-
-                    <div class="background-seçao-comentarios">
-                            <div class="box-comentarios">
-                                <p>Tem alguma sugestão ou quer deixar seu feedback?</p>
-                                    <p>Todos os comentários são analizados,</p> 
-                                        <p>
-                                            <address>
-                                                <a href="https://www.google.com/maps/place/Abriu+Chaveiros+Tauros+%26+Cia/@-30.0995611,-51.2446475,17z/data=!4m7!3m6!1s0x951982135552003b:0xf89b3fc591c7ae14!8m2!3d-30.0995611!4d-51.2424588!9m1!1b1">
-                                                    deixar o seu comentário.
-                                                </a>
-                                            </address>
-                                        </p>
-
-                                <div class="box-link">
-                                    <div class="hover-exclusao"><p>Tem alguma duvida ou deseja solicitar um orçamento?</p></div>
-                                        <div class="hover-link">
-                                            <address>
-                                            <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
-                                                <p>Entre em contato pelo WhatsApp agora mesmo</p>
-                                                <p>Responderemos o mais breve possível</p>
-                                            </address>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                    <div class="imagens-avaliaçao-container">
-                            <img src="./assets/img/avaliaçao2.PNG" alt="feedback da empresa" class="Avaliaçao-imagens">
-                            <img src="./assets/img/avaliaçao3.PNG" alt="feedback da empresa" class="Avaliaçao-imagens">
-                            <img src="./assets/img/avaliaçao4.PNG" alt="feedback da empresa" class="Avaliaçao-imagens">
+                    <div class="avaliaçao__imagens__container">
+                        <img src="./assets/img/avaliaçao2.PNG" alt="imagem de feedback da empresa" class="avaliaçao__imagens">
+                        <img src="./assets/img/avaliaçao3.PNG" alt="imagem de feedback da empresa" class="avaliaçao__imagens">
+                        <img src="./assets/img/avaliaçao4.PNG" alt="imagem de feedback da empresa" class="avaliaçao__imagens">
                     </div>
 
                 </div>
             </section>
 
-            <section id="localizaçao1" class="container-mapa-fotos"> <!-- Gmaps-->
-            
-                <div class="primeira-seçao">
-                    <img src="./assets/img/location-icon.png" alt="icone de localização" class="icone-localizaçao">
-                    <div class="container-onde-estamos-localizados">
-                        <p>Onde estamos localizados?</p>
-                        <p>Há mais de 20 anos atendendo toda a Zona Sul de Porto Alegre </p>
-                    </div> 
-
-                    <div class="container-mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1725.906198215657!2d-51.243553141865604!3d-30.099558774937037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951982135552003b%3A0xf89b3fc591c7ae14!2sAbriu%20Chaveiros%20Tauros%20%26%20Cia!5e0!3m2!1spt-BR!2sbr!4v1664884947584!5m2!1spt-BR!2sbr style="border:0; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                    <div class="container-fotos-banca">   
-                        <img src="./assets/img/banca-google.jpg" class="g-imagens" alt="imagens da banca de chaveiro">
-                        <img src="./assets/img/banca1.PNG" class="g-imagens" alt="imagens da banca de chaveiro">
-                        <img src="./assets/img/banca2.PNG" class="g-imagens" alt="imagens da banca de chaveiro">
-                    </div>
-
-                    <div class="endereço">
-                        <p>Nossa banca está localizada no endereço:</p>
-                        <address></address><p>Rua Coronel Claudino, 687 - Cristal, Porto Alegre - RS, 91910-670</p>
-                    </div>
-
+            <section id="localizaçao1" class="seçao__localizaçao__container"> <!-- Gmaps-->
+                <img src="./assets/img/location-icon.png" alt="icone de localização" class="localizaçao__img">
+                
+                <div class="localizaçao__titulo__container">
+                    <p class="localizaçao__texto">Onde estamos localizados?</p>
+                    <p class="localizaçao__texto--subtitulo">Há mais de 20 anos atendendo toda a Zona Sul de Porto Alegre </p>
                 </div> 
-            </div>
+
+                <div class="mapa__container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1725.906198215657!2d-51.243553141865604!3d-30.099558774937037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951982135552003b%3A0xf89b3fc591c7ae14!2sAbriu%20Chaveiros%20Tauros%20%26%20Cia!5e0!3m2!1spt-BR!2sbr!4v1664884947584!5m2!1spt-BR!2sbr style="border:0; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                    
+                    <div class="fotos__banca__container">   
+                        <img src="./assets/img/banca-google.jpg" class="banca__img" alt="imagens da banca de chaveiro">
+                        <img src="./assets/img/banca1.PNG" class="banca__img" alt="imagens da banca de chaveiro">
+                        <img src="./assets/img/banca2.PNG" class="banca__img" alt="imagens da banca de chaveiro">
+                    </div>
+
+                    <div class="endereço__container">
+                        <p class="endereço__texto">Nossa banca está localizada no endereço:</p>
+                        <address>
+                            <p class="endereço__texto--subtitulo">Rua Coronel Claudino, 687 - Cristal, Porto Alegre - RS, 91910-670</p>
+                        </address>
+                    </div>
+                </div> 
             </section>
 
-            <section id="blog1"> <!-- blog-->
-                    <div class="containerBlog">
-                        <div class="container-textoBlog">
-                            <p>Blog da Abriu Chaveiro:</p>
-                            <p>Confira em nosso blog dicas de segurança, cuidados e muito mais: </p>
+            <section id="blog1" class="seçao__blog__container"> <!-- blog-->
+                        <div class="blog__titulo__container">
+                            <p class="blog__texto">Blog da Abriu Chaveiro:</p>
+                            <p class="blog__texto--subtitulo">Confira em nosso blog dicas de segurança, cuidados e muito mais: </p>
                         </div>
-                        <iframe src="https://abriuchaveiro.blogspot.com/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blog-frame"></iframe>
-                    </div>
+                        <iframe src="https://abriuchaveiro.blogspot.com/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blog"></iframe>
             </section>
 
             <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"><img src="./assets/img/whats.png" class="botao__flutuante__whatsapp"></a>
         </main>
         
-            <footer>
+        <footer>
                 <section class="rodape__container">
 
                     <a href="tel:+5551982323232"><button type="text" class="botao__telefone__rodape"><p class="botao__telefone__rodape_texto">Ligue Agora</p></button></a>
@@ -284,6 +280,6 @@
                             <p>© Abriu Chaveiro - Todos os Direitos Reservados</p>
                             <p>Desenvolvido por guifer.3097@hotmail.com</p>
                 </section>      
-            </footer>
+        </footer>
     </body>
 </html>

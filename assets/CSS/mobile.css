@@ -1,83 +1,98 @@
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 320px) {
   main {
     overflow: hidden;
   }
   /* Header */
 
-#hidden {
-  display: none;
-}
-.adiçao-menu-mobile{
-  display: block;
-}
-.logo-container {
-  width: 45%;
-}
-.titulo-cabeçalho {
-  font-size: 0.8em;
-  font-weight: bold;
-}
-.cabeçalho-nav-container {
-  width: 50%;
-}
-.cabecalho-navegaçao-itens a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+  #navegaçao__mobile { 
+    display: block;
+  }
+  #menu__mobile {
+    display:none;
+    width: 100%;
+  }
+  .cabeçalho__container {
+    height: 2.5em;
+  }
+  .cabeçalho__titulo__logo__container{
+    height: fit-content;
+    width: 50%;
+    
+  }
+  .cabeçalho__titulo__container{
+    
+    width:100%;
+  }
+  .logo__cabeçalho__img {
+    
+    width: 26%;
+    padding: 0;
+  }
+  .cabeçalho__titulo {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .nav__container {
+    width: 50%;
+  }
+  .nav__menu__itens__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: lighter;
-  text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
 
-  
-  font-size:0.7em;
-  padding: 2%;
+    
+    font-size:0.7em;
+    padding: 2%;
 
-  color: rgb(66, 66, 66);
-}
-.cabeçalho-menu li ol {
-  overflow: visible;
-  height:25em;
-}
-/* ---------------- */
-/* Banner */
-.texto-principal {
-  top: 0;
-  font-size: 2em;
-}
+    color: rgb(66, 66, 66);
+  }
+  .nav__container__menu li ol {
+    overflow: visible;
+    height:25em;
+  }
+  /* ---------------- */
+  /* Banner */
+  .texto-principal {
+    top: 0;
+    font-size: 2em;
+  }
 
-.container-texto-banner h2 {
-  font-size: 2em;
-  top: 0;
-}
-.container-texto-banner p {
-  font-size: 1em;
-  top: 0;
-}
-.banner-container {
-  background: url(img/banner.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  
-}
+  .container-texto-banner h2 {
+    font-size: 2em;
+    top: 0;
+  }
+  .container-texto-banner p {
+    font-size: 1em;
+    top: 0;
+  }
+  .banner-container {
+    background: url(img/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+  }
 
 
-/* Celular Botoes */
-.botao-whatsapp-boxwhats, .botao-email-boxmail {
-    width: 25em;
-}
-.icon-mail {
-  width:10%;
-}
-.texto-botao-email {
-  font-size: 1.4em;
-}
+  /* Celular Botoes */
+  .botao-whatsapp-boxwhats, .botao-email-boxmail {
+      width: 25em;
+  }
+  .icon-mail {
+    width:10%;
+  }
+  .texto-botao-email {
+    font-size: 1.4em;
+  }
 /* ------------------ */
 
 

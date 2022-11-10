@@ -4,13 +4,11 @@
   transition: 1s;
   scroll-behavior: smooth;
 }
-#menu__mobile{
-  
+#menu__mobile {
   display:block;
   width: 100%;
 }
-#navegaçao__mobile{
-  
+#navegaçao__mobile { 
   display: none;
 }
 .cabeçalho__container {
@@ -112,7 +110,7 @@
   background: rgb(66, 66, 66) ;
   color: goldenrod;
 }
-.nav__hover {
+.nav__menu__itens__link {
   
   height: 2.9em
 }
