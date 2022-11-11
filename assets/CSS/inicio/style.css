@@ -20,34 +20,47 @@ main {
 /* Banner */
 .seçao__banner__container {
     
-    background: url('/assets/img/banner.png');
+    background: url(/assets/img/logo.png);
+    background-color: #afafaf;
+
+    background-size: 40%;
+    background-attachment:fixed;
+    background-position-x: 50% ;
+    background-position-y: 50% ;
+    background-repeat: no-repeat;
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-grow: 1;
+
     height: 100vh;
     overflow: hidden;
-    background-size: cover;
+
+    border-bottom: 5px dotted black;
+    
 }
 .texto__banner__container {
-    
-    background: rgba(199, 199, 199, 0.514);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: rgba(29, 29, 29, 0.808);
     width: 100%;
 
 }
 .texto__banner {
     
     font-family: 'Noto Sans', sans-serif;
-    color: #fefefe;
+    color: goldenrod;
     text-align: center;
     top: 1em;
-    font-size: 6em;
+    font-size: 14vh;
     line-height: 1.5em;
 }
 .texto__banner__container h2 {
     
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(51, 51, 51);
+    color: #cecece;
 
     font-weight: bold;
     text-align: center;
@@ -59,7 +72,7 @@ main {
 .texto__banner__container p {
     
     font-family: 'Noto Sans', sans-serif;
-    color: #fefefe;
+    color: goldenrod;
 
     font-weight: bold;
     text-align: center;
@@ -411,7 +424,7 @@ main {
     font-family: 'Open Sans', sans-serif;
 
     color: rgba(255, 255, 255, 0.84);
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .icone__email__botao {
     width: 2em;
@@ -572,7 +585,7 @@ main {
     flex-flow: row wrap;
 }
 .avaliaçao__comentario__container {
-    background: url('/assets/img/banca2.PNG');
+    background: url(/assets/img/banca2.PNG);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -50,39 +50,33 @@
     overflow: hidden;
     height:22em;
     width: 50%;
+    
 
     margin-top: 2.5em;
     border-radius: 0 0 0 10px;
   }
   .nav__container__menu ol li a {
     font-size: 0.9em;
+    font-weight: bold;
   }
+ 
 
   /* ---------------- */
 
   /* Banner */
   .texto__banner {
-    top: 0;
-    font-size: 2em;
-  }
-  .texto__banner__container {
-    width: 100%;
+    font-size: 6.5vh;
+    line-height: 1.5em;
   }
   .texto__banner__container h2 {
-    font-size: 2em;
-    top: 0;
+    font-size: 2.5vh;
   }
   .texto__banner__container p {
-    font-size: 1em;
-    top: 0;
+    font-size: 2vh;
+
   }
-  .seçao__banner__container  {
-    background: url('/assets/img/banner.png');
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    
+  .seçao__banner__container {
+  background-size: 80%;
   }
   /* ---------------- */
 
@@ -144,14 +138,14 @@
       height:10vh;
   }
 
-  .icone__email__botao {
-    width:10%;
+  .icone__email__botao, .icone__whatsapp__botao {
+    display: none;
   }
   .email__texto, .whatsapp__texto {
     font-size: 1.1em;
   }
   .botao__email__texto, .botao__whatsapp__texto {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
   /* ------------------ */
 
@@ -293,7 +287,7 @@
 
   /* Rodapé */
   .rodape__container {
-    height: 50vh;
+    height: auto;
     flex-direction: column;
     align-items:center;
     justify-content: space-evenly;
@@ -307,7 +301,7 @@
   .pagamento__container {
     order: 1;
     width: 100%;
-    padding: 0 0.5em;
+    padding: 10% 0.5em 0 0.5em;
     margin: 0;
     justify-content: end;
     flex-grow: 1;

@@ -10,6 +10,12 @@
 }
 #navegaçao__mobile { 
   display: none;
+  background: #333333;
+  color: #daa520;
+}
+#navegaçao__mobile li a {
+  color: #cecece;
+  text-decoration: underline;
 }
 .cabeçalho__container {
   
@@ -108,8 +114,8 @@
   
   background: rgb(66, 66, 66) ;
   color: goldenrod;
+  
 }
-
 /* ------------------------ */
 
 
@@ -126,18 +132,16 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
+  padding-left: 10%;
   
-  font-weight: lighter;
+  
   font-size: 1vw;
   line-height: 3.5em;
 
 }
 
-.nav__menu__itens li:hover{
 
-  background: #333333;
-}
 /* ------------------------- */
 
 
@@ -149,7 +153,7 @@
   width: 11.3%;
   height:fit-content;
 
-  background-color: #cecece;
+  background-color: #ececec;
   border-bottom: solid rgb(66, 66, 66);
   border-radius: 0 0 10px 10px;
 
