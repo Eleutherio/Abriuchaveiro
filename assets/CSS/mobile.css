@@ -188,7 +188,7 @@
   }
 
   .avaliaçao__comentario__container {
-    background: url(/assets/img/banca2.PNG);
+    background: url('/assets/img/banca2.PNG');
     background-size: cover;
     display: flex;
     flex-flow: column;

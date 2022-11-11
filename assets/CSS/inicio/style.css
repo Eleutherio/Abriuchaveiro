@@ -585,7 +585,7 @@ main {
     flex-flow: row wrap;
 }
 .avaliaçao__comentario__container {
-    background: url(/assets/img/banca2.PNG);
+    background: url('/assets/img/banca2.PNG');
     display: flex;
     justify-content: center;
     align-items: center;
