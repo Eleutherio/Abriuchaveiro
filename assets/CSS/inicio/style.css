@@ -20,7 +20,7 @@ main {
 /* Banner */
 .seçao__banner__container {
     
-    background: url('/assets/img/logo.png');
+    background-image: url('/assets/img/logo.png');
     background-color: #afafaf;
 
     background-size: 40%;
@@ -585,7 +585,7 @@ main {
     flex-flow: row wrap;
 }
 .avaliaçao__comentario__container {
-    background: url('/assets/img/banca2.PNG');
+    background-image: url('/assets/img/banca2.PNG');
     display: flex;
     justify-content: center;
     align-items: center;
