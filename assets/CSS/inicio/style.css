@@ -20,14 +20,15 @@ main {
 /* Banner */
 .seçao__banner__container {
     
-    background-image: url('/assets/img/logo.png');
-    background-color: #afafaf;
+    background-image: url("/assets/img/logo.png");
+    background-color: #e70909;
 
     background-size: 40%;
     background-attachment:fixed;
     background-position-x: 50% ;
     background-position-y: 50% ;
     background-repeat: no-repeat;
+    background-blend-mode:overlay;
 
     display: flex;
     align-items: center;
@@ -585,7 +586,7 @@ main {
     flex-flow: row wrap;
 }
 .avaliaçao__comentario__container {
-    background-image: url('/assets/img/banca2.PNG');
+    background-image: url("/assets/img/banca2.PNG");
     display: flex;
     justify-content: center;
     align-items: center;
