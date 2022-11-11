@@ -76,9 +76,9 @@
 
   }
   .seçao__banner__container {
-    background: url('/assets/img/banner.jpg');
+    background: url('/assets/img/logo.png');
     
-    background-size: cover;
+    background-size: 80%;
     background-attachment:fixed;
     background-position-x: 50% ;
     background-position-y: 50% ;
@@ -188,6 +188,8 @@
   }
 
   .avaliaçao__comentario__container {
+    background: url(/assets/img/banca2.PNG);
+    background-size: cover;
     display: flex;
     flex-flow: column;
     justify-content: center;
