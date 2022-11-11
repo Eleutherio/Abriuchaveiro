@@ -76,9 +76,9 @@
 
   }
   .seçao__banner__container {
-    background: url('/assets/img/banca2.PNG');
+    background: url('/assets/img/banner.jpg');
     
-    background-size: 80%;
+    background-size: cover;
     background-attachment:fixed;
     background-position-x: 50% ;
     background-position-y: 50% ;
