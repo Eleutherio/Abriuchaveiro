@@ -33,7 +33,7 @@ main {
     
     background: rgba(199, 199, 199, 0.514);
     width: 100%;
-    padding: 0;
+
 }
 .texto__banner {
     
@@ -101,7 +101,6 @@ main {
 
 /* Seção de Serviços */
 .seçao__serviços__container{
-    
     width: 100%;
 }
 .serviços__titulo__container{
@@ -133,25 +132,23 @@ main {
     width: 100%;
 }
 
-.primeiro__bloco, .segundo__bloco {
+.primeiro-bloco__serviços, .segundo-bloco__serviços {
     padding: 2.5%;
     background:#fefefe;
     width: 70%;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap-reverse;
-    align-items:flex-end;
-
-    
+    align-items:flex-end; 
 }
-.segundo__bloco {
+.segundo-bloco__serviços {
     border-top: 5px dotted rgba(32,33,36,255);
 }
 
-.primeiro__bloco ul, .segundo__bloco ul {
+.primeiro-bloco__lista, .segundo-bloco__lista {
     width:60%
 }
-.primeiro__bloco li, .segundo__bloco li {
+.primeiro-bloco__lista__item, .segundo-bloco__lista__item {
     
     font-family: 'Open Sans', sans-serif;
     color: rgba(32,33,36,255);
@@ -162,7 +159,7 @@ main {
 
     display: flex;
 }
-.primeiro__bloco p:first-child, .segundo__bloco p:first-child {
+.primeiro-bloco__lista__titulo, .segundo-bloco__lista__titulo {
     
     color: rgba(32,33,36,255);
     background: goldenrod;  
@@ -262,10 +259,14 @@ main {
     font-size: 2.0em;
     line-height: 3em;
 }
-.orçamento__titulo:nth-child(2){
-    
+.orçamento__subtitulo{
+    color: goldenrod; 
+
+    font-family: 'Open Sans', sans-serif;
+
     font-weight: lighter;
     font-size: 1.7em;
+    line-height: 3em;
 }
 .orçamento__titulo--horas {
     color:#cecece;
@@ -313,16 +314,16 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
    
-    width: 100%;
-    height: 15em;
+    width: 26rem;
+    height: 15rem;
     padding:5%;
     margin-bottom: 15%;
 
     border: 5% solid transparent;
-    border-radius: 1em;
-    box-shadow:  20px 10px 30px rgba(52, 175, 35, 0.74);
+    border-radius: 1rem;
+    box-shadow:  1rem 1rem 1rem rgba(52, 175, 35, 0.74);
 }
 .whatsapp__texto {
 
@@ -332,15 +333,15 @@ main {
     font-size: 1.5em;
 }
 .botao__whatsapp {
-    width: 30em;
-    height: 5em;
-    margin: 2em 1em;
+    width: 22rem;
+    height: 5rem;
+    margin: 1rem 1rem;
 
     background: rgb(52, 175, 35);
 
     border: transparent;
-    border-radius: 4em;
-    box-shadow: 0px 0px 30px rgba(52, 175, 35, 0.45);
+    border-radius: 10rem;
+    box-shadow: 0px 0px 1rem rgba(52, 175, 35, 0.45);
     cursor: pointer;
 }
 .botao__whatsapp__texto {
@@ -373,17 +374,19 @@ main {
     
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
    
-    width: 100%;
-    height: 15em;
-    margin: 5;
+    width: 26rem;
+    height: 15rem;
+    padding:5%;
+    margin-bottom: 15%;
+    
     
 
     border: 5% solid transparent;
-    border-radius: 1em;
+    border-radius: 1rem;
     background: rgba(255, 255, 255, 0.63);
-    box-shadow:  20px 10px 30px rgba(255, 68, 0, 0.74);
+    box-shadow:  1rem 1rem 1rem rgba(255, 68, 0, 0.74);
 }
 .email__texto {
     font-family: 'Open Sans', sans-serif;
@@ -393,15 +396,15 @@ main {
 }
 .botao__email {
     
-    width: 30em;
-    height: 5em;
-    margin: 2em 1em;
+    width: 22rem;
+    height: 5rem;
+    margin: 1rem 1rem;
 
     background: rgb(255 70 0);
 
     border: transparent;
-    border-radius: 4em;
-    box-shadow: 0px 0px 30px rgba(255, 68, 0, 0.74);
+    border-radius: 10rem;
+    box-shadow: 0 0 1rem rgba(255, 68, 0, 0.74);
     cursor: pointer;
 }
 .botao__email__texto {
@@ -519,30 +522,38 @@ main {
 
     display: flex;
     flex-flow: row wrap;
-
+    justify-content: space-between;
     width: 100%;
     padding: 2%;
+}
+.titulo__texto__container--posiçao{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-flow: row;
 }
 .titulo__texto {
     
     color: rgb(161, 161, 161);
-    
     display: flex;
-    flex-grow: 1;
-    align-items:center;
-    order:0;
+    
     
     font-family: 'Open Sans', sans-serif;
 
     font-weight: bold;
     font-size: 2em;
-    line-height: 3em;
-    margin-left: 5%;
+    margin-right: 1%;
+    
+    
 }
 .titulo__texto--destaque {
-    
-    margin-left: 0.3em;
     color: goldenrod;
+    font-family: 'Open Sans', sans-serif;
+
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 1%;
+    
 }
 .titulo__imagem__container {
     display: flex;
@@ -575,12 +586,11 @@ main {
 
     width: 30em;
     height: 30em;
-
+    
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-
 }
 .comentarios__texto {
     font-family: 'Open Sans', sans-serif;
@@ -669,7 +679,7 @@ height: auto;
 }
 /* ------------ */
 
-/* G maps */
+/* Seção Localização */
 .seçao__localizaçao__container {
     background: goldenrod;
     
@@ -768,16 +778,19 @@ height: auto;
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-around;
 
     flex-basis: 100%;
-    height: 100vh;
+    height: fit-content;
 }
 .blog__titulo__container {
-    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
 }
 
-.blog__texto {
+.blog__titulo {
     color: rgba(32,33,36,255);
     font-family: 'Open Sans', sans-serif;
 
@@ -788,7 +801,7 @@ height: auto;
     font-size: 2em;
     line-height: 3em;
 }
-.blog__texto--subtitulo {
+.blog__subtitulo {
     color: rgba(32,33,36,255);
     font-family: 'Open Sans', sans-serif;
 

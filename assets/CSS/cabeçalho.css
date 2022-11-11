@@ -54,7 +54,6 @@
 
   color: goldenrod;
 }
-
 .logo__cabeçalho__img {
   
   padding: 2.5% 0 0 10%;
@@ -68,7 +67,7 @@
   
   display: flex;
   justify-content: end;
-  width: 60%;
+  width: 50%;
 }
 .nav__container__menu {
   
@@ -83,7 +82,8 @@
   width: 100%;
   
 }
-.nav__menu__itens > a {
+.nav__menu__itens__link {
+  height: 3.9rem;
   
   display: flex;
   align-items: center;
@@ -100,8 +100,7 @@
 
   color: rgb(66, 66, 66);
 }
-.nav__menu__itens a > p {
-  
+.icone__menu__inicio {
   margin-left: 10%;
 }
 
@@ -110,10 +109,7 @@
   background: rgb(66, 66, 66) ;
   color: goldenrod;
 }
-.nav__menu__itens__link {
-  
-  height: 2.9em
-}
+
 /* ------------------------ */
 
 
@@ -128,12 +124,12 @@
   color: rgb(66, 66, 66);
 
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   
   font-weight: lighter;
-  font-size: 1.3em;
+  font-size: 1vw;
   line-height: 3.5em;
 
 }
@@ -150,8 +146,8 @@
   position: absolute;
   margin-top: 3.9em;
   
-  width: 16.3em;
-  height:18em;
+  width: 11.3%;
+  height:fit-content;
 
   background-color: #cecece;
   border-bottom: solid rgb(66, 66, 66);
