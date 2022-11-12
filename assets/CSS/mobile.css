@@ -157,6 +157,9 @@
   /* ------------------ */
 
   /* Ligue já */
+  .ligue-ja__container{
+    padding: 10% 0;
+  }
   .ligue-ja__texto {
     font-size: 6vw;
   }
@@ -176,11 +179,10 @@
   /* ------------------ */
 
   /* Seção Avaliação */
-
   .titulo__texto__container--posiçao {
     width: 100%;
     flex-flow: column;
-    padding: 5% 0;
+    padding: 10% 0;
   }
   .titulo__texto, .titulo__texto--destaque {
   font-size: 5vw;
