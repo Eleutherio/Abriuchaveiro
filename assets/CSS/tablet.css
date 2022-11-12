@@ -1,0 +1,11 @@
+@media screen and (min-width: 425px) {
+  
+
+  .avaliaçao__imagens__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 0;
+    background: #565656;
+  }
+}

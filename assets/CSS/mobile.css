@@ -1,9 +1,12 @@
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 300px) {
   main {
     overflow: hidden;
   }
-  /* Header */
 
+  .botao__flutuante__whatsapp{
+    display: none;
+  }
+  /* Header */
   #navegaçao__mobile { 
     display: block;
   }
@@ -11,7 +14,6 @@
     display:none;
     width: 100%;
   }
-
 
   .cabeçalho__container {
     height: fit-content;
@@ -23,17 +25,16 @@
   }
 
   .logo__cabeçalho__img {
-    padding: 6% 2% 0 2%;
-    width: 5em;
+    padding: 2%;
+    width: 20vw;
     position: relative;
   }
   .cabeçalho__titulo__container {
     align-items: center;
   }
   .cabeçalho__titulo {
-    font-size: 0.8em;
+    font-size: 3.2vw;
   }
-
 
   .nav__container {
     width: 50%;
@@ -61,8 +62,6 @@
     font-size: 0.9em;
     font-weight: bold;
   }
- 
-
   /* ---------------- */
 
   /* Banner */
@@ -74,8 +73,7 @@
     font-size: 2.5vh;
   }
   .texto__banner__container p {
-    font-size: 2vh;
-
+    font-size: 2.5vh;
   }
   .seçao__banner__container {
 
@@ -121,10 +119,10 @@
 
   /* Celular Botoes */
   .orçamento__titulo{
-    font-size: 1.2em;
+    font-size: 6vw;
   } 
   .orçamento__subtitulo {
-    font-size: 1em;
+    font-size: 4.5vw;
     padding: 0 1%;
   }
   
@@ -151,8 +149,11 @@
   .email__texto, .whatsapp__texto {
     font-size: 1.1em;
   }
-  .botao__email__texto, .botao__whatsapp__texto {
-    font-size: 1.2em;
+  .botao__email__texto{
+    font-size: 4.4vw;
+  }
+  .botao__whatsapp__texto {
+    font-size: 5vw;
   }
   /* ------------------ */
 
@@ -193,31 +194,42 @@
   .avaliaçao__comentario__container {
     background-size: cover;
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 50%;
+    width: 100%;
+    height: 60vh;
+  }
+  .avaliaçao__imagens__container {
+    background: rgba(32,33,36,255);
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
   }
   .fazer-comentario__container {
-    margin: 15% 5%;
-    padding: 8% 0;
-    width: fit-content;
-    
-
-    text-align: center;
+  width: 80vw;
+  height: 50vh;
+  flex-wrap: nowrap;
   }
+  .comentarios__orçamento__container {
+    margin-top: 6vh;
+}
   .comentarios__texto {
-    font-size: 4.3vw;
-    line-height: 2em;
+    font-size: 3vw;
+    line-height: 7vh;  
   }
   .comentarios__texto--subtitulo {
-    font-size: 4vw;
-    line-height: 5vh;
-    padding-bottom: 5%;
+    font-size: 3.5vw;
+    line-height: 7vh;
   }
   .comentarios__link {
-    font-size: 5vw;
+    font-size: 3.5vw;
+    font-weight: lighter;
+    padding: 0;
+  }
+  .comentarios__link__texto {
+    font-weight: bold;
+    font-size: 3vw;
   }
   /* ------------------ */
 
@@ -287,8 +299,6 @@
   }
   /* ------------------ */
 
-  /* ----*/
-
   /* Rodapé */
   .rodape__container {
     height: auto;
@@ -315,12 +325,31 @@
     width: 100%;
     margin: 5% 0 0 0;
   }
+
+ 
+  .botao__telefone__rodape_texto {
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 4vw;
+  }
+ 
+  .botao__whatsapp__rodape_texto {
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 3.5vw;
+  }
   .botao__telefone__rodape, .botao__whatsapp__rodape {
-    margin-top: 15%
+    margin-top: 15%;
+    width: 45vw;
+    height: 8vh;
   }
   /* ----*/
-  /* Copyright */
 
+  /* Copyright */
   .copyright {
     width: 100%;
     height: 15vh;
@@ -336,4 +365,203 @@
     line-height: 2em;
   }
   /* ----*/
+}
+
+/* -------------- Tablet --------------- */
+/* -------------- Tablet --------------- */
+/* -------------- Tablet --------------- */
+
+@media screen and (min-width: 426px) {
+  
+  /* Seção Banner */
+  .texto__banner {
+    font-size: 10vh;
+  }
+  .texto__banner__container h2 {
+    font-size: 4vh;
+  }
+  .texto__banner__container p {
+    font-size: 3vh;
+  }
+  /* --------------- */
+
+  /* Celular Botoes */
+
+  .email__texto, .whatsapp__texto {
+    font-size: 3.5vw;
+  }
+
+  .orçamento__titulo{
+    font-size: 5vh;
+  } 
+  .orçamento__subtitulo {
+    font-size: 3.5vh;
+  }
+  
+  .botoes__container {
+    
+    padding: 10%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .email__texto, .whatsapp__texto {
+    font-size: 1.5em;
+  }
+  .botao__email__texto{
+    font-size: 3vw;
+  }
+  .botao__whatsapp__texto {
+    font-size: 3vw;
+  }
+  .botao__email__container, .botao__whatsapp__container {
+    width: 60vw;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+  .botao__whatsapp, .botao__email {
+      width: 50vw;
+      height:10vh;
+  }
+  /* ----------------- */
+
+  /* Ligue já */
+  .ligue-ja__container{
+    padding: 5% 0;
+  }
+  .ligue-ja__texto {
+    font-size: 4vw;
+  }
+  .ligue-ja__telefones {
+    font-size: 5vw;
+  }
+  .ligue-ja__img { 
+    display: block;
+    width: 10%;
+  }
+  /* ---------------- */
+
+  /* Seção Avaliação */
+  .avaliaçao__comentario__container {
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+  }
+  .avaliaçao__imagens__container {
+    background: rgba(32,33,36,255);
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    height: fit-content;
+    align-items: center;
+  }
+  .avaliaçao__imagens {
+  width:60%;
+  }
+  .titulo__avaliaçao__container {
+    justify-content: center;
+  }
+  .titulo__texto__container--posiçao {
+    width: 100%;
+    flex-flow: column;
+    padding: 2.5% 0;
+  }
+  .titulo__texto, .titulo__texto--destaque {
+  font-size: 5vw;
+  line-height: 2em;
+  text-align: none;
+  }
+  .avaliaçao__imagens {
+    width:80%;
+    height: auto;
+  }
+  /* ------------------ */
+
+  /* Seção Localização */
+  .localizaçao__img {
+    width: 15%;
+    height: auto;
+  }
+  .localizaçao__texto{
+    font-size: 5vw;
+    line-height: 2.5em;
+  }
+  .localizaçao__texto--subtitulo {
+    font-size: 3vw;
+    line-height:1.5em;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .endereço__texto {
+    text-align: center;
+
+    font-size: 3.5vw;  
+    line-height:2em;
+  }
+  .endereço__texto--subtitulo {
+    font-size: 2vw;  
+    line-height:2em;
+  }
+  /* ------------------ */
+
+  /* blog */
+  .blog__titulo__container {
+    height: 50vh;
+  }
+  .blog__titulo {
+    font-size: 5vw;
+    line-height: 2em;
+  }
+  .blog__subtitulo {
+    font-size: 3vw;
+    line-height: 2em;
+    text-align:center;
+  }
+  /* ---------------- */
+
+  /* Rodapé */
+  .pagamento__texto {
+    font-size: 3.7vw;
+    font-weight: bold;
+    color: goldenrod;
+    
+  }
+
+  .botao__telefone__rodape_texto {
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 3vw;
+  }
+  .botao__whatsapp__rodape_texto {
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 3vw;
+  }
+  .botao__telefone__rodape, .botao__whatsapp__rodape {
+    margin-top: 15%;
+    width: 45vw;
+    height: 10vh;
+  }
+
+  /* ---------------- */
+
+
+  /* Copyright */
+  .copyright {
+    height: 20vh;
+  }
+  .copyright p {
+    font-size: 2.5vw;
+  }
+  /* ------------------ */
 }

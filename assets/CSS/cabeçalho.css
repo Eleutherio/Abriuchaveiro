@@ -55,7 +55,7 @@
   
   font-family: 'Open Sans', sans-serif;
   
-  font-size:1.5em;
+  font-size:1.5vw;
   font-weight: bold;
 
   color: goldenrod;
@@ -63,7 +63,7 @@
 .logo__cabeçalho__img {
   
   padding: 2.5% 0 0 10%;
-  width: 9em;
+  width: 20vh;
   position: relative;
 }
 /* ------------------------ */
@@ -89,7 +89,7 @@
   
 }
 .nav__menu__itens__link {
-  height: 3.9rem;
+  height: 4rem;
   
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@
   text-decoration: none;
 
   
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   padding: 2% 5%;
 
   color: rgb(66, 66, 66);

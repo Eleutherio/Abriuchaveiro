@@ -16,7 +16,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9K54W3" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
         
@@ -35,10 +34,10 @@
                 <ul class="nav__container__menu">
                     <li class="nav__menu__itens"><a href="#" class="nav__menu__itens__link">Início <p class="icone__menu__inicio">☰</p></a>
                         <ol>                        
-                            <li><a  href="#avaliaçao1">Avaliação</a></li>                                       
-                            <li><a  href="#orçamento1">Orçamento / Contato</a></li>
-                            <li><a  href="#localizaçao1">Localização</a></li>
-                            <li><a  href="#blog1">Blog</a></li>
+                            <li><a  href="#referencia-de-navegaçao--orçamento">Orçamento / Contato</a></li>
+                            <li><a  href="#referencia-de-navegaçao--avaliaçao">Avaliação</a></li>                                       
+                            <li><a  href="#referencia-de-navegaçao--localizaçao">Localização</a></li>
+                            <li><a  href="#referencia-de-navegaçao--blog">Blog</a></li>
 
                             <div id="navegaçao__mobile">
                                 <li><a href="#">Serviços ↗</a></li>
@@ -55,7 +54,7 @@
         </header>
         
         <main>
-            <section class="seçao__banner__container">         <!-- Seção Banner -->
+            <section class="seçao__banner__container">    <!-- Seção Banner -->
                 
                 <div  class="texto__banner__container">
                     <h1 class="texto__banner">Abriu Chaveiro</h1> 
@@ -126,9 +125,9 @@
                 </div>
             </section> 
 
-            <section class="seçao__orçamento__container"> <!-- Seção Orçamento e Contato -->
+            <section id="referencia-de-navegaçao--orçamento" class="seçao__orçamento__container"> <!-- Seção Orçamento e Contato -->
                 
-                <div id="orçamento1" class="orçamento__titulo__container">
+                <div class="orçamento__titulo__container">
 
                     <p class="orçamento__titulo">Solicite agora o seu orçamento!</p>
                     <p class="orçamento__subtitulo">Estamos <span class="orçamento__titulo--horas">24 horas</span> pronto para lhe atender</p>
@@ -182,7 +181,7 @@
                     </div>
             </section> 
 
-            <section id="avaliaçao1" class="seçao__avaliaçao__container">  <!-- avaliações e comentários-->
+            <section id="referencia-de-navegaçao--avaliaçao" class="seçao__avaliaçao__container">  <!-- avaliações e comentários-->
                 
                 <div class="titulo__avaliaçao__container">
                     
@@ -208,7 +207,7 @@
                                     </address>
                                     
                             <div class="comentarios__orçamento__container">
-                                <div class="comentarios__orçamento--block"><p class="comentarios__texto">Tem alguma duvida ou deseja solicitar um orçamento?</p></div>
+                                <div class="comentarios__orçamento--block"><p class="comentarios__link__texto">Tem alguma duvida ou deseja solicitar um orçamento?</p></div>
                                     <div class="comentarios__orçamento--on">
                                         <address>
                                         <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
@@ -230,7 +229,7 @@
                 </div>
             </section>
 
-            <section id="localizaçao1" class="seçao__localizaçao__container"> <!-- Gmaps-->
+            <section id="referencia-de-navegaçao--localizaçao" class="seçao__localizaçao__container"> <!-- Gmaps-->
                 <img src="./assets/img/location-icon.png" alt="icone de localização" class="localizaçao__img">
                 
                 <div class="localizaçao__titulo__container">
@@ -256,7 +255,7 @@
                 </div> 
             </section>
 
-            <section id="blog1" class="seçao__blog__container"> <!-- blog-->
+            <section id="referencia-de-navegaçao--blog" class="seçao__blog__container"> <!-- blog-->
                         <div class="blog__titulo__container">
                             <p class="blog__titulo">Blog da Abriu Chaveiro:</p>
                             <p class="blog__subtitulo">Confira em nosso blog dicas de segurança, cuidados e muito mais: </p>
@@ -271,11 +270,11 @@
                 <section class="rodape__container">
 
                     <a href="tel:+5551982323232"><button type="text" class="botao__telefone__rodape"><p class="botao__telefone__rodape_texto">Ligue Agora</p></button></a>
-                        <div class="pagamento__container">
-                            <p class="pagamento__texto">Aceitamos as principais formas de pagamento:</p>
-                            <img src="./assets/img/pagamento.png" class="pagamento__img"> 
-                        </div>
                     <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"><button type="text" class="botao__whatsapp__rodape"><p class="botao__whatsapp__rodape_texto">Mande Uma Mensagem</p></button></a>
+                    <div class="pagamento__container">
+                        <p class="pagamento__texto">Aceitamos as principais formas de pagamento:</p>
+                        <img src="./assets/img/pagamento.png" class="pagamento__img"> 
+                    </div>
                 </section>
                 
                 <section class="copyright">
