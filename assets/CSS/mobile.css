@@ -46,9 +46,9 @@
   .nav__menu__itens__link {
     font-weight: bold;
 
-    height: 2em;
-    font-size: 4vw;
-    padding: 2.1vh 0;
+    height: 2.4em;
+    font-size: 1rem;
+    padding: 0;
     flex-grow: 1;
   }
   .nav__container__menu li ol {
@@ -57,7 +57,7 @@
     width: 50%;
     
 
-    margin-top: 43vh;
+    margin-top: 24.5em;
     border-radius: 0 0 0 10px;
   }
   .nav__container__menu ol li a {
