@@ -14,11 +14,11 @@
 
 
   .cabeçalho__container {
-    height: 2.5em;
+    height: fit-content;
   }
   .cabeçalho__titulo__logo__container {
     height:2.4em;
-  width: 50%;
+    width: 50%;
   }
 
   .logo__cabeçalho__img {
@@ -40,16 +40,12 @@
   .nav__container__menu {
     flex-grow: 1;
   }
-  .nav__menu__itens:first-child {
-    align-items: center;
-  }
+
   .nav__menu__itens__link {
     font-weight: bold;
 
     height: 2.4em;
-    font-size: 1em;
-    padding: none;
-    flex-grow: 1;
+    font-size:1em;
   }
   .nav__container__menu li ol {
     overflow: hidden;
@@ -57,7 +53,7 @@
     width: 50%;
     
 
-    margin-top: 25em;
+    margin-top: 2.5em;
     border-radius: 0 0 0 10px;
   }
   .nav__container__menu ol li a {
