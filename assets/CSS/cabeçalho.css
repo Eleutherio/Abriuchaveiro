@@ -15,6 +15,7 @@
 }
 #navegaçao__mobile li a {
   color: rgb(66, 66, 66);
+  vertical-align: middle;
 }
 .cabeçalho__container {
   
@@ -38,7 +39,7 @@
   
   background: #333333;
   width: 30%;
-  height: 3.9em;
+  height: 4em;
 
   display: flex;
   flex-flow: row nowrap;
@@ -138,14 +139,6 @@
   font-size: 1vw;
   line-height: 3.5em;
 
-}
-.navegaçao__mobile__item {
-  display: flex;
-  align-items: baseline;
-}
-.navegaçao__mobile__icone {
-  margin-left: 5%;
-  width: 7%;
 }
 /* ------------------------- */
 
