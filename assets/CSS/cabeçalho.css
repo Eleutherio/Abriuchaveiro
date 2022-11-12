@@ -10,12 +10,11 @@
 }
 #navegaçao__mobile { 
   display: none;
-  background: #333333;
-  color: #daa520;
+  background: #bdbcbc;
+  
 }
 #navegaçao__mobile li a {
-  color: #cecece;
-  text-decoration: underline;
+  color: rgb(66, 66, 66);
 }
 .cabeçalho__container {
   
@@ -140,10 +139,15 @@
   line-height: 3.5em;
 
 }
-
-
+.navegaçao__mobile__item {
+  display: flex;
+  align-items: baseline;
+}
+.navegaçao__mobile__icone {
+  margin-left: 5%;
+  width: 7%;
+}
 /* ------------------------- */
-
 
 .nav__container__menu li ol{     /* Fundo do menu complementar */
   

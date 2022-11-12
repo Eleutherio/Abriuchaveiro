@@ -20,13 +20,14 @@ main {
 /* Banner */
 .seçao__banner__container {
     background-image: url('../../img/logo.png');
+    background-blend-mode:darken;
+    background-color: #cecece;
 
     background-size: 40%;
     background-attachment:fixed;
     background-position-x: 50% ;
     background-position-y: 50% ;
     background-repeat: no-repeat;
-    background-blend-mode:overlay;
 
     display: flex;
     align-items: center;
