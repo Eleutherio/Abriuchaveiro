@@ -8,7 +8,7 @@ main {
 }
 
 .botao__flutuante__whatsapp{
-  
+    z-index: 1;
     width: 7%;
     bottom: 5.5em;
     padding: 1em;
