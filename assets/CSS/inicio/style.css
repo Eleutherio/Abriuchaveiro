@@ -19,9 +19,7 @@ main {
 
 /* Banner */
 .seçao__banner__container {
-    
-    background-image: url("/assets/img/logo.png");
-    
+    background-image: url('../../img/logo.png');
 
     background-size: 40%;
     background-attachment:fixed;
@@ -32,13 +30,12 @@ main {
 
     display: flex;
     align-items: center;
-
     height: 100vh;
-    overflow: hidden;
-
-    border-bottom: 5px dotted black;
     
+    overflow: hidden;
+    border-bottom: 5px dotted black; 
 }
+
 .texto__banner__container {
     display: flex;
     flex-direction: column;
@@ -586,7 +583,7 @@ main {
     flex-flow: row wrap;
 }
 .avaliaçao__comentario__container {
-    background-image: url("/assets/img/banca2.PNG");
+    background-image: url('../../img/banca2.PNG');
     display: flex;
     justify-content: center;
     align-items: center;
