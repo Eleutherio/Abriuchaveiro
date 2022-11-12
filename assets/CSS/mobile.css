@@ -77,10 +77,9 @@
   }
   .seçao__banner__container {
 
-    background-size: 80%;
     background-attachment:fixed;
     background-position: center;
-    position: relative;
+    background-size: contain;
     background-repeat: no-repeat;
     
   }

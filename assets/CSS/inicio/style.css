@@ -23,13 +23,10 @@ main {
     background-blend-mode:darken;
     background-color: #cecece;
 
-    background-size: 40%;
-    background-attachment:fixed;
-    background-position-x: 550px;
-    background-position-y: 80px;
-    z-index: 0;
 
-    
+    background-attachment:fixed;
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 
     display: flex;
