@@ -5,17 +5,24 @@ main {
 }
 .seçao__titulo__principal {
     width: 100%;
-    height: auto; 
+    height: 70vh;
+    background-image: url('/assets/img/background_contato.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .titulo__principal__container {
-    background-color: #cecece;
+    padding: 2.5% 0 2.5% 0;
+    background-color: #e7e7e736;
+
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-    padding: 15vh 0 10vh 0;
+    
+    
 }
 .titulo__principal, .subtitulo__principal {
     color: rgba(32,33,36,255);
-
     font-weight: lighter;
     text-align: center;
     font-size: 3vw;
@@ -52,7 +59,7 @@ main {
     color: rgba(32,33,36,255);
 
     font-weight: bold;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     padding-bottom: 2%;
 }
 .texto__informativo--subtitulo {
@@ -64,7 +71,7 @@ main {
 
 
 .campo__formulario__container {
-    background-color: goldenrod;
+    background-color: #fefefe;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,33 +80,62 @@ main {
     height: 100%;
     width: 70%;
 }
-.input__container {
-    background-color: rgb(255, 0, 234);
-    
-    height: 100%;
-}
-.input {
-    background-color: rgb(19, 91, 247);
-    margin-bottom: 0.5em;
+.fildset__container {
+    background-color:rgb(216, 181, 92);
 
-    border-radius: 10px;
+    
+    padding: 3rem;
+    width: 80%;
+    height: 80%;
+}
+.input__container, .input__container--mensagem{
+    
+    margin-bottom: 5%;
+    border-bottom: 2px dotted rgba(32,33,36,255);
+}
+.input__container--mensagem {
+    margin-top: 5%;
+}
+
+.input {
+    background-color: transparent;
     border-color: transparent;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-style: italic;
     font-weight: lighter;
     height: 3rem;
     width: 100%;
-    
 }
-.input-label {
-    font-size: 2em;
+::placeholder{
+    color: rgba(32,33,36,255);
+    opacity: 1;
+}
+.input:focus {
+    outline: none;
+}
+
+
+.captcha__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
 }
 .botao__enviar {
-    border-radius: 20px;
+
+    border-radius: 10px 0 10px 0;
     border-color: transparent;
-    background-color: #cecece;
 
-    width: 20%;
-    height: 5%;
+    background-color: #fefefe;
+    width: 25%;
+    height: 100%;
+    padding: 2%;
 }
-
+.botao__enviar p{
+    font-size: 2em;
+    font-weight: lighter;
+    font-style: oblique;
+    
+}
 

@@ -14,8 +14,8 @@
     <link link rel="stylesheet" media="(max-width: 800px)" href="./assets/CSS/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -76,8 +76,9 @@
 
             
               <form class="campo__formulario__container">
-                <legend class="texto__informativo--titulo">Preencha o formulário...</legend>
-                    <fieldset>
+                <legend class="texto__informativo--titulo">ENSIRA AS SUAS INFORMAÇÕES DE CONTATO</legend>
+                    <fieldset class="fildset__container">
+                        
                             <div class="input__container">
                                 <label for="nome" class="input-label"></label>
                                 <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
@@ -93,12 +94,15 @@
                                 <input name="email" id="email" class="input" type="email" placeholder="Email" required>
                             </div>
 
-                            <div class="input__container">
+                            <div class="input__container--mensagem">
                                 <label for="msg" class="input-label"></label>
                                 <input name="mensagem" id="msg" class="input" type="text" placeholder="Digite sua mensagem" required>
                             </div>
+                            <div action="?" method="POST" class="captcha__container">
+                                <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
+                                <button type="submit" class="botao__enviar"><p>Enviar</p></button>
+                            </div>
                             
-                            <button type="submit" class="botao__enviar"><p>Enviar</p></button>
 
                     </fieldset>
             </form>  
