@@ -7,15 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Abriu Chaveiro - Contato</title>
     <link rel="icon" href="./assets/img/logo.png">
+
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/cabeçalho.css">
     <link rel="stylesheet" href="./assets/CSS/rodape.css">
     <link rel="stylesheet" href="./assets/CSS/Contato/main.css">
-    <link link rel="stylesheet" media="(max-width: 800px)" href="./assets/CSS/mobile.css" />
+    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>   
 </head>
 
 <body>
@@ -32,7 +34,7 @@
 
         <nav class="nav__container">
             <ul class="nav__container__menu">
-                <li class="nav__menu__itens"><a href="#" class="nav__menu__itens__link">Início <p
+                <li class="nav__menu__itens"><a href="/index.html" class="nav__menu__itens__link">Início <p
                             class="icone__menu__inicio">☰</p></a>
                     <ol>
                         <li><a href="#referencia-de-navegaçao--orçamento">Orçamento / Contato</a></li>
@@ -65,7 +67,7 @@
             </div>
         </section>
         
-        <div class="seçao__campo__formulario">
+        <section class="seçao__campo__formulario">
 
             <div class="campo__texto__informativo__container">
                 <div class="campo__texto__informativo--posiçao">
@@ -75,37 +77,50 @@
             </div>
 
             
-              <form class="campo__formulario__container">
-                <legend class="texto__informativo--titulo">ENSIRA AS SUAS INFORMAÇÕES DE CONTATO</legend>
-                    <fieldset class="fildset__container">
-                        
-                            <div class="input__container">
-                                <label for="nome" class="input-label"></label>
-                                <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
-                            </div>
+              <div class="campo__formulario__container">
 
-                            <div class="input__container">
-                                <label for="telefone" class="input-label"></label>
-                                <input name="telefone" id="telefone" class="input" type="tel" placeholder="Telefone" required>
-                            </div>
+                    <form  id="form">
 
-                            <div class="input__container">
-                                <label for="email" class="input-label"></label>
-                                <input name="email" id="email" class="input" type="email" placeholder="Email" required>
-                            </div>
+                        <legend class="texto__informativo--titulo">INSIRA AS SUAS INFORMAÇÕES DE CONTATO</legend>
 
-                            <div class="input__container--mensagem">
-                                <label for="msg" class="input-label"></label>
-                                <input name="mensagem" id="msg" class="input" type="text" placeholder="Digite sua mensagem" required>
-                            </div>
-                            <div action="?" method="POST" class="captcha__container">
-                                <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
+                            <fieldset class="fildset__container">
+
+                                <div class="input__container">
+                                    <label for="nome" class="input-label"></label>
+                                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome" >
+                                    <span class="span__required">Nome deve conter mais que 1 caracteres e apenas letras.</span>
+                                </div>
+
+                                <div class="input__container">
+                                    <label for="telefone" class="input-label"></label>
+                                    <input name="telefone" id="fone" class="input" type="tel" placeholder="Telefone" >
+                                    <span class="span__required">Telefone deve ser no formato (ddd) xxxxx-xxxx</span>
+                                </div>
+
+                                <div class="input__container">
+                                    <label for="email" class="input-label"></label>
+                                    <input name="email" id="email" class="input" type="email" placeholder="Email" >
+                                    <span class="span__required">Digite um email válido.</span>
+                                </div>
+
+                                <div class="input__container--mensagem">
+                                    <label for="msg" class="input-label"></label>
+                                    <input name="mensagem" id="msg" class="input" type="text" placeholder="Digite sua mensagem" >
+                                    <span class="span__required">Qual o motivo do seu contato?</span>
+                                </div>
+
+                                <div action="?" method="POST" class="captcha__container">
+                                    <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
+                                    <span class="span__required">Verificação obrigatória</span>    
+                                </div>
+
                                 <button type="submit" class="botao__enviar"><p>Enviar</p></button>
-                            </div>
-                            
 
-                    </fieldset>
-            </form>  
+
+                            </fieldset>
+                        </form>
+                        
+              </div>  
         </section>  
     </main>
 
@@ -130,6 +145,7 @@
             <p>Desenvolvido por guifer.3097@hotmail.com</p>
         </section>
     </footer>
+    <script src="./Js/validacao.js" type="module"></script>
 </body>
 
 </html>
