@@ -1,5 +1,6 @@
 
 main {
+    
     font-family: 'Noto Sans', sans-serif; 
     box-sizing: border-box;
 }
@@ -88,9 +89,9 @@ main {
     background-color:rgb(216, 181, 92);
 
     
-    padding: 3rem;
+    padding: 1rem;
     width: 100%;
-    height: fit-content;
+    height: max-content;
 }
 .input__container, .input__container--mensagem{
     
@@ -122,22 +123,32 @@ main {
     align-items: center;
 }
 .botao__enviar {
-    border-radius: 10px 0 10px 0;
-    border-color: transparent;
+    border: transparent;
+    border-radius: 10px;
 
-    background-color: #fefefe;
+    background: rgb(196,196,196);
+    background: linear-gradient(245deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%);
     width: 25%;
     height: 20%;
     padding: 2%;
 
     margin: 0 auto;
+    transition: none;
+
 }
 .botao__enviar p{
-    border-bottom: 1px solid gray;
-    font-size: 2em;
-    font-weight: lighter;
-    font-style: oblique;
     
+    font-size: 1.8em;
+    font-weight: lighter;
+
+
+    padding: 5%
+}
+.botao__enviar:hover {
+    background: rgb(78, 78, 78);
+    color: white;
+
+    transition: none;
 }
 
 .span__required {

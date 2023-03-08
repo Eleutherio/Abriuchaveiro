@@ -110,11 +110,14 @@
   margin-left: 10%;
 }
 
+.nav__menu__itens a:hover, .active{
+  background: rgb(66, 66, 66) !important;
+  color: goldenrod;
+}
+
 .nav__menu__itens a:hover {
-  
   background: rgb(66, 66, 66) ;
   color: goldenrod;
-  
 }
 /* ------------------------ */
 
