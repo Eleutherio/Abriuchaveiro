@@ -87,11 +87,8 @@ main {
 /*Seção Perguntas */
 .seçao__perguntas__container {
     width: 100%;
-    height: 300px;
-    background-image: url('../../img/banca2.PNG');
-    background-repeat: no-repeat;
-    background-position: center right 350px;
-    background-size: 100% 350px;
+    height: 45vh;
+    background: goldenrod;
 
     display: flex;
     flex-flow: row wrap;
@@ -105,7 +102,21 @@ main {
     color: rgb(46, 46, 46);
     
     font-size: 1.8vw;
-    line-height: 3em;
+    line-height: 2.5em;
+}
+.lista__perguntas {
+    width: 60%;
+    padding: 2% 0 2% 5%;
+}
+.lista__perguntas--background {
+    width: 40%;
+    height: 100%;
+    float: right;
+    background: url('/Abriuchaveiro/assets/img/banca-google.jpg') no-repeat center center / cover;
+    -webkit-shape-outside: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    shape-outside: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
 }
 /* ----------------- */
 
