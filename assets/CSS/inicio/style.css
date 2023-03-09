@@ -175,8 +175,8 @@ main {
     color: rgba(32,33,36,255);
     
     font-weight: bold;
-    font-size: 1.6vw;
-    line-height: 2.5em;
+    font-size: 1.3vw;
+    line-height: 2.2em;
 
     display: flex;
 }
@@ -311,7 +311,7 @@ main {
     flex-wrap: wrap;
 }
 .celular__img {
-    width: 75%;
+    width: 100%;
 }
 .celular__img:hover {
     
@@ -461,7 +461,7 @@ main {
 /* seção ligue já */
 .ligue-ja__container {
 
-    padding: 5% 0;
+    padding: 2.5% 0;
     width: 100%;
     
     background: goldenrod;
@@ -482,7 +482,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 2vw;
     line-height: 2em;
 }
 .ligue-ja__texto:nth-child(2) {
@@ -512,7 +512,7 @@ main {
     
     color: rgba(32,33,36,255);
     
-    font-size: 2.5vw;
+    font-size: 2vw;
     line-height: 2em;
 }
 .ligue-ja__telefones:nth-child(3){

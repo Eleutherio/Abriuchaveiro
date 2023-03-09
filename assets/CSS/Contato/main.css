@@ -1,13 +1,18 @@
 
-main {
+@import url(/Abriuchaveiro/assets/CSS/cabeçalho.css);
+
+* {
     
     font-family: 'Noto Sans', sans-serif; 
     box-sizing: border-box;
 }
+
+/* seção Titulo */
 .seçao__titulo__principal {
     width: 100%;
     height: 70vh;
-    background-image: url('/assets/img/background_contato.png');
+    background: url('/Abriuchaveiro/assets/img/background_contato.png') no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,16 +38,16 @@ main {
     font-weight: lighter;
     font-size: 2vw;
 }
+/* ---------------- */
 
-
+/* Formulário */
 .seçao__campo__formulario {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
-
+/* seção texto informativo lateral */
 .campo__texto__informativo__container {
     width: 30%;
     background-color: goldenrod;
@@ -53,24 +58,28 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     background-color: rgb(216, 181, 92);
-    padding: 0 5% 0 5%;
+    
     
 }
-.texto__informativo--titulo {
+.texto__informativo--titulo, .texto__formulario--titulo  {
     color: rgba(32,33,36,255);
 
     font-weight: bold;
     font-size: 1.5vw;
     padding-bottom: 2%;
+    text-align: center;
 }
 .texto__informativo--subtitulo {
     color: rgba(32,33,36,255);
     padding-right: 10%;
     font-size: 1.2vw;
     line-height: 1.2;  
+    text-align: center;
+    padding: 0 6%;
 }
+/* ------------------ */
 
-
+/* seção formulário */
 .campo__formulario__container {
     background-color: goldenrod;
     display: flex;
@@ -78,39 +87,60 @@ main {
     justify-content: center;
     align-items: center;
     
-    height: 100%;
+    
     width: 70%;
+    height: 100vh;
 }
-.fildset__container {
+
+
+.fildset__dados {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
     
     background-color:rgb(216, 181, 92);
 
     
-    padding: 1rem;
-    width: 100%;
-    height: max-content;
+    padding: 5%;
+    width: 60vw;
 }
-.input__container, .input__container--mensagem{
+
+.input__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    width: auto;
+    justify-content: end;
     
-    margin-bottom: 2%;;
-    border-bottom: 2px dotted rgba(32,33,36,255);
+
+    margin-top: 3%;
+    
+    background: firebrick;
 }
-.input__container--mensagem {
-    margin-top: 5%;
+
+.input__container {
+    width: 42%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    background: floralwhite;
 }
 
 .input {
-    background-color: transparent;
-    border-color: transparent;
-    font-size: 1em;
-    font-style: italic;
-    font-weight: lighter;
+    background: darkblue;
+    margin-left: 5%;
+    width: 15rem;
     height: 3rem;
-    width: 100%;
 }
+
+.input-label {
+    height: auto;
+    width: auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.7rem;
+    color: #fefefe;
+}
+
 
 .input:focus {
     outline: none;
@@ -128,9 +158,10 @@ main {
 
     background: rgb(196,196,196);
     background: linear-gradient(245deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%);
-    width: 25%;
-    height: 20%;
+    width: 10rem;
+    height: 5rem;
     padding: 2%;
+    
 
     margin: 0 auto;
     transition: none;
@@ -154,4 +185,4 @@ main {
 .span__required {
     display: none;
 }
-
+/* -------------------- */
