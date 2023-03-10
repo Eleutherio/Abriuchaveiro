@@ -7,6 +7,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 
+ 
   background: rgb(49, 49, 49);
   border-style: solid;
   border-color: goldenrod;
@@ -36,8 +37,7 @@
 }
 
 .botao__telefone__rodape {
-  
-  margin-top: 2.5%;
+   margin-top: 15%;
   width: 20vw;
   height: 8vh;
   background: rgb(255 70 0);
