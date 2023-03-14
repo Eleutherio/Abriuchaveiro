@@ -12,7 +12,7 @@
 .seçao__titulo__principal {
     width: 100%;
     height: 70vh;
-    background: url('/Abriuchaveiro/assets/img/background_contato.png') no-repeat;
+    background: url('/assets/img/background_contato.png') no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -45,29 +45,26 @@
 .seçao__campo__formulario {
     display: flex;
     flex-flow: row wrap;
-    height: 900px;
+    height: 100%;
 }
 
 /* seção texto informativo lateral */
 .campo__texto__informativo__container {
     width: 30%;
 }
-
 .campo__texto__informativo--posiçao {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     background-color: rgb(216, 181, 92);
-    
-    
 }
 .texto__informativo--titulo, .texto__formulario--titulo  {
     color: rgba(32,33,36,255);
 
     font-weight: bold;
     font-size: 1.5vw;
-    padding-bottom: 2%;
+    margin-bottom: 3%;
     text-align: center;
 }
 .texto__informativo--subtitulo {
@@ -84,87 +81,65 @@
 .campo__formulario__container {
     background-color: goldenrod;
     width: 70%;
-    
 }
-
-
-.fildset__dados {
+.fildset__dados, .fildset__mensagem {
     margin:0 auto;
     width: 90%;
-    position:relative;
-    top: 20px;
-    
-    
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2.5%;
     background-color:rgb(216, 181, 92);
 }
-
-.input__wrapper {
-    width:100%;
-    display: block;
+.fildset__mensagem {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper{
     
-
-    padding:10px 0 10px 0;
+    border-top: 1px solid rgb(27, 27, 27);
+    padding: 2.5%;
 }
 
-.label__referencia {
-    display: block;
-    color:#bbbbbb;
-    font-size:12px;
-    float:left;
-    width:100px;
-    text-align:right;
-    padding:5px 20px 0 0;
-}
-
-.input {
-    padding:10px 10px;
-    width:100px;
-    background:#cecece;
-   
-}
-
-.input-label {
-    color: #fefefe;
-
-    display: block;
+.fildset__dados label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: center;
     
-    float:left;
-    width:100px;
-    text-align:right;
-    padding:5px 20px 0 0;
+    font-size: 1.4em;
 }
 
+.fildset__dados .wrapper:last-child label {
+    vertical-align: top;
+}
 
-.input:focus {
+.fildset__dados input, .input__mensagem {
+    padding: 10px;
+    border: transparent;
+    background: #cecece;
+}
+
+.input:focus, .input__mensagem:focus {
     outline: none;
 }
 
-.captcha__container{
-    
-    float: right;
-}
 .botao__enviar {
     border: transparent;
     border-radius: 10px;
 
     background: rgb(196,196,196);
     background: linear-gradient(245deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%);
-    width: 20%;
-    height: 10%;
-    padding: 2%;
-    margin-left: 80%;
-    
+    width: 10vw;
+    height: 7vh;
 
     transition: none;
 
 }
 .botao__enviar p{
-    
+    padding: 2%;
     font-size: 1.8em;
     font-weight: lighter;
-
-
-    padding: 5%
 }
 .botao__enviar:hover {
     background: rgb(78, 78, 78);

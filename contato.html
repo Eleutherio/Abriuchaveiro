@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./assets/CSS/Contato/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -48,7 +49,8 @@
                 </li>
                 <li id="menu__mobile" class="nav__menu__itens"><a href="#" class="nav__menu__itens__link">Serviços</a>
                 </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="#" class="nav__menu__itens__link active">Contato</a>
+                <li id="menu__mobile" class="nav__menu__itens"><a href="#"
+                        class="nav__menu__itens__link active">Contato</a>
                 </li>
                 <li id="menu__mobile" class="nav__menu__itens"><a href="#" class="nav__menu__itens__link">Sobre a
                         empresa</a></li>
@@ -63,57 +65,63 @@
                 <h2 class="subtitulo__principal">Tire todas as suas dúvidas ou solicite um orçamento.</h2>
             </div>
         </section>
-        
+
         <section class="seçao__campo__formulario">
 
             <div class="campo__texto__informativo__container">
                 <span class="campo__texto__informativo--posiçao">
                     <h1 class="texto__informativo--titulo">ATENDIMENTO 24 HORAS</h1>
-                    <h2 class="texto__informativo--subtitulo">Entre em contato com a Abriu Chaveiro através do nosso e-mail abriuchaveiro@yahoo.com.br ou preenchendo o formulário de contato.</legend> 
+                    <h2 class="texto__informativo--subtitulo">Entre em contato com a Abriu Chaveiro através do nosso
+                        e-mail abriuchaveiro@yahoo.com.br ou preenchendo o formulário de contato.</legend>
                 </span>
             </div>
 
-            
-              <div class="campo__formulario__container">
 
-                    <form method="post" id="form" action="mailto:#">
+            <div class="campo__formulario__container">
 
-                            <fieldset class="fildset__dados">
-                                <legend class="texto__formulario--titulo"><h1>INSIRA AS SUAS INFORMAÇÕES DE CONTATO</h1></legend>
-                                
-                        
-                                        <label for="nome" class="input-label">
-                                        <span class="label__referencia">Nome</span>
-                                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" >
-                                        <span class="span__required">Nome deve conter mais que 1 caracteres e apenas letras.  
-                                        </span>                                                             
-                               
-                                        <label for="telefone" class="input-label">
-                                        <span>Telefone</span>
-                                        <input name="telefone" id="fone" class="input" type="tel" placeholder="Telefone" >
-                                        <span class="span__required">Telefone deve ser no formato (ddd) xxxxx-xxxx</span>
-                                        </label>
-                                 
-                                        <label for="email" class="input-label">
-                                        <input name="email" id="email" class="input" type="email" placeholder="Email" >
-                                        <span class="span__required">Digite um email válido.</span>
-                                        </label>
-                                
-                                        <!-- <label for="msg" class="input-label">Mensagem:</label>
-                                        <textarea id="msg" placeholder="Digite a sua mensagem..." cols="55" rows="10"></textarea></p>
-                                        <span class="span__required">Qual o motivo do seu contato?</span>
-                                        <button type="submit" class="botao__enviar"><p>Enviar</p></button>  
-                                
-                                    <div action="?" method="POST" class="captcha__container">
-                                        <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
-                                        <span class="span__required">Verificação obrigatória</span>    
-                                    </div>
-                                -->
-                                </fieldset>
-                        </form>
-                        
-              </div>  
-        </section>  
+                <form method="post" id="form" action="mailto:#">
+                    <fieldset class="fildset__dados">
+                        <p><h1 class="texto__formulario--titulo">Formulário de Contato:</h1></p>
+
+                            <div class="wrapper">
+                                <label for="nome" class="input-label">Nome:</label>
+                                <input name="nome" id="nome" class="input" type="text" placeholder="Nome">
+                                <span class="span__required">Nome deve conter mais que 1 caracteres e apenas letras.</span>
+                            </div>
+                            
+                            <div class="wrapper">
+                                <label for="telefone" class="input-label">Telefone:</label>
+                                <input name="telefone" id="fone" class="input" type="tel" placeholder="Telefone">
+                                <span class="span__required">Telefone deve ser no formato (ddd) xxxxx-xxxx</span>  
+                            </div>
+
+                            <div class="wrapper">
+                                <label for="email" class="input-label">Email:</label>
+                                <input name="email" id="email" class="input" type="email" placeholder="Email">
+                                <span class="span__required">Digite um email válido.</span>  
+                            </div>
+
+                            <div class="wrapper">
+                                <label for="msg" class="input-label">Mensagem:</label>
+                                <textarea id="msg" placeholder="Digite a sua mensagem..." cols="55" rows="10" class="input__mensagem"></textarea>
+                                <span class="span__required">Qual o motivo do seu contato?</span>
+                            </div>
+                    </fieldset>
+
+                    <fieldset class="fildset__mensagem">
+                    <div action="?" method="POST" class="captcha__container">
+                            <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
+                            <span class="span__required">Verificação obrigatória</span>
+                    </div>
+
+                    <button type="submit" class="botao__enviar">
+                        <p>Enviar</p>
+                    </button>
+                    </fieldset>
+                </form>
+
+            </div>
+        </section>
     </main>
 
     <footer>
