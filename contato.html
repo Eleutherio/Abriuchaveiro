@@ -85,19 +85,19 @@
 
                             <div class="wrapper">
                                 <label for="nome" class="input-label">Nome:</label>
-                                <input name="nome" id="nome" class="input" type="text" placeholder="Nome">
+                                <input name="nome" id="nome" class="input" type="text" placeholder="Nome" pattern="\(a-z)+(A-Z/^[a-z ,.'-]+$/i)">
                                 <span class="span__required">Nome deve conter mais que 1 caracteres e apenas letras.</span>
                             </div>
                             
                             <div class="wrapper">
                                 <label for="telefone" class="input-label">Telefone:</label>
-                                <input name="telefone" id="fone" class="input" type="tel" placeholder="Telefone">
-                                <span class="span__required">Telefone deve ser no formato (ddd) xxxxx-xxxx</span>  
+                                <input name="telefone" id="fone" class="input" type="tel" placeholder="(ddd) 9xxxx-xxxx" pattern="/^\([1-9]{2}\) [9]{0,1}[5-9]{1}[0-9]{3}\-[0-9]{4}$/">
+                                <span class="span__required">Telefone deve ser no formato (ddd) 9xxxx-xxxx</span>  
                             </div>
 
                             <div class="wrapper">
                                 <label for="email" class="input-label">Email:</label>
-                                <input name="email" id="email" class="input" type="email" placeholder="Email">
+                                <input name="email" id="email" class="input" type="email" placeholder="exemplo@gmail.com">
                                 <span class="span__required">Digite um email válido.</span>  
                             </div>
 
@@ -115,14 +115,15 @@
                     </fieldset>
 
                     <fieldset class="fildset__mensagem">
-                    <div action="?" method="POST" class="captcha__container">
+
+                        <div action="?" method="POST" class="captcha__container">
                             <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
                             <span class="span__required">Verificação obrigatória</span>
-                    </div>
+                        </div>
 
-                    <button type="submit" class="botao__enviar">
-                        <p>Enviar<p class="enviar--efeito">></p></p>
-                    </button>
+                        <button type="submit" class="botao__enviar">
+                            <p>Enviar<p class="enviar--efeito">></p></p>
+                        </button>
                     </fieldset>
                 </form>
 
