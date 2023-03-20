@@ -9,26 +9,33 @@
     font-family: 'Noto Sans', sans-serif; 
     box-sizing: border-box;
 }
-
 /* seção Titulo */
 .seçao__titulo__principal {
     width: 100%;
-    height: 70vh;
-    background: url('/Abriuchaveiro/assets/img/background_contato.png') no-repeat;
+    height: auto;
+    overflow: hidden;
+
+}
+.seçao__titulo__principal--background{
+    background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    background-position: center;
+    position: fixed;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    
+    overflow: hidden;
 }
 .titulo__principal__container {
+    position: absolute;
+    top: 25%;
     padding: 2.5% 0 2.5% 0;
-    background-color: #e7e7e736;
+    background-color: #e7e7e752;
 
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    
-    
 }
 .titulo__principal, .subtitulo__principal {
     color: rgba(32,33,36,255);
@@ -45,25 +52,35 @@
 
 /* Formulário */
 .seçao__campo__formulario {
+    margin-top: 36.5%;
+    background-color: #fefefe;
     display: flex;
     flex-flow: row wrap;
-    height: 100vh;
+    height: fit-content;
+    width: 100%;
+    height: auto;
 }
 
 /* seção texto informativo lateral */
 .campo__texto__informativo__container {
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .campo__texto__informativo--posiçao {
-    height: 100%;
+    height: 550px;
+    width: 90%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-color: rgb(216, 181, 92);
+    align-items: center;
+    background-color: #96969677;
+    border: 5px solid transparent;
+    border-radius: 10px;
 }
 .texto__informativo--titulo, .texto__formulario--titulo  {
     color: rgba(32,33,36,255);
-
     font-weight: bold;
     font-size: 1.5vw;
     margin-bottom: 3%;
@@ -81,7 +98,6 @@
 
 /* seção formulário */
 .campo__formulario__container {
-    background-color: goldenrod;
     width: 70%;
 }
 
