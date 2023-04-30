@@ -31,24 +31,24 @@
             </section>
             
             <nav class="nav__container">
-                <ul class="nav__container__menu">
+                <ul class="nav__container__menu"> <!-- Navegação EXTERNA do site -->
                     <li class="nav__menu__itens"><a href="#" class="nav__menu__itens__link active">Início <p class="icone__menu__inicio">☰</p></a>
-                        <ol>                        
+                        <ol>  <!-- Navegação INTERNA do site e também nos sistemas Mobile -->                       
                             <li><a  href="#referencia-de-navegaçao--orçamento">Orçamento / Contato</a></li>
                             <li><a  href="#referencia-de-navegaçao--avaliaçao">Avaliação</a></li>                                       
                             <li><a  href="#referencia-de-navegaçao--localizaçao">Localização</a></li>
                             <li><a  href="#referencia-de-navegaçao--blog">Blog</a></li>
 
-                            <div id="navegaçao__mobile">
-                                <li><a href="#">Serviços ↗</a></li>
-                                <li><a href="contato.html">Contato ↗</a></li>
-                                <li><a href="#">Sobre a empresa ↗</a></li>
+                            <div id="navegaçao__mobile"> <!-- Seção de navegação EXTERNA do site em sistemas Mobile -->
+                                <li><a href="#" rel="next">Serviços ↗</a></li>
+                                <li><a href="contato.html" rel="next">Contato ↗</a></li>
+                                <li><a href="#" rel="next">Sobre a empresa ↗</a></li>
                             </div>                                        
                         </ol>
                     </li>
-                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__menu__itens__link">Serviços</a></li>
-                    <li id="menu__mobile" class="nav__menu__itens"><a href="contato.html"  class="nav__menu__itens__link">Contato</a></li>
-                    <li id="menu__mobile" class="nav__menu__itens"><a href="#"  class="nav__menu__itens__link">Sobre a empresa</a></li>
+                    <li id="menu__mobile" class="nav__menu__itens"><a href="#" rel="next" class="nav__menu__itens__link">Serviços</a></li>
+                    <li id="menu__mobile" class="nav__menu__itens"><a href="contato.html" rel="next" class="nav__menu__itens__link">Contato</a></li>
+                    <li id="menu__mobile" class="nav__menu__itens"><a href="#" rel="next" class="nav__menu__itens__link">Sobre a empresa</a></li>
                 </ul>             
             </nav>
         </header>
@@ -59,7 +59,7 @@
                 <div  class="texto__banner__container">
                     <h1 class="texto__banner">Abriu Chaveiro</h1> 
                     <h2>Atendimento técnico e especializado <br> 24 horas a domicílio</h2>
-                    <p>Técnico responsável: Tauros Machado</p>
+                    <h3>Técnico responsável: Tauros Machado</h3>
                 </div>
             </section> 
 
@@ -130,14 +130,14 @@
                 
                 <div class="orçamento__titulo__container">
 
-                    <p class="orçamento__titulo">Solicite agora o seu orçamento!</p>
-                    <p class="orçamento__subtitulo">Estamos <span class="orçamento__titulo--horas">24 horas</span> pronto para lhe atender</p>
+                    <h1 class="orçamento__titulo">Solicite agora o seu orçamento!</h1>
+                    <h2 class="orçamento__subtitulo">Estamos <span class="orçamento__titulo--horas">24 horas</span> pronto para lhe atender</h2>
                 </div>
                     <div class="orçamento__container">
                         
                         <div class="celular__container">
                             <address>
-                                <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
+                                <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0" target="_blank" rel="external">
                                     <img src="./assets/img/celular.png" alt="banner telefone com contato" class="celular__img">
                                 </a>
                             </address>
@@ -146,7 +146,7 @@
                         <div class="botoes__container">
 
                             <address> <!-- WhatsApp -->
-                                <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
+                                <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0" target="_blank" rel="external"></a>>
                                     <div class="botao__whatsapp__container">
                                         <p class="whatsapp__texto">Envie-nos uma mensagem:</p>
                                         <button type="text" class="botao__whatsapp"><p class="botao__whatsapp__texto"><img src="./assets/img/whatsapp.png" alt="" class="icone__whatsapp__botao">Mande Uma Mensagem ↗</p></button>
@@ -199,8 +199,8 @@
 
                     <div class="avaliaçao__comentario__container"> 
                         <div class="fazer-comentario__container">
-                            <p class="comentarios__texto">Tem alguma sugestão ou quer deixar seu feedback?</p>
-                                <p class="comentarios__texto--subtitulo">Todos os comentários são analizados</p>                                   
+                            <h1 class="comentarios__texto">Tem alguma sugestão ou quer deixar seu feedback?</h1>
+                                <h2 class="comentarios__texto--subtitulo">Todos os comentários são analizados</h2>                                   
                                     <address>
                                         <a href="https://www.google.com/maps/place/Abriu+Chaveiros+Tauros+%26+Cia/@-30.0995611,-51.2446475,17z/data=!4m7!3m6!1s0x951982135552003b:0xf89b3fc591c7ae14!8m2!3d-30.0995611!4d-51.2424588!9m1!1b1" class="comentarios__link">
                                             deixar o seu comentário.
@@ -211,7 +211,7 @@
                                 <div class="comentarios__orçamento--block"><p class="comentarios__link__texto">Tem alguma duvida ou deseja solicitar um orçamento?</p></div>
                                     <div class="comentarios__orçamento--on">
                                         <address>
-                                        <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0">
+                                        <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0" target="_blank" rel="external">
                                             <p class="comentarios__texto--subtitulo">Entre em contato pelo WhatsApp agora mesmo</p>
                                             <p  class="comentarios__texto--subtitulo">Responderemos o mais breve possível</p>
                                         </a>
@@ -271,7 +271,7 @@
                 <section class="rodape__container">
 
                     <a href="tel:+5551982323232"><button type="text" class="botao__telefone__rodape"><p class="botao__telefone__rodape_texto">Ligue Agora</p></button></a>
-                    <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"><button type="text" class="botao__whatsapp__rodape"><p class="botao__whatsapp__rodape_texto">Mande Uma Mensagem</p></button></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"  target="_blank" rel="external"><button type="text" class="botao__whatsapp__rodape"><p class="botao__whatsapp__rodape_texto">Mande Uma Mensagem</p></button></a>
                     <div class="pagamento__container">
                         <p class="pagamento__texto">Aceitamos as principais formas de pagamento:</p>
                         <img src="./assets/img/pagamento.png" class="pagamento__img"> 

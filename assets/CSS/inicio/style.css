@@ -25,8 +25,6 @@ main {
     background-image: url('../../img/logo.png');
     background-blend-mode:darken;
     background-color: #cecece;
-
-
     background-attachment:fixed;
     background-position: center;
     background-size: contain;
@@ -50,16 +48,8 @@ main {
     width: 100%;
 
 }
-.texto__banner {
-    
-    font-family: 'Noto Sans', sans-serif;
-    color: goldenrod;
-    text-align: center;
-    top: 1em;
-    font-size: 5.5vw;
-    line-height: 1.5em;
-}
-.texto__banner__container h2 {
+
+.texto__banner, .texto__banner__container h2, .texto__banner__container h3 {
     
     font-family: 'Noto Sans', sans-serif;
     color: #cecece;
@@ -70,17 +60,13 @@ main {
     font-size: 3vw;
     line-height: 2em;
 }
-
-.texto__banner__container p {
-    
-    font-family: 'Noto Sans', sans-serif;
+.texto__banner__container h3 {
+    font-size: 2vw; 
+}
+.texto__banner {
     color: goldenrod;
-
-    font-weight: bold;
-    text-align: center;
-    top: 1em;
-    font-size: 2vw;
-    line-height: 2em;
+    font-size: 5.5vw;
+    line-height: 1.5em;
 }
 /* ------------ */
 
@@ -561,7 +547,7 @@ main {
     font-family: 'Open Sans', sans-serif;
 
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin-right: 1%; 
 }
 .titulo__texto--destaque {
