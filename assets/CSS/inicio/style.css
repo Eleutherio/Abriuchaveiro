@@ -35,7 +35,6 @@ main {
     height: 100vh;
     
     overflow: hidden;
-    border-bottom: 5px dotted black; 
 }
 
 .texto__banner__container {
@@ -71,14 +70,6 @@ main {
 /* ------------ */
 
 /*Seção Perguntas */
-.seçao__perguntas__container {
-    width: 100%;
-    height: 45vh;
-    background: goldenrod;
-
-    display: flex;
-    flex-flow: row wrap;
-}
 
 .lista__perguntas li {
     
@@ -87,22 +78,16 @@ main {
     
     color: rgb(46, 46, 46);
     
-    font-size: 1.8vw;
+    font-size: 1.6em;
     line-height: 2.5em;
 }
 .lista__perguntas {
-    width: 60%;
+    width: 100%;
     padding: 2% 0 2% 5%;
-}
-.lista__perguntas--background {
-    width: 40%;
-    height: 100%;
-    float: right;
-    background: url('/Abriuchaveiro/assets/img/banca-google.jpg') no-repeat center center / cover;
-    -webkit-shape-outside: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-    shape-outside: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: goldenrod;
+    
+    clip-path: polygon(0 0,100% 25px,100% 100%,0 100%);
+
 }
 /* ----------------- */
 
@@ -111,9 +96,7 @@ main {
     width: 100%;
 }
 .serviços__titulo__container{
-    
     background-color: rgba(32,33,36,255);
-
     width: 100%;
     text-align: center;
 }
