@@ -2,6 +2,7 @@
 main {
     box-sizing: border-box;
     transition: 1.5s;
+    scroll-behavior: smooth;
     
     background: rgb(216, 216, 216);
     padding-top: 3.5em; 
@@ -33,10 +34,8 @@ main {
     display: flex;
     align-items: center;
     height: 100vh;
-    
-    
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 25px));}
 
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 25px));}
 
 .texto__banner__container {
     display: flex;
@@ -48,7 +47,6 @@ main {
     width: 100%;
 
 }
-
 .texto__banner, .texto__banner__container h2, .texto__banner__container h3 {
     
     font-family: 'Noto Sans', sans-serif;
@@ -79,7 +77,6 @@ main {
     margin-top: -25px;
     clip-path: polygon(0 0,100% 25px,100% 100%,0 100%);
 }
-
 .lista__perguntas li {
     
     font-family: 'Open Sans', sans-serif;
@@ -90,7 +87,6 @@ main {
     font-size: 1.6em;
     line-height: 2.5em;
 }
-
 /* ----------------- */
 
 /* Seção de Serviços */
@@ -109,7 +105,7 @@ main {
     
     font-weight: bold;
     font-size: 2.0em;
-    line-height: 3em;
+    padding: 2.5% 0;
 }
 
 .blocos__serviços__container{
@@ -144,7 +140,6 @@ main {
     
     font-family: 'Open Sans', sans-serif;
     color: rgba(32,33,36,255);
-    
     font-weight: bold;
     font-size: 1.3vw;
     line-height: 2.2em;
@@ -191,7 +186,6 @@ main {
 }
 
 .legenda--primeiro-bloco, .legenda--segundo-bloco {
-    
     color: rgb(51, 51, 51);
     background-color: rgba(78, 78, 78, 0.411);
 
@@ -206,8 +200,7 @@ main {
     line-height: 3em;
 }
 
-.serviços__img {
-    
+.serviços__img { 
     padding: 5%;
     width: 15em;
 }

@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Abriu Chaveiro - Contato</title>
-    <link rel="shortcut icon" href="assets/img/favcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favcon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/cabeçalho.css">
     <link rel="stylesheet" href="./assets/CSS/rodape.css">
-    <link rel="stylesheet" href="./assets/CSS/Contato/main.css">
+    <link rel="stylesheet" href="./assets/CSS/Contato/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link link rel="stylesheet" media="(max-width: 800px)" href="./assets/CSS/mobile.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
@@ -56,75 +57,65 @@
 
     <main>
         <section class="seçao__titulo__principal">
-            <img src="assets/img/background_contato.jpeg" alt="background" class="seçao__titulo__principal--background">
+            <img src="assets/img/background.jpg" alt="background" class="seçao__titulo__principal--background">
             <div class="titulo__principal__container">
                 <h1 class="titulo__principal"> Entre em contato conosco</h1>
                 <h2 class="subtitulo__principal">Tire todas as suas dúvidas ou solicite um orçamento.</h2>
             </div>
         </section>
 
-        <section class="seçao__campo__formulario">
+        <section class="seçao__formulario">
+            <div class="seçao__formulario__container">
+                <form action=formulario.php method="post" id="form">
+                    <legend class="formulario__titulo">
+                        <h1>Insira seus dados</h1>
+                        <h2>Atendimento 24h em Porto Alegre</h2>
+                </legend>
+                    <fieldset>
+                        <p class="nome__container">
+                            <label for="nome" class="label">Nome</label>
+                            <input type="text" id="input" required placeholder="Informe o seu nome" minlength="3" maxlength=" 30">
+                        </p>
+                    <div class="email-telefone__container">
+                        <p>
+                            <label for="email" class="label">E-mail</label>
+                            <input type="email" id="input" required placeholder="exemplo@gmail.com">
+                        </p>
+                        <p>
+                            <label for="telefone" class="label">Telefone</label>
+                            <input type="tel" id="input" required placeholder="(51) xxxxx-xxxx" inputmode="tel">
+                        </p>
+                    </div>
+                    <div class="bairro-servicos__container">
+                        <p>
+                            <label for="bairro" class="label">Bairro</label>
+                            <input type="bairro" id="input" required placeholder="Informe o seu bairro">
+                        </p>
+                        <p>
+                            <label for=select class="label">Tipo de serviço
+                            </label>
+                            <select id="select" form="form">
+                                <option value="0" disabled selected>SELECIONE</option>                   
+                                <option value="1">RESIDENCIAL</option>
+                                <option value="2">EMPRESARIAL</option>
+                                <option value="3">ESCOLAR</option>
+                            </select>
+                        
+                        </p>
+                    </div>
 
-            <div class="campo__texto__informativo__container">
-                <span class="campo__texto__informativo--posiçao">
-                    <h1 class="texto__informativo--titulo">ATENDIMENTO 24 HORAS</h1>
-                    <h2 class="texto__informativo--subtitulo">Entre em contato com a Abriu Chaveiro através do nosso
-                        e-mail abriuchaveiro@yahoo.com.br ou preenchendo o formulário de contato.</h2>
-                </span>
-            </div>
+                    <div class="textarea-submit__container">
+                        <p class="mensagem__container">Qual o motivo do seu contato?
+                            <textarea cols="50" rows="10" placeholder="Escreva sua mensagem..."></textarea>
+                        </p>
 
-
-            <div class="campo__formulario__container">
-
-                <form method="post" id="form" action="mailto:#">
-                    <fieldset class="fildset__dados">
-                        <p><h1 class="texto__formulario--titulo">Formulário de Contato:</h1></p>
-
-                            <div class="wrapper">
-                                <label for="nome" class="input-label">Nome:</label>
-                                <input name="nome" id="nome" class="input" type="text" placeholder="Nome" pattern="\(a-z)+(A-Z/^[a-z ,.'-]+$/i)">
-                                <span class="span__required">Nome deve conter mais que 1 caracteres e apenas letras.</span>
-                            </div>
-                            
-                            <div class="wrapper">
-                                <label for="telefone" class="input-label">Telefone:</label>
-                                <input name="telefone" id="fone" class="input" type="tel" placeholder="(ddd) 9xxxx-xxxx" pattern="/^\([1-9]{2}\) [9]{0,1}[5-9]{1}[0-9]{3}\-[0-9]{4}$/">
-                                <span class="span__required">Telefone deve ser no formato (ddd) 9xxxx-xxxx</span>  
-                            </div>
-
-                            <div class="wrapper">
-                                <label for="email" class="input-label">Email:</label>
-                                <input name="email" id="email" class="input" type="email" placeholder="exemplo@gmail.com">
-                                <span class="span__required">Digite um email válido.</span>  
-                            </div>
-
-                            <div class="wrapper">
-                                <label for="assunto" class="input-label">Assunto:</label>
-                                <input name="assunto" id="assunto" class="input" type="text" placeholder="Assunto">
-                                <span class="span__required">Digite um assunto.</span>  
-                            </div>
-
-                            <div class="wrapper">
-                                <label for="msg" class="input-label">Mensagem:</label>
-                                <textarea id="msg" placeholder="Digite a sua mensagem..." cols="55" rows="10" class="input__mensagem"></textarea>
-                                <span class="span__required">Qual o motivo do seu contato?</span>
-                            </div>
-                    </fieldset>
-
-                    <fieldset class="fildset__mensagem">
-
-                        <div action="?" method="POST" class="captcha__container">
-                            <div class="g-recaptcha" data-sitekey="6Lf0EYUkAAAAAHmIvu8MFVTFNFAtgNnTf-Q6UqZi"></div>
-                            <span class="span__required">Verificação obrigatória</span>
-                        </div>
-
-                        <button type="submit" class="botao__enviar">
-                            <p>Enviar<p class="enviar--efeito">></p></p>
-                        </button>
-                    </fieldset>
+                        <p class="submit__container">
+                            <input type="submit" value="Enviar" id="submit" form="form">
+                        </p>
+                    </div>
+                </fieldset>
                 </form>
-
-            </div>
+        </div>
         </section>
     </main>
 
