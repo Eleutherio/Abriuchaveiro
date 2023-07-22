@@ -6,14 +6,14 @@ main {
 
 /* Banner */
 .texto__banner {
-    font-size: 2.5em;
+    font-size: 10vw;
     line-height: 1.5em;
 }
 .texto__banner__container h2 {
-    font-size: 1.2em;
+    font-size: 5vw;
 }
 .texto__banner__container h3 {
-    font-size: 1em;
+    font-size: 3.7vw;
 }
 .seçao__banner__container {
     height: 85vh;
@@ -71,11 +71,14 @@ main {
 /* ---------------- */
 
 /* Celular Botoes */
+.orçamento__titulo__container {
+height: 10%;
+}
 .orçamento__titulo{
-    font-size: 6vw;
+    font-size: 5.5vw;
 } 
 .orçamento__subtitulo{
-    font-size: 4.5vw;
+    font-size: 4.8vw;
     padding: 0 1%;
 }
 .celular__container{
@@ -83,23 +86,24 @@ main {
 }
 
 .botoes__container{
-    padding: 10%;
+    padding: 20% 10% 15% 10%;
+    height: fit-content;
 }
 .botao__email__container, .botao__whatsapp__container {
     width: 80vw;
-    height: 30vh;
-    justify-content: space-evenly;
+    height: 20vh;
+    justify-content: space-between;
 }
 .botao__whatsapp, .botao__email {
     width: 70vw;
-    height:10vh;
+    height:7vh;
 }
 
 .icone__email__botao, .icone__whatsapp__botao {
     display: none;
 }
 .email__texto, .whatsapp__texto {
-    font-size: 1.1em;
+    font-size: 5vw;
 }
 .botao__email__texto{
     font-size: 4.4vw;
@@ -142,6 +146,9 @@ font-size: 5vw;
 line-height: 2em;
 text-align: center;
 }
+.titulo__imagem__container {
+    margin: 0 auto;
+}
 
 .avaliaçao__comentario__container {
     background-size: cover;
@@ -167,21 +174,21 @@ flex-wrap: nowrap;
     margin-top: 6vh;
 }
 .comentarios__texto {
-    font-size: 3vw;
+    font-size: 1.3em;
     line-height: 7vh;  
 }
 .comentarios__texto--subtitulo {
-    font-size: 3.5vw;
+    font-size: 4.4vw;
     line-height: 7vh;
 }
 .comentarios__link {
-    font-size: 3.5vw;
+    font-size: 1.2em;
     font-weight: lighter;
     padding: 0;
 }
 .comentarios__link__texto {
-    font-weight: bold;
-    font-size: 3vw;
+    font-weight: lighter;
+    font-size: 1.2em;
 }
 /* ------------------ */
 
@@ -195,14 +202,14 @@ flex-wrap: nowrap;
     height: auto;
 }
 .localizaçao__texto{
-    font-size: 7vw;
-    line-height: 2.5em;
+    font-size: 6.6vw;
+    line-height: 2em;
 }
 .localizaçao__texto--subtitulo {
-    font-size: 5vw;
+    font-size: 1.2em;
     line-height:1.5em;
     text-align: center;
-    padding-bottom: 5%;
+    padding: 0 5% 5% 5%;
 }
 .mapa__container {   
     width: 100%;
@@ -224,8 +231,9 @@ padding: 5% 2%;
     line-height:2em;
 }
 .endereço__texto--subtitulo {
-    font-size: 3vw;  
+    font-size: 3.5vw;  
     line-height:2em;
+    padding: 0 1%;
 }
 /* ------------------ */
 
@@ -241,9 +249,10 @@ padding: 5% 2%;
     line-height: 2em;
 }
 .blog__subtitulo {
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     line-height: 2em;
     text-align:center;
+    padding: 0 1%;
 }
 .blog {
     width: 100%;

@@ -232,7 +232,8 @@ main {
     margin-bottom: 2.5%;
 
     width: 100%;
-    height: 15em; 
+    height: 15%;
+    padding: 5% 0; 
 }
 .orçamento__titulo {
        
@@ -242,7 +243,7 @@ main {
 
     font-weight: bold;
     font-size: 2.0em;
-    line-height: 3em;
+    line-height: 1em;
 }
 .orçamento__subtitulo{
     color: goldenrod; 
@@ -691,7 +692,7 @@ height: auto;
     font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 1.4vw;
     line-height: 2.5em;
 }
 .localizaçao__texto--subtitulo {
