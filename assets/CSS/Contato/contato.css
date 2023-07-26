@@ -55,7 +55,7 @@
 .seçao__formulario__container {
     height: fit-content;
     width: 50%;
-    padding: 0 2.5%;
+    padding: 2.5%;
     margin:  0 auto;
     border: 2.5px solid transparent;
     border-radius: 10px;
@@ -65,9 +65,9 @@
 
 /* Formulário titulo */
 .formulario__titulo {
-    width: 100%;
-    padding: 5%;
+    width: fit-content;
     text-align: center;
+    margin: 0 auto;
 }
 .formulario__titulo h1, h2 {
     font-family: 'Open Sans', sans-serif;
@@ -94,6 +94,13 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     font-size: 1.2em;
+}
+fieldset {
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    padding: 5%;
+
+
 }
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
