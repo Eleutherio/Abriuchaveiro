@@ -1,5 +1,6 @@
-
-@import url(/assets/CSS/cabeçalho.css);
+@charset "UTF-8";       /* Define a codificação da folha de estilo para Unicode UTF-8 */
+@import url(../header/cabeçalho.css);
+@import url(../footer/rodape.css);
 
 
 * {
