@@ -61,14 +61,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  // Substitua pelo host do seu provedor SMTP
         $mail->SMTPAuth = true;
-        $mail->Username = 'teste.eleutherio@gmail.com';  // Substitua pelo seu usuário SMTP
-        $mail->Password = 'hrauhohokzjmecpa';  // Substitua pela senha do seu usuário SMTP
+        $mail->Username = 'eleutherio.profissional@gmail.com';  // Substitua pelo seu usuário SMTP
+        $mail->Password = 'senha do email ou senha para autorização de apps';  // Substitua pela senha do seu usuário SMTP
         $mail->SMTPSecure = 'tls';  // Use 'tls' ou 'ssl' dependendo do seu provedor SMTP
         $mail->Port = 587;  // Porta do seu servidor SMTP
 
         // Configurações do e-mail
         $mail->setFrom($email, $nome);
-        $mail->addAddress('teste.eleutherio@gmail.com'); // Substitua pelo seu endereço de e-mail
+        $mail->addAddress('eleutherio.profissional@gmail.com'); // Substitua pelo seu endereço de e-mail
         $mail->Subject = 'Novo formulário submetido';
         $mail->Body = $conteudoEmail;
         $mail->CharSet = 'UTF-8';  // Define a codificação para UTF-8

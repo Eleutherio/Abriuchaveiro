@@ -1,71 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var form = document.getElementById('form');
-    var nome = document.getElementById('input--nome');
-    var tooltip = document.getElementById('tooltip-nome');
-    var loading = document.getElementById('loading'); // Adicionado
-
-    // Recupera os dados do localStorage ao carregar a página
-    if (localStorage.getItem('nome')) {
-        nome.value = localStorage.getItem('nome');
-    }
 
     function validarFormulario() {
-        // Sua lógica de validação aqui
-        return true; // Substitua isso pela sua lógica de validação real
+
+// capturando os imputs //
+        var form = document.getElementById('form');
+        var nome = document.getElementById('input--nome');
+        var email = document.getElementById('input--email');
+        var bairro = document.getElementById('input--bairro');
+        var telefone = document.getElementById('input--telefone');
+        var tooltip = document.getElementById('tooltip-nome');
+        var loading = document.getElementById('loading'); 
+//----------------------- //
+
+// Auto preenchimento com local storage //
+    if (localStorage.getItem('nome') && localStorage.getItem('email') && localStorage.getItem('telefone') && localStorage.getItem('bairro')) {
+        nome.value = localStorage.getItem('nome');
+        email.value = localStorage.getItem('email');
+        telefone.value = localStorage.getItem('telefone');
+        bairro.value = localStorage.getItem('nome');
     }
+//---------------------//
 
-    function exibirLoading() {
-        loading.style.display = 'block';
+
+// Função de validação do Fromulário //
+        let valido = true;
+
+        if (!validarNome()) valido = false; 
+        if (!validarEmail()) valido = false;
+        if (!validarTelefone()) valido = false;
+        if (!validarBairro()) valido = false;
+        if (!validarServico()) valido = false;
+        if (!validarMensagem()) valido = false;
+
+        function validarNome (){
+            const nome = document.getElementByque('nome').value;
+            if (nome.length >= 3 && nome.length <= 30){
+                document.querySelector('.nome__container input').style.border = "1px solid green";;
+                return true;
+            };
     }
-
-    function ocultarLoading() {
-        loading.style.display = 'none';
-    }
-    function enviarFormularioAjax() {
-        var formData = new FormData(form);
-
-        exibirLoading();
-        
-        // Armazena os dados no localStorage antes de enviar o formulário
-        localStorage.setItem('nome', nome.value);
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', '../formulario.php', true);
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-
-                ocultarLoading();
-                
-                if (xhr.status == 200) {
-                    // Sucesso no envio, redireciona para a página de sucesso
-                    window.location.replace('/contents/sucess.html');
-                } else {
-                    // Falha no envio, redireciona para a página de erro
-                    window.location.replace('/contents/error.html');
-                }
-            }
-        };
-
-        xhr.send(formData);
-    }
-
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Impede o envio padrão do formulário
-
-            if (validarFormulario()) {
-                // Se a validação passar, envie o formulário usando AJAX
-                enviarFormularioAjax();
-            }
-        });
-    }
-
-    nome.addEventListener("focus", function () {
-        tooltip.style.display = 'block';
-    });
-
-    nome.addEventListener("blur", function () {
-        tooltip.style.display = 'none';
-    });
+    return valido;   
+}
 });
