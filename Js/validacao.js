@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function validarNome() {
         if (nome.value.length >= 3 && nome.value.length <= 30) {
+            nome.style.border = "1px solid green";
             return true;
         } else {
             return false;
