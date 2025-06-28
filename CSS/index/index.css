@@ -30,43 +30,40 @@ main {
 
 /* Seção Banner */
 .seçao__banner__container {
-    background-image: url('../../assets/img/logo.png');
-    background-blend-mode:darken;
+    background-image: url('../../assets/img/macaneta-dourada-com-chaves-em-uma-porta-branca.jpg');
     background-color: #cecece;
     background-attachment:fixed;
     background-position: center;
-    background-size: contain;
+    background-size:cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
     height: 100vh;
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 25px));
 }
 .texto__banner__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    margin-top: 3.5em;
-    background: rgba(29, 29, 29, 0.808);
+    padding-left: 45%;
+    height: 100vh;
+    background: rgba(70, 70, 70, 0.808);
+    background-blend-mode:darken;
     width: 100%;
 }
-.texto__banner, .texto__banner__container h2, .texto__banner__container h3 { 
+.texto__banner{ 
     font-family: 'Noto Sans', sans-serif;
-    color: #cecece;
+    color: white;
     font-weight: bold;
     text-align: center;
     top: 1em;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     line-height: 2em;
 }
-.texto__banner__container h3 {
-    font-size: 2vw; 
-}
-.texto__banner {
-    color: goldenrod;
-    font-size: 5.5vw;
+
+.texto__banner--h1 {
+    color: #daa520;
+    font-weight: bold;
+    font-size: 5vw;
     line-height: 1.5em;
 }
 /* ------------ */
