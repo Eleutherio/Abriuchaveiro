@@ -21,6 +21,7 @@
 .cabeçalho__container {
   width: 100%;
   height: auto;
+  
   background: transparent;
   backdrop-filter: blur(5px);
 
@@ -49,10 +50,9 @@
 }
 
 .cabeçalho__titulo {
-
   font-family: 'Open Sans', sans-serif;
   
-  font-size:1.5vw;
+  font-size:1.2vw;
   font-weight: bold;
 
   color: goldenrod;
@@ -60,7 +60,7 @@
 .logo__cabeçalho__img {
   
   padding: none;
-  width: 10vh;
+  width: 8vh;
   display:block;
   margin-right: 5px;
 }
@@ -85,6 +85,25 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  position: relative;
+}
+.container__menu__navegacao__lista--indices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  padding: 1.2em;
+  cursor: pointer;
+}
+.container__menu__navegacao__lista--indices:first-of-type {
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .container__menu__navegacao__lista--indices a {
   display: flex;
@@ -93,132 +112,82 @@
   font-weight: lighter;
   text-decoration: none;
   color: goldenrod;
-  font-size: 1.2vw;
-
+  font-size: 1vw;
 }
-
-.container__menu__navegacao__lista--indices:first-of-type::after {
-  content: "";
-  display: none;
-  width: 100px;
-  height: 20px;
-  background: rgb(250, 250, 250);
-  transition: width 0.3s;
-}
-
-.container__menu__navegacao__lista--indices:first-of-type:hover::after {
-  display: block;
+.container__dropdown{
   position: absolute;
-  width: 100px;
-  height: 20px;
-  background: rgb(250, 250, 250);
-  transition: width 0.3s;
-}
-
-/*
- Cabeçalho Menu Navegação 
-.nav__container {
-  
   display: flex;
-  justify-content: end;
-  width: 50%;
-}
-.nav__container__menu {
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-}
-.nav__menu__itens {
-  
-  display: flex;
-  width: 100%;
-  height: auto;
-  
-}
-.nav__menu__itens__link {
-  height: auto;
-  
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  align-items: center;
+  height: auto;
+  top: 100%;
 
-  font-family: 'Noto Sans', sans-serif;
-  
-  text-decoration: none;
-
-  
-  font-size: 1.2vw;
-  
-
-  color: rgb(66, 66, 66);
+  background: #ececec;
+  padding-bottom: 0.5em;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  flex-direction: column;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  border: none; 
+  cursor: pointer;
 }
-.icone__menu__inicio {
-  margin-left: 10%;
-}
-
-.nav__menu__itens a:hover, .active{
-  background: rgb(66, 66, 66) !important;
-  color: goldenrod;
-}
-
-.nav__menu__itens a:hover {
-  background: rgb(66, 66, 66) ;
-  color: goldenrod;
-}
-/* ------------------------ */
-
-
-/* Menu Complementar da Seção Inicio -----
-
-.nav__container__menu ol li a{    /* Estilização textual do menu complementar ----- 
-  
-  font-family: 'Noto Sans', sans-serif;
+.container__dropdown li {
+  display: flex;
+  justify-content: center;
+  font-size: 1vw;
   font-weight: lighter;
   text-decoration: none;
+  width: 10vw;
 
-  color: rgb(66, 66, 66);
-
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items:flex-start;
-  padding-left: 10%;
-  
-  
-  font-size: 1vw;
-  line-height: 3.5em;
-
+  height: auto;
+  list-style-type: none;
 }
-/* ------------------------- 
-
-.nav__container__menu li ol{     /* Fundo do menu complementar 
-  
-  position: absolute;
-  margin-top: auto;
-  
-  width: 11.3%;
-  height:fit-content;
-
-  background-color: #ececec;
-  border-bottom: solid rgb(66, 66, 66);
-  border-radius: 0 0 10px 10px;
-
-  display:none;
-  overflow: hidden;
-  }
-
-.nav__container__menu li:hover ol {
-  
+.container__dropdown li a {
+  text-decoration: none;
+  padding: 0.5em;
   display: block;
-  }
-.nav__container__menu ol li a:hover {
-  
-  color: goldenrod;
 }
-*/
+.container__menu__navegacao__lista li:first-of-type {
+  pointer-events: auto;
+  background: transparent;
+  border: none; 
+  cursor: pointer;
+  gap: 0.3em;
+}
+
+#menu__dropdown{
+  overflow: hidden;
+}
+#menu__dropdown:hover  .dropdown--arrow{
+  transform: rotate(360deg);
+  
+}
+.dropdown--arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+  width: 1vw;
+  height: auto;
+  margin-left: 20px;
+}
+.container__dropdown li:hover {
+  background: rgb(207, 206, 206);
+}
+.container__dropdown li a {
+  color: rgb(58, 58, 58);
+  font-size: 1vw;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.container__dropdown li a:hover {
+  color: goldenrod;
+  
+}
+
+.container__menu__navegacao__lista a.active {
+  border-bottom: 2px solid rgb(211, 211, 211);
+}
 
 @media only screen and (min-width:360px) and (max-width: 480px){
   main {

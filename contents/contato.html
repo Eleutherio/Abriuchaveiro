@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Abriu Chaveiro - Contato</title>
     <script type="module" src="../Js/validacao.js"></script>
-    <link rel="shortcut icon" href="../assets/img/favcon.ico" type="image/x-icon">
+    <script src="../Js/incluir-header-footer.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="shortcut icon" href="../assets/img/logo_cabecalho.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/contato/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,46 +16,11 @@
     <link link rel="stylesheet" media="(max-width: 800px)" href="../CSS/contato/contato-mobile.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
     rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 </head>
 
 <body>
-    <header class="cabeçalho__container">
-
-        <section class="cabeçalho__titulo__logo__container">
-
-            <img src="../assets/img/logo_cabecalho.png" alt="logo Abriu Chaveiro" class="logo__cabeçalho__img">
-
-            <div class="cabeçalho__titulo__container">
-                <p class="cabeçalho__titulo">briu Chaveiro - 24h</p>
-            </div>
-        </section>
-
-        <nav class="nav__container">
-            <ul class="nav__container__menu"> <!-- Navegação EXTERNA do site -->
-                <li class="nav__menu__itens"><a href="../index.html" rel="prev" class="nav__menu__itens__link">Início <p class="icone__menu__inicio">☰</p></a>
-                    <ol> <!-- Navegação INTERNA do site e também nos sistemas Mobile -->
-                        <li><a href="#referencia-de-navegaçao--orçamento">Orçamento / Contato</a></li>
-                        <li><a href="#referencia-de-navegaçao--avaliaçao">Avaliação</a></li>
-                        <li><a href="#referencia-de-navegaçao--localizaçao">Localização</a></li>
-                        <li><a href="#referencia-de-navegaçao--blog">Blog</a></li>
-
-                        <div id="navegaçao__mobile"> <!-- Navegação EXTERNA do site em sistemas Mobile -->
-                            <li><a href="#" rel="next">Serviços ↗</a></li>
-                            <li><a href="#" rel="next">Contato ↗</a></li>
-                            <li><a href="#" rel="next">Sobre a empresa ↗</a></li>
-                        </div>
-                    </ol>
-                </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="./error.html" rel="next" class="nav__menu__itens__link">Serviços</a>
-                </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="#" rel="next" class="nav__menu__itens__link active">Contato</a>
-                </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="./error.html" rel="next" class="nav__menu__itens__link">Sobre a empresa</a></li>
-            </ul>
-        </nav>
-    </header>
-
+   
     <main>
         <section class="seçao__titulo__principal">
             <img src="../assets/img/background.jpg" alt="background" class="seçao__titulo__principal--background">

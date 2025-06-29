@@ -9,40 +9,31 @@
     <link rel="stylesheet" href="../CSS/error.css">
 </head>
 <body>
-    <header class="cabeçalho__container">
+    <header class="cabeçalho__container">  
 
-        <section class="cabeçalho__titulo__logo__container">
+            <section class="cabeçalho__titulo__logo__container">
+                
+                <img src="./assets/img/logo_cabecalho.png" alt="logo Abriu Chaveiro" class="logo__cabeçalho__img">
 
-            <img src="../assets/img/logo_cabecalho.png" alt="logo Abriu Chaveiro" class="logo__cabeçalho__img">
-
-            <div class="cabeçalho__titulo__container">
-                <p class="cabeçalho__titulo">briu Chaveiro - 24h</p>
-            </div>
-        </section>
-
-        <nav class="nav__container">
-            <ul class="nav__container__menu"> <!-- Navegação EXTERNA do site -->
-                <li class="nav__menu__itens"><a href="../index.html" rel="prev" class="nav__menu__itens__link">Início <p class="icone__menu__inicio">☰</p></a>
-                    <ol> <!-- Navegação INTERNA do site e também nos sistemas Mobile -->
-                        <li><a href="#referencia-de-navegaçao--orçamento">Orçamento / Contato</a></li>
-                        <li><a href="#referencia-de-navegaçao--avaliaçao">Avaliação</a></li>
-                        <li><a href="#referencia-de-navegaçao--localizaçao">Localização</a></li>
-                        <li><a href="#referencia-de-navegaçao--blog">Blog</a></li>
-
-                        <div id="navegaçao__mobile"> <!-- Navegação EXTERNA do site em sistemas Mobile -->
-                            <li><a href="#" rel="next">Serviços ↗</a></li>
-                            <li><a href="#" rel="next">Contato ↗</a></li>
-                            <li><a href="#" rel="next">Sobre a empresa ↗</a></li>
-                        </div>
-                    </ol>
-                </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="./error.html" rel="next" class="nav__menu__itens__link">Serviços</a>
-                </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="./contato.html" rel="next" class="nav__menu__itens__link active">Contato</a>
-                </li>
-                <li id="menu__mobile" class="nav__menu__itens"><a href="./error.html" rel="next" class="nav__menu__itens__link">Sobre a empresa</a></li>
-            </ul>
-        </nav>
+                <div class="cabeçalho__titulo__container">
+                    <p class="cabeçalho__titulo">Abriu Chaveiro - 24h</p>
+                </div>
+            </section>
+            
+            <nav class="container__menu__navegacao">
+                <ul class="container__menu__navegacao__lista">
+                    <li class="container__menu__navegacao__lista--indices" id="menu__dropdown"><a href="./index.html" class="dropdown--hover">Início </a><img src="./assets/img/dropdown.svg" alt="ícone do menu" class="dropdown--arrow">
+                        <ul class="container__dropdown">
+                            <li><a href="#referencia-de-navegaçao--orçamento">Orçamento</a></li>
+                            <li><a href="#referencia-de-navegaçao--avaliaçao">Avaliação</a></li>
+                            <li><a href="#referencia-de-navegaçao--localizaçao">Localização</a></li>
+                        </ul>
+                    </li>           
+                    <li class="container__menu__navegacao__lista--indices"><a href="./contents/error.html">Serviços</a></li>
+                    <li class="container__menu__navegacao__lista--indices"><a href="./contents/contato.html">Contato</a></li>
+                    <li class="container__menu__navegacao__lista--indices"><a href="./contents/error.html">Sobre</a></li>
+                </ul>    
+            </nav>
     </header>
 
     <main>

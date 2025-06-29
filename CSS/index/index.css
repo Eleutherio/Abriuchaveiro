@@ -30,7 +30,7 @@ main {
 
 /* Seção Banner */
 .seçao__banner__container {
-    background-image: url('../../assets/img/macaneta-dourada-com-chaves-em-uma-porta-branca.jpg');
+    background-image: url('../../assets/img/Background__index.jpg');
     background-color: #cecece;
     background-attachment:fixed;
     background-position: center;
@@ -46,7 +46,6 @@ main {
     align-items: center;
     padding-left: 45%;
     height: 100vh;
-    background: rgba(70, 70, 70, 0.808);
     background-blend-mode:darken;
     width: 100%;
 }
