@@ -63,11 +63,14 @@ if (dropdown && dropdownList) {
   });
 }
 
+    // muda o fundo do cabeçalho na página de contato para cor escura com blur
     const cabecalhoContainer = document.querySelector(".cabeçalho__container");
-        if (window.location.pathname.endsWith("/contato.html")) {
-            cabecalhoContainer.style.backgroundColor = "rgba(17, 17, 17, 0.53)";
-            cabecalhoContainer.style.backdropFilter = "blur(5px)";
-    }
+    if (window.location.pathname.endsWith("/contato.html")) {
+    cabecalhoContainer.style.backgroundColor = "rgba(17, 17, 17, 0.53)";
+    cabecalhoContainer.style.backdropFilter = "blur(5px)";
+}
+// ------------------
+
     const links = document.querySelectorAll(".container__menu__navegacao__lista a");
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
@@ -77,6 +80,7 @@ if (dropdown && dropdownList) {
             link.classList.add("active");
         }
 });
+    // Esconde o cabeçalho ao rolar a página
     const cabecalho = document.getElementById("cabecalho");
     if (cabecalho) {
       window.addEventListener("scroll", () => {
@@ -88,11 +92,12 @@ if (dropdown && dropdownList) {
         }
       });
     }
+    // ----------------
+
 
   // Cria e injeta o FOOTER
   const footerContainer = document.createElement("div");
   document.body.appendChild(footerContainer);
-
   try {
     const footerResponse = await fetch(`${prefix}contents/footer.html`);
     const footerHTML = await footerResponse.text();
@@ -101,3 +106,4 @@ if (dropdown && dropdownList) {
     console.error("❌ Erro ao carregar o footer:", error);
   }
 });
+// --------------------
