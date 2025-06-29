@@ -93,6 +93,19 @@ if (dropdown && dropdownList) {
       });
     }
     // ----------------
+    // Ajusta o espaçamento (gap) dos itens com a classe .dropdown--hover ao passar o mouse (desativado)
+    // const barra = document.querySelectorAll(".dropdown--hover");
+    // barra.forEach(item => {
+    //   item.addEventListener("mouseenter", () => {
+    //     mouseInsideList = true;
+    //     item.style.gap = "2.3em";
+    //   });
+    //   item.addEventListener("mouseleave", () => {
+    //     mouseInsideList = false;
+    //     item.style.gap = "1.3em";
+    //   });
+    // });
+    // ----------------
 
 
   // Cria e injeta o FOOTER

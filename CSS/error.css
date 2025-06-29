@@ -16,7 +16,7 @@ main {
     line-height: 100vh;
     text-align: center;
 
-    background-color: goldenrod;
+    background-color: rgb(233, 233, 233);
 }
 
 .error_container {
