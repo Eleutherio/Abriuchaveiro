@@ -67,7 +67,7 @@ main {
 }
 /* ------------ */
 
-/*Seção Perguntas */
+/*Seção Perguntas 
 .seçao__perguntas__container {
     width: 100%;
     padding: 2% 0 2% 5%;
@@ -89,25 +89,53 @@ main {
 /* ----------------- */
 
 /* Seção de Serviços */
-.seçao__serviços__container{
-    height: 100vh;
-}
+
 .serviços__titulo__container{
-    background-color: rgba(32,33,36,255);
-    width: 100%;
-    text-align: center;
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.serviços__titulo{
-    
-    color: #fefefe;
+.serviços__titulo, .serviços__titulo--destaque{
+    color: black;
     font-family: 'Open Sans', sans-serif;
     
     font-weight: bold;
     font-size: 2rem;
-    padding: 2.5% 0;
+    padding-bottom: 2em;
+    
+}
+.serviços__subtitulo{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+    font-weight: lighter;
+    font-size: 1.5rem;
+    padding-top: 1em;
 }
 
-.blocos__serviços__container{
+.serviços__titulo--destaque{
+    color: goldenrod;
+}
+
+.seçao__serviços__container{
+    height: 100vh;
+    width: 100vw;  
+    background-image: url('../../assets/img/background__titulo__serviços.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+  
+}
+.serviços__img {
+    width: 5vh;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*.blocos__serviços__container{
     
     background: #cecece;
     

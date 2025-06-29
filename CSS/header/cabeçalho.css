@@ -110,6 +110,11 @@
   color: goldenrod;
   font-size: 1vw;
 }
+
+.container__menu__navegacao__lista--indices a.active:hover, .container__menu__navegacao__lista--indices a:hover{
+  color: rgb(201, 199, 196) !important;
+}
+
 .container__dropdown{
     margin-left: 0;
   display: flex;
