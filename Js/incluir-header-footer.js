@@ -15,98 +15,96 @@ document.addEventListener("DOMContentLoaded", async () => {
     headerContainer.innerHTML = headerHTML;
 
     console.log("✅ Header carregado. Executando script...");
-
-} catch (error) {
+  } catch (error) {
     console.error("❌ Erro ao carregar o header:", error);
-    }   
-    // === Script de estilização da navegação ===
+  }
 
-const dropdown = document.querySelector("#menu__dropdown");
-const dropdownList = document.querySelector(".container__dropdown");
+  // === Script de estilização da navegação ===
 
-let mouseInsideDropdown = false;
-let mouseInsideList = false;
+  const dropdown = document.querySelector("#menu__dropdown");
+  const dropdownList = document.querySelector(".container__dropdown");
 
-function showDropdown() {
-  dropdown.style.overflow = "visible";
-}
+  let mouseInsideDropdown = false;
+  let mouseInsideList = false;
 
-function hideDropdown() {
-  dropdown.style.overflow = "hidden";
-}
+  function showDropdown() {
+    dropdown.style.overflow = "visible";
+  }
 
-if (dropdown && dropdownList) {
-  dropdown.addEventListener("mouseenter", () => {
-    mouseInsideDropdown = true;
-    showDropdown();
-  });
+  function hideDropdown() {
+    dropdown.style.overflow = "hidden";
+  }
 
-  dropdown.addEventListener("mouseleave", () => {
-    mouseInsideDropdown = false;
-    // Só esconde se o mouse também não estiver na lista
-    if (!mouseInsideList) {
-      hideDropdown();
-    }
-  });
+  if (dropdown && dropdownList) {
+    dropdown.addEventListener("mouseenter", () => {
+      mouseInsideDropdown = true;
+      showDropdown();
+    });
 
-  dropdownList.addEventListener("mouseenter", () => {
-    mouseInsideList = true;
-    showDropdown();
-  });
+    dropdown.addEventListener("mouseleave", () => {
+      mouseInsideDropdown = false;
+      // Só esconde se o mouse também não estiver na lista
+      if (!mouseInsideList) {
+        hideDropdown();
+      }
+    });
 
-  dropdownList.addEventListener("mouseleave", () => {
-    mouseInsideList = false;
-    // Só esconde se o mouse também não estiver no dropdown
-    if (!mouseInsideDropdown) {
-      hideDropdown();
-    }
-  });
-}
+    dropdownList.addEventListener("mouseenter", () => {
+      mouseInsideList = true;
+      showDropdown();
+    });
 
-    // muda o fundo do cabeçalho na página de contato para cor escura com blur
-    const cabecalhoContainer = document.querySelector(".cabeçalho__container");
-    if (window.location.pathname.endsWith("/contato.html")) {
+    dropdownList.addEventListener("mouseleave", () => {
+      mouseInsideList = false;
+      // Só esconde se o mouse também não estiver no dropdown
+      if (!mouseInsideDropdown) {
+        hideDropdown();
+      }
+    });
+  }
+
+  // muda o fundo do cabeçalho na página de contato para cor escura com blur
+  const cabecalhoContainer = document.querySelector(".cabeçalho__container");
+  if (window.location.pathname.endsWith("/contato.html")) {
     cabecalhoContainer.style.backgroundColor = "rgba(17, 17, 17, 0.53)";
     cabecalhoContainer.style.backdropFilter = "blur(5px)";
-}
-// ------------------
+  }
+  // ------------------
 
-    const links = document.querySelectorAll(".container__menu__navegacao__lista a");
-    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  const links = document.querySelectorAll(
+    ".container__menu__navegacao__lista a"
+  );
+  const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
-    links.forEach(link => {
-        const linkPath = link.getAttribute("href").split("/").pop();
-        if (linkPath === currentPath) {
-            link.classList.add("active");
-        }
-});
-    // Esconde o cabeçalho ao rolar a página
-    const cabecalho = document.getElementById("cabecalho");
-    if (cabecalho) {
-      window.addEventListener("scroll", () => {
-        if (pageYOffset > 50) {
-          cabecalho.style.transition = ".3s ease-out";
-          cabecalho.style.transform = "translateY(-200%)";
-        } else {
-          cabecalho.style.transform = "";
-        }
-      });
+  links.forEach((link) => {
+    const linkPath = link.getAttribute("href").split("/").pop();
+    if (linkPath === currentPath) {
+      link.classList.add("active");
     }
-    // ----------------
-    // Ajusta o espaçamento (gap) dos itens com a classe .dropdown--hover ao passar o mouse (desativado)
-    // const barra = document.querySelectorAll(".dropdown--hover");
-    // barra.forEach(item => {
-    //   item.addEventListener("mouseenter", () => {
-    //     mouseInsideList = true;
-    //     item.style.gap = "2.3em";
-    //   });
-    //   item.addEventListener("mouseleave", () => {
-    //     mouseInsideList = false;
-    //     item.style.gap = "1.3em";
-    //   });
-    // });
-    // ----------------
+  });
+  // Esconde o cabeçalho ao rolar a página
+  const cabecalho = document.getElementById("cabecalho");
 
+  if (cabecalho) {
+    // Aplica a transição uma vez, para garantir suavidade
+    cabecalho.style.transition = ".3s ease-out";
+
+    // Verifica a posição atual da página ao carregar
+    if (window.pageYOffset > 50) {
+      cabecalho.style.transform = "translateY(-200%)";
+    } else {
+      cabecalho.style.transform = "translateY(0)";
+    }
+
+    // Sempre escuta o scroll do usuário
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 50) {
+        cabecalho.style.transform = "translateY(-200%)";
+      } else {
+        cabecalho.style.transform = "translateY(0)";
+      }
+    });
+  }
 
   // Cria e injeta o FOOTER
   const footerContainer = document.createElement("div");
