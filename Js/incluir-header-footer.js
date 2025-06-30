@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (err) {
     console.error(err);
   }
-});
+
   // === Script de estilização da navegação ===
 
   const dropdown = document.querySelector("#menu__dropdown");
@@ -116,5 +116,5 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
   }
-
+});
 // --------------------
