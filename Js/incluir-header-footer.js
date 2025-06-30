@@ -14,24 +14,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Corrige caminhos de imagens e links se estiver no GitHub Pages
     if (isGitHub) {
-      const prefix = "/Abriuchaveiro/";
+  const prefix = "/Abriuchaveiro/";
 
-      const imgs = headerContainer.querySelectorAll("img");
-      imgs.forEach(img => {
-        const src = img.getAttribute("src");
-        if (src && !src.startsWith("http") && !src.startsWith("data:")) {
-          img.src = prefix + src.replace(/^\/+/, "");
-        }
-      });
-
-      const links = headerContainer.querySelectorAll("a[href]");
-      links.forEach(link => {
-        const href = link.getAttribute("href");
-        if (href && !href.startsWith("http") && !href.startsWith("data:")) {
-          link.href = prefix + href.replace(/^\/+/, "");
-        }
-      });
+  const imgs = headerContainer.querySelectorAll("img");
+  imgs.forEach(img => {
+    const src = img.getAttribute("src");
+    if (src && src.startsWith("./")) {
+      img.src = prefix + src.slice(2);
     }
+  });
+}
   } catch (err) {
     console.error(err);
   }
