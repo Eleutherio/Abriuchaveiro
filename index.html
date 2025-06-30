@@ -6,19 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
     <title>Abriu Chaveiro</title>
-    <script src="./Js/incluir-header-footer.js" defer type="module"></script>
+    <script src="./Js/ajustar-caminhos.js"></script>
+    <script src="/Abriuchaveiro/Js/incluir-header-footer.js" type="module" defer></script>
+    <script src="../Abriuchaveiro/Js/validacao.js" defer></script>
     <link
       rel="shortcut icon"
-      href="./assets/img/logo_cabecalho.png"
+      href="/Abriuchaveiro/assets/img/logo_cabecalho.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/index/index.css" />
-    <link
-      rel="stylesheet"
-      media="(max-width: 970px)"
-      href="./CSS/index/index-mobile.css"
-    />
+    <link rel="stylesheet" href="/Abriuchaveiro/CSS/reset.css" />
+    <link rel="stylesheet" href="/Abriuchaveiro/CSS/index/index.css" />
+    <link rel="stylesheet" href="/Abriuchaveiro/CSS/index/index-mobile.css" media="(max-width: 970px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,7 +56,8 @@
           <h1 class="serviços__titulo">
             Oferecemos soluções completas em segurança para
             <span class="serviços__titulo--destaque">residências</span>,
-            <span class="serviços__titulo--destaque">empresas</span> e <span class="serviços__titulo--destaque">veículos</span>.
+            <span class="serviços__titulo--destaque">empresas</span> e
+            <span class="serviços__titulo--destaque">veículos</span>.
           </h1>
           <h2 class="serviços__subtitulo">
             Com atendimento ágil e equipe especializada, garantimos conforto,
@@ -69,39 +68,39 @@
           </h2>
         </div>
         <div class="blocos__serviços__container">
-        <div class="blocos__serviços__residenciais">
-          <img
-            src="./assets/img/icone__residencial.svg"
-            alt="ilustração de icone de residencia"
-            class="serviços__img"
-          />
-          <h1>Serviços residenciais</h1>
-          <ul>
-            <li>✔ Serviços de abertura de portas</li>
-            <li>✔ Troca de fechaduras</li>
-            <li>✔ Conserto e substituição de fechaduras e cilindros</li>
-            <li>✔ Cópias de chaves residenciais</li>
-            <li>✔ Abertura de veículos</li>
-            <li>✔ Abertura de cofres</li>
-          </ul>
+          <div class="blocos__serviços__residenciais">
+            <img
+              src="./assets/img/icone__residencial.svg"
+              alt="ilustração de icone de residencia"
+              class="serviços__img"
+            />
+            <h1>Serviços residenciais</h1>
+            <ul>
+              <li>✔ Serviços de abertura de portas</li>
+              <li>✔ Troca de fechaduras</li>
+              <li>✔ Conserto e substituição de fechaduras e cilindros</li>
+              <li>✔ Cópias de chaves residenciais</li>
+              <li>✔ Abertura de veículos</li>
+              <li>✔ Abertura de cofres</li>
+            </ul>
+          </div>
+          <div class="blocos__serviços__comerciais">
+            <img
+              src="./assets/img/icone__comercial.png"
+              alt="ilustração de icone de empresa"
+              class="serviços__img"
+            />
+            <h1>Serviços comerciais</h1>
+            <ul>
+              <li>✔ Instalação de fechaduras comerciais</li>
+              <li>✔ Manutenção de sistemas de segurança empresarial</li>
+              <li>✔ Cópias de controles de alarme e portão</li>
+              <li>✔ Fechaduras para portas de vidro</li>
+              <li>✔ Capas para telecomando</li>
+              <li>✔ Afiações em geral</li>
+            </ul>
+          </div>
         </div>
-        <div class="blocos__serviços__comerciais">
-          <img
-            src="./assets/img/icone__comercial.png"
-            alt="ilustração de icone de empresa"
-            class="serviços__img"
-          />
-          <h1>Serviços comerciais</h1>
-          <ul>
-            <li>✔ Instalação de fechaduras comerciais</li>
-            <li>✔ Manutenção de sistemas de segurança empresarial</li>
-            <li>✔ Cópias de controles de alarme e portão</li>
-            <li>✔ Fechaduras para portas de vidro</li>
-            <li>✔ Capas para telecomando</li>
-            <li>✔ Afiações em geral</li>
-          </ul>
-        </div>
-    </div>
       </section>
 
       <section
@@ -379,7 +378,5 @@
         <p>Desenvolvido por guifer.3097@hotmail.com</p>
       </section>
     </footer>
-    <script type="module" src="./Js/validacao.js"></script>
-    <script type="module" src="./Js/index_script.js"></script>
   </body>
 </html>
