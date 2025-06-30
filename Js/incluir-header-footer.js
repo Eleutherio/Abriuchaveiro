@@ -1,5 +1,3 @@
-// Js/incluir-header-footer.js
-
 document.addEventListener("DOMContentLoaded", async () => {
   const isGitHub = location.hostname.includes("github.io");
   const basePath = isGitHub ? "/Abriuchaveiro/" : "./";
@@ -13,6 +11,27 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!headerResponse.ok) throw new Error("Erro ao carregar header");
     const headerHTML = await headerResponse.text();
     headerContainer.innerHTML = headerHTML;
+
+    // Corrige caminhos de imagens e links se estiver no GitHub Pages
+    if (isGitHub) {
+      const prefix = "/Abriuchaveiro/";
+
+      const imgs = headerContainer.querySelectorAll("img");
+      imgs.forEach(img => {
+        const src = img.getAttribute("src");
+        if (src && !src.startsWith("http") && !src.startsWith("data:")) {
+          img.src = prefix + src.replace(/^\/+/, "");
+        }
+      });
+
+      const links = headerContainer.querySelectorAll("a[href]");
+      links.forEach(link => {
+        const href = link.getAttribute("href");
+        if (href && !href.startsWith("http") && !href.startsWith("data:")) {
+          link.href = prefix + href.replace(/^\/+/, "");
+        }
+      });
+    }
   } catch (err) {
     console.error(err);
   }
@@ -30,8 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error(err);
   }
 
-  // === Script de estilização da navegação ===
-
+  // Dropdown nav
   const dropdown = document.querySelector("#menu__dropdown");
   const dropdownList = document.querySelector(".container__dropdown");
 
@@ -54,7 +72,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     dropdown.addEventListener("mouseleave", () => {
       mouseInsideDropdown = false;
-      // Só esconde se o mouse também não estiver na lista
       if (!mouseInsideList) {
         hideDropdown();
       }
@@ -67,24 +84,21 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     dropdownList.addEventListener("mouseleave", () => {
       mouseInsideList = false;
-      // Só esconde se o mouse também não estiver no dropdown
       if (!mouseInsideDropdown) {
         hideDropdown();
       }
     });
   }
 
-  // muda o fundo do cabeçalho na página de contato para cor escura com blur
+  // Estilo do cabeçalho na página de contato
   const cabecalhoContainer = document.querySelector(".cabeçalho__container");
   if (window.location.pathname.endsWith("/contato.html")) {
     cabecalhoContainer.style.backgroundColor = "rgba(17, 17, 17, 0.53)";
     cabecalhoContainer.style.backdropFilter = "blur(5px)";
   }
-  // ------------------
 
-  const links = document.querySelectorAll(
-    ".container__menu__navegacao__lista a"
-  );
+  // Ativa link atual no menu
+  const links = document.querySelectorAll(".container__menu__navegacao__lista a");
   const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
   links.forEach((link) => {
@@ -93,21 +107,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       link.classList.add("active");
     }
   });
-  // Esconde o cabeçalho ao rolar a página
+
+  // Esconde o cabeçalho ao rolar
   const cabecalho = document.getElementById("cabecalho");
 
   if (cabecalho) {
-    // Aplica a transição uma vez, para garantir suavidade
     cabecalho.style.transition = ".3s ease-out";
 
-    // Verifica a posição atual da página ao carregar
     if (window.pageYOffset > 50) {
       cabecalho.style.transform = "translateY(-200%)";
     } else {
       cabecalho.style.transform = "translateY(0)";
     }
 
-    // Sempre escuta o scroll do usuário
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 50) {
         cabecalho.style.transform = "translateY(-200%)";
@@ -117,4 +129,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 });
-// --------------------
