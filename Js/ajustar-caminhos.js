@@ -1,3 +1,5 @@
+// Js/ajustar-caminhos.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const isGitHubPages = location.hostname.includes("github.io");
   const basePath = isGitHubPages ? "/Abriuchaveiro/" : "./";
