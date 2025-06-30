@@ -98,29 +98,30 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .serviços__titulo,
 .serviços__titulo--destaque {
   color: black;
   font-family: "Open Sans", sans-serif;
-
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: clamp(1.4rem, 2.2vw, 2.5rem); /* responsivo com limite */
   padding-bottom: 2em;
 }
+
 .serviços__subtitulo {
   color: black;
   font-family: "Open Sans", sans-serif;
-
   font-weight: lighter;
-  font-size: 1.5rem;
-  padding-top: 1em;
+  font-size: clamp(1.1rem, 1.7vw, 1.8rem); /* idem */
+  padding: 1em 0;
 }
 
 .serviços__titulo--destaque {
   color: goldenrod;
 }
+
 .seçao__serviços__container {
-  height: 100vh;
+  min-height: 100vh; /* evita corte em mobile */
   width: 100%;
   background-image: url("../../assets/img/background__titulo__serviços.jpg");
   background-repeat: no-repeat;
@@ -130,18 +131,22 @@ main {
 
 .blocos__serviços__container {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap; /* corrigido */
   justify-content: space-around;
   align-items: center;
   width: 100%;
 }
+
 .serviços__img {
-  width: 5em;
+  width: 4.5em;
   height: auto;
   margin: 0 auto;
   display: block;
 }
-.blocos__serviços__residenciais {
+
+.blocos__serviços__residenciais,
+.blocos__serviços__comerciais {
   padding: 3em 1em;
   border-radius: 5px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -149,12 +154,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: #e3e3e3;
   width: 45%;
   height: auto;
 }
-.blocos__serviços__residenciais h1 {
+
+.blocos__serviços__residenciais h1,
+.blocos__serviços__comerciais h1 {
   color: #424242;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -162,7 +168,9 @@ main {
   text-align: center;
   line-height: 2.5em;
 }
-.blocos__serviços__residenciais ul li {
+
+.blocos__serviços__residenciais ul li,
+.blocos__serviços__comerciais ul li {
   color: #424242;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
@@ -171,108 +179,18 @@ main {
   line-height: 2em;
 }
 
-.blocos__serviços__comerciais {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #daa520;
-  width: 40%;
-  height: auto;
-}
+/* ✅ Melhoria de responsividade em telas menores */
+@media (max-width: 768px) {
+  .blocos__serviços__residenciais,
+  .blocos__serviços__comerciais {
+    width: 90%;
+    margin-bottom: 2em;
+  }
 
-/*
-.primeiro-bloco__serviços, .segundo-bloco__serviços {
-    padding: 2.5%;
-    background:#fefefe;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap-reverse;
-    align-items:flex-end; 
+  .serviços__img {
+    width: 2em;
+  }
 }
-.segundo-bloco__serviços {
-    border-top: 5px dotted rgba(32,33,36,255);
-}
-
-.primeiro-bloco__lista, .segundo-bloco__lista {
-    width:60%
-}
-.primeiro-bloco__lista__item, .segundo-bloco__lista__item {
-    
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(32,33,36,255);
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 2.2em;
-
-    display: flex;
-}
-.primeiro-bloco__lista__titulo, .segundo-bloco__lista__titulo {
-    
-    color: rgba(32,33,36,255);
-    background: goldenrod;  
-
-    font-family: 'Open Sans', sans-serif;
-
-    font-weight: bold;
-    font-size: 1.5em;
-    line-height: 2.5em;
-    text-align: center;
-}
-
-.ver-mais__container--primeiro-bloco, .ver-mais__container--segundo-bloco {
-    
-    background: goldenrod;
-    
-    width: 15em;
-    height: 15em;
-    text-decoration: none;
-    text-align: center;
-    
-    overflow: hidden;
-    border-radius: 10px;
-}
-.ver-mais__container--primeiro-bloco a, .ver-mais__container--segundo-bloco a {
-    text-decoration: none;
-}
-.ver-mais__container--primeiro-bloco img:hover, .ver-mais__container--segundo-bloco img:hover {
-    filter: blur(4px);
-}
-
-.legenda--primeiro-bloco:hover, .legenda--segundo-bloco:hover {
-    
-    transition: 0.5s;
-
-    color: goldenrod;
-    background-color: rgba(20, 20, 20, 0.74);
-}
-
-.legenda--primeiro-bloco, .legenda--segundo-bloco {
-    color: rgb(51, 51, 51);
-    background-color: rgba(78, 78, 78, 0.411);
-
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-
-    font-family: 'Open Sans', sans-serif;
-
-    font-size: 1.5em;
-    line-height: 3em;
-}
-
-.serviços__img { 
-    margin: 5%;
-    width: 50%;
-}
-.icone__abrir-pagina {
-    
-    margin-left: 1em;
-    width: 1em;
-}
-/* ----------------- */
 
 /* Seção Orçamento */
 .seçao__orçamento__container {
@@ -342,14 +260,6 @@ main {
 }
 .botoes__container a {
   text-decoration: none;
-}
-
-.teste {
-  font-size: 1.5em;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5em;
-  grid-row: span 1;
-  grid-column: span 3;
 }
 
 /* botoes flutuantes whatsapp e email */
