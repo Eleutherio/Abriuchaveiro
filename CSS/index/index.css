@@ -68,31 +68,10 @@ main {
 }
 /* ------------ */
 
-/*Seção Perguntas 
-.seçao__perguntas__container {
-    width: 100%;
-    padding: 2% 0 2% 5%;
-    background-color: goldenrod;
-    
-    margin-top: -25px;
-    clip-path: polygon(0 0,100% 25px,100% 100%,0 100%);
-}
-.lista__perguntas li {
-    
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    
-    color: rgb(46, 46, 46);
-    
-    font-size: 1.5em;
-    line-height: 2.5em;
-}
-/* ----------------- */
-
 /* Seção de Serviços */
 
 .serviços__titulo__container {
-  padding: 2.5em;
+  padding: 5em 2.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,15 +83,15 @@ main {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: clamp(1.4rem, 2.2vw, 2.5rem); /* responsivo com limite */
-  padding-bottom: 2em;
+  font-size: clamp(1.4rem, 2.1vw, 2rem); /* responsivo com limite */
+  padding-bottom: 1em;
 }
 
 .serviços__subtitulo {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
-  font-size: clamp(1.1rem, 1.7vw, 1.8rem); /* idem */
+  font-size: clamp(1.1rem, 1.6vw, 1.6rem); /* idem */
   padding: 1em 0;
 }
 

@@ -111,7 +111,7 @@
   font-size: 1vw;
 }
 
-.container__menu__navegacao__lista--indices a.active:hover, .container__menu__navegacao__lista--indices a:hover{
+#menu__dropdown > a.active:hover, .container__menu__navegacao__lista--indices > a:hover{
   color: rgb(201, 199, 196) !important;
 }
 
