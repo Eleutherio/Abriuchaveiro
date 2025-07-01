@@ -1,45 +1,57 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const isGitHub = location.hostname.includes("github.io");
-  const basePath = isGitHub ? "/Abriuchaveiro/" : "./";
+  const basePath = isGitHub ? "/Abriuchaveiro/" : "/";
 
-  // HEADER
+  // Função para ajustar atributos (src, href) adicionando basePath
+  function ajustarAtributo(elementos, atributo) {
+    elementos.forEach(el => {
+      const valor = el.getAttribute(atributo);
+      if (valor && !valor.startsWith("http") && !valor.startsWith("data:") && !valor.startsWith(basePath)) {
+        el.setAttribute(atributo, basePath + valor.replace(/^\.?\//, ""));
+      }
+    });
+  }
+
+  // Carregar header
   const headerContainer = document.createElement("div");
   document.body.prepend(headerContainer);
-
   try {
-    const headerResponse = await fetch(`${basePath}contents/header.html`);
+    const headerResponse = await fetch(`${basePath}header.html`);
     if (!headerResponse.ok) throw new Error("Erro ao carregar header");
     const headerHTML = await headerResponse.text();
     headerContainer.innerHTML = headerHTML;
 
-    // Corrige caminhos de imagens e links se estiver no GitHub Pages
-    if (isGitHub) {
-  const prefix = "/Abriuchaveiro/";
+    // Ajusta src e href do header para basePath
+    ajustarAtributo(headerContainer.querySelectorAll("img"), "src");
+    ajustarAtributo(headerContainer.querySelectorAll("script[src]"), "src");
+    ajustarAtributo(headerContainer.querySelectorAll("link[href]"), "href");
 
-  const imgs = headerContainer.querySelectorAll("img");
-  imgs.forEach(img => {
-    const src = img.getAttribute("src");
-    if (src && src.startsWith("./")) {
-      img.src = prefix + src.slice(2);
-    }
-  });
-}
   } catch (err) {
     console.error(err);
   }
 
-  // FOOTER
+  // Carregar footer
   const footerContainer = document.createElement("div");
   document.body.append(footerContainer);
-
   try {
-    const footerResponse = await fetch(`${basePath}contents/footer.html`);
+    const footerResponse = await fetch(`${basePath}footer.html`);
     if (!footerResponse.ok) throw new Error("Erro ao carregar footer");
     const footerHTML = await footerResponse.text();
     footerContainer.innerHTML = footerHTML;
+
+    // Ajusta src e href do footer para basePath
+    ajustarAtributo(footerContainer.querySelectorAll("img"), "src");
+    ajustarAtributo(footerContainer.querySelectorAll("script[src]"), "src");
+    ajustarAtributo(footerContainer.querySelectorAll("link[href]"), "href");
+
   } catch (err) {
     console.error(err);
   }
+
+  // Ajustar src e href do documento principal
+  ajustarAtributo(document.querySelectorAll("img"), "src");
+  ajustarAtributo(document.querySelectorAll("script[src]"), "src");
+  ajustarAtributo(document.querySelectorAll("link[href]"), "href");
 
   // Dropdown nav
   const dropdown = document.querySelector("#menu__dropdown");
@@ -106,18 +118,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (cabecalho) {
     cabecalho.style.transition = ".3s ease-out";
 
-    if (window.pageYOffset > 50) {
-      cabecalho.style.transform = "translateY(-200%)";
-    } else {
-      cabecalho.style.transform = "translateY(0)";
-    }
-
-    window.addEventListener("scroll", () => {
+    function toggleCabecalho() {
       if (window.pageYOffset > 50) {
         cabecalho.style.transform = "translateY(-200%)";
       } else {
         cabecalho.style.transform = "translateY(0)";
       }
-    });
+    }
+
+    toggleCabecalho();
+    window.addEventListener("scroll", toggleCabecalho);
   }
 });
