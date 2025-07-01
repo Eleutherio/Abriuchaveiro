@@ -3,6 +3,7 @@
 Sistema web para registro e análise de pedidos de um chaveiro local. O objetivo é criar uma solução completa — do formulário de pedidos até relatórios estratégicos — utilizando HTML, CSS, JavaScript, Python (Flask) e SQLite.
 
 🔗 [Acesse o site](https://eleutherio.github.io/Abriuchaveiro/)
+🔗 [Link alternativo](https://abriuchaveiroapp.vercel.app/)
 
 ---
 Antes de começar:
