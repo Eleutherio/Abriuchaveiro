@@ -8,6 +8,7 @@
     <title>Abriu Chaveiro</title>
     <script src="/Js/incluir-header-footer.js" defer></script>
     <script src="/Js/validacao.js" defer></script>
+    <script src="/Js/manipulacao-elementos.js" defer></script>
     <link
       rel="shortcut icon"
       href="/assets/img/logo_cabecalho.png"
@@ -48,7 +49,9 @@
         </div>
       </section>
 
-      <section class="seçao__serviços__container">
+      <section
+      id="referencia-de-navegaçao--serviços" 
+      class="seçao__serviços__container">
         <!-- Seção Serviços -->
 
         <div class="serviços__titulo__container">
@@ -102,103 +105,54 @@
         </div>
       </section>
 
-      <section
-        id="referencia-de-navegaçao--orçamento"
-        class="seçao__orçamento__container"
-      >
-        <!-- Seção Orçamento e Contato -->
 
-        <div class="orçamento__titulo__container">
-          <h1 class="orçamento__titulo">Solicite agora o seu orçamento!</h1>
-          <h2 class="orçamento__subtitulo">
-            Estamos
-            <span class="orçamento__titulo--horas">24 horas</span> pronto para
-            lhe atender
-          </h2>
-        </div>
-        <div class="orçamento__container">
-          <address class="celular__container">
-            <a
-              href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="external"
-            >
-              <img
-                src="./assets/img/celular.png"
-                alt="banner telefone com contato"
-                class="celular__img"
-              />
-            </a>
-          </address>
-          <div class="teste">
-            <h1>Imprevistos não tem hora para acontecer</h1>
-            <p>Fornecemos atendimento por ligação, WhatsApp ou Email</p>
-          </div>
-          <div class="botoes__container">
-            <address>
-              <!-- WhatsApp -->
-              <a
-                href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="external"
-              >
-                <div class="botao__whatsapp__container">
-                  <button type="text" class="botao__whatsapp">
-                    <p class="botao__whatsapp__texto">
-                      <img
-                        src="./assets/img/whatsapp.png"
-                        alt=""
-                        class="icone__whatsapp__botao"
-                      />Clique aqui
-                    </p>
-                  </button>
-                </div>
-              </a>
-            </address>
-            <address>
-              <!-- Email -->
-              <a href="mailto:abriuchaveiro@yahoo.com.br">
-                <div class="botao__email__container">
-                  <button type="text" class="botao__email">
-                    <p class="botao__email__texto">
-                      <img
-                        src="./assets/img/gmail.png"
-                        alt=""
-                        class="icone__email__botao"
-                      />abriuchaveiro@yahoo.com.br
-                    </p>
-                  </button>
-                </div>
-              </a>
-            </address>
-          </div>
-        </div>
-        <div class="ligue-ja__container">
-          <div class="ligue-ja__texto__container">
-            <p class="ligue-ja__texto">Ou se preferir,</p>
-            <p class="ligue-ja__texto">ligue já:</p>
-          </div>
 
-          <div class="ligue-ja__telefones__container">
-            <img
-              src="./assets/img/phone.png"
-              alt="icon telefone"
-              class="ligue-ja__img"
-            />
-            <address>
-              <a href="tel:+51982323232" class="ligue-ja__telefones__link"
-                ><p class="ligue-ja__telefones">(51) 98232.3232</p></a
-              >
-            </address>
-            <p class="ligue-ja__telefones">-</p>
-            <address>
-              <a href="tel:+51999456045" class="ligue-ja__telefones__link"
-                ><p class="ligue-ja__telefones">(51) 99945.6045</p></a
-              >
-            </address>
-          </div>
+
+
+
+
+<!-- Seção Orçamento e Contato -->
+<section id="referencia-de-navegacao--orcamento" class="seçao__orçamento__container">
+  <div class="titulo__container">
+    <h1 class="orçamento__titulo">Solicite já o seu orçamento!</h1>
+    <h2 class="orçamento__subtitulo">
+      Nossa equipe está <span class="orçamento__titulo--horas">24 horas</span> pronta para lhe atender
+    </h2>
+  </div>
+
+  <div class="orçamento__container">
+    <div class="celular__container">
+      <a href="https://api.whatsapp.com/send/?phone=5551982323232" target="_blank" rel="external">
+        <img src="./assets/img/celular.png" alt="banner telefone com contato" class="celular__img" />
+      </a>
+    </div>
+
+    <div class="botoes__container">
+      <a href="https://api.whatsapp.com/send/?phone=5551982323232" target="_blank" rel="external">
+        <div class="botao__whatsapp__container">
+          <button type="text" class="botao__whatsapp">
+            <img src="./assets/img/whatsapp.png" alt="" class="icone__whatsapp__botao" />
+            <span class="botao__whatsapp__texto">(51) 98232-3232</span>
+          </button>
         </div>
-      </section>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <section
         id="referencia-de-navegaçao--avaliaçao"

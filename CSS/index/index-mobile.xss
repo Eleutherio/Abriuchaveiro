@@ -2,6 +2,18 @@
 main {
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .blocos__serviços__residenciais,
+  .blocos__serviços__comerciais {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  .serviços__img {
+    width: 2em;
+  }
+}
 /* ---------------- */
 
 /* Banner */

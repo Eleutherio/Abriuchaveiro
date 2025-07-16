@@ -54,6 +54,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   ajustarAtributo(document.querySelectorAll("link[href]"), "href");
 
   // Dropdown nav
+
+
+   const frases = document.querySelectorAll(".text-wrap span");
+  let index = 0;
+
+  setInterval(() => {
+    frases[index].classList.remove("active");
+    index = (index + 1) % frases.length;
+    frases[index].classList.add("active");
+  }, 3000); // troca a cada 3 segundos
+
+
   const dropdown = document.querySelector("#menu__dropdown");
   const dropdownList = document.querySelector(".container__dropdown");
 
