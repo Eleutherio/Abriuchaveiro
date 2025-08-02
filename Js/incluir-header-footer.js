@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", async () => {
   const isGitHub = location.hostname.includes("github.io");
-  const basePath = isGitHub ? "./Abriuchaveiro/" : "/"; 
+  const basePath = isGitHub ? "/Abriuchaveiro/" : "/"; 
 
   const base = document.createElement("base");
   base.href = basePath;
@@ -143,4 +142,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     toggleCabecalho();
     window.addEventListener("scroll", toggleCabecalho);
   }
-});
+;
