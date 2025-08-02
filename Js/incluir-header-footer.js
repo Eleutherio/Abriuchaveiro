@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const isGitHub = location.hostname.includes("github.io");
-  const basePath = isGitHub ? "/Abriuchaveiro/" : "/"; // <-- ESTA LINHA ESTÁ FALTANDO
+  const basePath = isGitHub ? "/Abriuchaveiro/" : "/"; 
 
   const base = document.createElement("base");
   base.href = basePath;
@@ -58,10 +58,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   ajustarAtributo(document.querySelectorAll("link[href]"), "href");
 
   // Dropdown nav
-
-
-   const frases = document.querySelectorAll(".text-wrap span");
-  let index = 0;
+  const frases = document.querySelectorAll(".text-wrap span");
+    let index = 0;
 
   setInterval(() => {
     frases[index].classList.remove("active");
@@ -112,10 +110,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Estilo do cabeçalho na página de contato
   const cabecalhoContainer = document.querySelector(".cabeçalho__container");
-  if (window.location.pathname.endsWith("/contato.html")) {
-    cabecalhoContainer.style.backgroundColor = "rgba(17, 17, 17, 0.53)";
-    cabecalhoContainer.style.backdropFilter = "blur(5px)";
-  }
+    if (window.location.pathname.endsWith("/contato.html")) {
+      cabecalhoContainer.style.backgroundColor = "rgba(17, 17, 17, 0.53)";
+      cabecalhoContainer.style.backdropFilter = "blur(5px)";
+    }
 
   // Ativa link atual no menu
   const links = document.querySelectorAll(".container__menu__navegacao__lista a");
