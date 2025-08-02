@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const isGitHub = location.hostname.includes("github.io");
+  const basePath = isGitHub ? "/Abriuchaveiro/" : "/"; // <-- ESTA LINHA ESTÁ FALTANDO
 
   const base = document.createElement("base");
-  base.href = isGitHub ? "/Abriuchaveiro/" : "/";
+  base.href = basePath;
   document.head.prepend(base);
 
   // Função para ajustar atributos (src, href) adicionando basePath
