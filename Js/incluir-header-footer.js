@@ -20,7 +20,7 @@
   const headerContainer = document.createElement("div");
   document.body.prepend(headerContainer);
   try {
-    const headerResponse = await fetch(`${basePath}header.html`);
+    const headerResponse = await fetch("header.html");
     if (!headerResponse.ok) throw new Error("Erro ao carregar header");
     const headerHTML = await headerResponse.text();
     headerContainer.innerHTML = headerHTML;
@@ -38,7 +38,7 @@
   const footerContainer = document.createElement("div");
   document.body.append(footerContainer);
   try {
-    const footerResponse = await fetch(`${basePath}footer.html`);
+    const footerResponse = await fetch("footer.html");
     if (!footerResponse.ok) throw new Error("Erro ao carregar footer");
     const footerHTML = await footerResponse.text();
     footerContainer.innerHTML = footerHTML;
