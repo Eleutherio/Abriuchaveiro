@@ -71,7 +71,7 @@ main {
 /* Seção de Serviços */
 
 .serviços__titulo__container {
-  padding: 3em;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,7 @@ main {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: clamp(1.4rem, 2.1vw, 2rem); /* responsivo com limite */
+  font-size: clamp(1rem, 1.6vw, 2rem); /* responsivo com limite */
   line-height: 2em;
 }
 
@@ -91,7 +91,10 @@ main {
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
-  font-size: clamp(1.1rem, 1.6vw, 1.6rem); /* idem */
+  white-space: nowrap;       /* Impede que quebre para a próxima linha */
+  /* Mostra "..." se o texto passar do limite */
+  max-width: 100%;           /* Limita à largura do container */
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem); /* idem */
   line-height: 2em;
 }
 
@@ -100,7 +103,7 @@ main {
 }
 
 .seçao__serviços__container {
-  max-height: 100vh; /* evita corte em mobile */
+  height: 100vh; /* evita corte em mobile */
   width: 100%;
   background-image: url("../../assets/img/background__titulo__serviços.jpg");
   background-repeat: no-repeat;
@@ -113,13 +116,14 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* corrigido */
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  padding: 5%
 }
 
 .serviços__img {
-  width: 4.5em;
+  width: clamp(2rem, 1.5vw, 2.5rem); /* idem */
   height: auto;
   margin: 0 auto;
   display: block;
@@ -127,7 +131,8 @@ main {
 
 .blocos__serviços__residenciais,
 .blocos__serviços__comerciais {
-  padding: 3em;
+  padding: 1.5em;
+  margin: 1.5em;
   border-radius: 5px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -144,7 +149,7 @@ main {
   color: #424242;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
   text-align: center;
   line-height: 2.5em;
 }
@@ -154,7 +159,7 @@ main {
   color: #424242;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
-  font-size: clamp(1rem, 1.2vw, 1rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.3rem);
   text-align: left;
   line-height: 2em;
 }
