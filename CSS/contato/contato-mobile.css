@@ -1,0 +1,369 @@
+@media screen and (min-width: 300px) {
+    main {
+      overflow: hidden;
+    }
+  
+    .botao__flutuante__whatsapp{
+      display: none;
+    }
+    /* Header */
+    #navegaçao__mobile { 
+      display: block;
+    }
+    #menu__mobile {
+      display:none;
+      width: 100%;
+    }
+  
+    .cabeçalho__container {
+      height: fit-content;
+    }
+    .cabeçalho__titulo__logo__container {
+      height:3.5em;
+      width: 50%;
+      align-items: center;
+    }
+  
+    .logo__cabeçalho__img {
+      padding: 2%;
+      width: 20vw;
+      position: relative;
+    }
+    .cabeçalho__titulo__container {
+      align-items: center;
+    }
+    .cabeçalho__titulo {
+      font-size: 3.2vw;
+    }
+  
+    .nav__container {
+      width: 50%;
+    }
+    .nav__container__menu {
+      flex-grow: 1;
+    }
+  
+    .nav__menu__itens__link {
+      font-weight: bold;
+  
+      height: 3.5em;
+      font-size:1em;
+    }
+    .nav__container__menu li ol {
+      overflow: hidden;
+      height:22em;
+      width: 50%;
+      
+  
+      margin-top: 3.59em;
+      border-radius: 0 0 0 10px;
+    }
+    .nav__container__menu ol li a {
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+    /* ---------------- */
+  
+    /* Banner */
+    .texto__banner {
+      font-size: 6.5vh;
+      line-height: 1.5em;
+    }
+    .texto__banner__container h2 {
+      font-size: 2.5vh;
+    }
+    .texto__banner__container p {
+      font-size: 2.5vh;
+    }
+    .seçao__banner__container {
+  
+      background-attachment:fixed;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      
+    }
+    /* ---------------- */
+  
+    /* Seção Perguntas */
+    .seçao__perguntas__container {
+      display: none;
+    }
+    /* ---------------- */
+    
+    /* Seção serviços */
+    .primeiro-bloco__serviços, .segundo-bloco__serviços {
+      display: flex;
+      width: 100vw;
+      flex-flow: column wrap-reverse;
+      
+  
+      padding: 5% 0;
+    }
+    .blocos__serviços__container {
+      display: flex;
+      flex-flow: row wrap;
+      flex-grow: 1;
+    }
+    .primeiro-bloco__lista__item, .segundo-bloco__lista__item {
+      display: none;
+    }
+    .primeiro-bloco__lista__titulo, .segundo-bloco__lista__titulo{
+      margin: 0 0 5% 0;
+      width: 100vw;
+    }
+    .ver-mais__container--primeiro-bloco, .ver-mais__container--segundo-bloco {
+      margin: 5% auto;
+    }
+    /* ---------------- */
+  
+    /* Celular Botoes */
+    .orçamento__titulo{
+      font-size: 6vw;
+    } 
+    .orçamento__subtitulo {
+      font-size: 4.5vw;
+      padding: 0 1%;
+    }
+    
+    .celular__container {
+      display: none;
+    }
+  
+    .botoes__container {
+      padding: 10%;
+    }
+    .botao__email__container, .botao__whatsapp__container {
+      width: 80vw;
+      height: 30vh;
+      justify-content: space-evenly;
+    }
+    .botao__whatsapp, .botao__email {
+        width: 70vw;
+        height:10vh;
+    }
+  
+    .icone__email__botao, .icone__whatsapp__botao {
+      display: none;
+    }
+    .email__texto, .whatsapp__texto {
+      font-size: 1.1em;
+    }
+    .botao__email__texto{
+      font-size: 4.4vw;
+    }
+    .botao__whatsapp__texto {
+      font-size: 5vw;
+    }
+    /* ------------------ */
+  
+    /* Ligue já */
+    .ligue-ja__container{
+      padding: 10% 0;
+    }
+    .ligue-ja__texto {
+      font-size: 6vw;
+    }
+    .ligue-ja__telefones__container {  
+      flex-grow: 1;
+      flex-flow: column wrap;
+    }
+    .ligue-ja__telefones:nth-child(3){
+      display: none;
+    }
+    .ligue-ja__telefones {
+      font-size: 8vw;;
+    }
+    .ligue-ja__img { 
+      display: none;
+    }
+    /* ------------------ */
+  
+    /* Seção Avaliação */
+    .titulo__texto__container--posiçao {
+      width: 100%;
+      flex-flow: column;
+      padding: 10% 0;
+    }
+    .titulo__texto, .titulo__texto--destaque {
+    font-size: 5vw;
+    line-height: 2em;
+    text-align: center;
+    }
+  
+    .avaliaçao__comentario__container {
+      background-size: cover;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60vh;
+    }
+    .avaliaçao__imagens__container {
+      background: rgba(32,33,36,255);
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+    }
+    .fazer-comentario__container {
+    width: 80vw;
+    height: 50vh;
+    flex-wrap: nowrap;
+    }
+    .comentarios__orçamento__container {
+      margin-top: 6vh;
+  }
+    .comentarios__texto {
+      font-size: 3vw;
+      line-height: 7vh;  
+    }
+    .comentarios__texto--subtitulo {
+      font-size: 3.5vw;
+      line-height: 7vh;
+    }
+    .comentarios__link {
+      font-size: 3.5vw;
+      font-weight: lighter;
+      padding: 0;
+    }
+    .comentarios__link__texto {
+      font-weight: bold;
+      font-size: 3vw;
+    }
+    /* ------------------ */
+  
+    /* Seção Localização */
+    .seçao__localizaçao__container {
+      padding: 2.5% 0 0 0;
+      border-bottom: none;
+    }
+    .localizaçao__img {
+      width: 30%;
+      height: auto;
+    }
+    .localizaçao__texto{
+      font-size: 7vw;
+      line-height: 2.5em;
+    }
+    .localizaçao__texto--subtitulo {
+      font-size: 5vw;
+      line-height:1.5em;
+      text-align: center;
+      padding-bottom: 5%;
+    }
+    .mapa__container {   
+      width: 100%;
+      margin: 0;
+    }
+    .mapa{
+      height: 50vh;
+    }
+    .fotos__banca__container {
+    display: none;
+    }
+    .endereço__container {
+    padding: 5% 2%;
+    }
+    .endereço__texto {
+      text-align: center;
+  
+      font-size: 4.5vw;  
+      line-height:2em;
+    }
+    .endereço__texto--subtitulo {
+      font-size: 3vw;  
+      line-height:2em;
+    }
+    /* ------------------ */
+  
+    /* Blog Abriu chaveiro */
+    .seçao__blog__container {
+      margin-bottom: 10%;
+    }
+    .blog__titulo__container {
+      height: 30vh;
+    }
+    .blog__titulo {
+      font-size: 7.5vw;
+      line-height: 2em;
+    }
+    .blog__subtitulo {
+      font-size: 4.5vw;
+      line-height: 2em;
+      text-align:center;
+    }
+    .blog {
+      width: 100%;
+      height: 50vh;
+    }
+    /* ------------------ */
+  
+    /* Rodapé */
+    .rodape__container {
+      height: auto;
+      flex-direction: column;
+      align-items:center;
+      justify-content: space-evenly;
+    }
+    .pagamento__texto {
+      font-size: 4.2vw;
+      font-weight: bold;
+      color: goldenrod;
+      
+    }
+    .pagamento__container {
+      order: 1;
+      width: 100%;
+      padding: 10% 0.5em 0 0.5em;
+      margin: 0;
+      justify-content: end;
+      flex-grow: 1;
+    }
+    .pagamento__img {
+    
+      width: 100%;
+      margin: 5% 0 0 0;
+    }
+  
+   
+    .botao__telefone__rodape_texto {
+      
+      font-family: 'Open Sans', sans-serif;
+      
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 4vw;
+    }
+   
+    .botao__whatsapp__rodape_texto {
+      
+      font-family: 'Open Sans', sans-serif;
+      
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 3.5vw;
+    }
+    .botao__telefone__rodape, .botao__whatsapp__rodape {
+      margin-top: 15%;
+      width: 45vw;
+      height: 8vh;
+    }
+    /* ----*/
+  
+    /* Copyright */
+    .copyright {
+      width: 100%;
+      height: 15vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em;
+    }
+    .copyright p {
+      font-size: 3vw;
+      font-weight: bold;
+      line-height: 2em;
+    }
+    /* ----*/
+}
+

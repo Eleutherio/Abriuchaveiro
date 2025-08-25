@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abriu Chaveiro - Contato</title>
+    <script type="module" src="../Js/validacao.js"></script>
+    <script src="/Js/incluir-header-footer.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="shortcut icon" href="../assets/img/logo_cabecalho.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/contato/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link link rel="stylesheet" media="(max-width: 800px)" href="../CSS/contato/contato-mobile.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+   
+    <main>
+        <section class="seçao__titulo__principal">
+            <img src="../assets/img/background.jpg" alt="background" class="seçao__titulo__principal--background">
+            <div class="titulo__principal__container">
+                <h1 class="titulo__principal"> Entre em contato conosco</h1>
+                <h2 class="subtitulo__principal">Tire todas as suas dúvidas ou solicite um orçamento.</h2>
+            </div>
+        </section>
+
+        <section class="seçao__formulario">
+            <div class="seçao__formulario__container">
+                <form action="../formulario.php" method="post" id="form">
+                    <fieldset>
+                        <legend class="formulario__titulo">
+                            <h1>Insira seus dados</h1>
+                            <h2>Atendimento 24h em Porto Alegre</h2>
+                        </legend>
+                        <p class="nome__container">
+                            <label for="input--nome" class="label">Nome</label>
+                            <input type="text" id="input--nome" name="input--nome" required placeholder="Informe o seu nome">
+                            <div id="tooltip-nome" class="tooltip">Informe um nome com pelo menos 3 caracteres.</div>
+                        </p>
+                        <div class="email-telefone__container">
+                            <p>
+                                <label for="input--email" class="label">E-mail</label>
+                                <input type="email" id="input--email" name="input--email" required placeholder="exemplo@gmail.com" maxlength="30" autocomplete="email">
+                            </p>
+                            <p>
+                                <label for="input--telefone" class="label">Telefone</label>
+                                <input type="tel" id="input--telefone" name="input--telefone" required placeholder="(51) xxxxx-xxxx" inputmode="tel">
+                            </p>
+                        </div>
+                        <div class="bairro-servicos__container">
+                            <p>
+                                <label for="input--bairro" class="label">Bairro</label>
+                                <input type="text" id="input--bairro" name="input--bairro" required placeholder="Informe o seu bairro">
+                            </p>
+                            <p>
+                                <label for="select" class="label">Tipo de serviço:</label>
+                                <select id="select" name="tipo_servico" form="form">
+                                    <option value="0" disabled selected>Selecione</option>
+                                    <option value="1">Residencial</option>
+                                    <option value="2">Empresa</option>
+                                    <option value="3">Escola</option>
+                                </select>
+                            </p>                            
+                        </div>
+                        <div class="textarea-submit__container">
+                            <p class="mensagem__container">Como posso te ajudar? (inclua detalhes)
+                                <textarea name="mensagem" cols="50" rows="10" placeholder="Escreva sua mensagem..."></textarea>
+                            </p>
+                            <p class="submit__container">
+                                <input type="submit" value="Enviar" id="submit" form="form">
+                            </p>
+                        </div>
+                    </fieldset>
+                </form>          
+                <div id="loading">
+                    Enviando mensagem<span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span>
+                  </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape__container">
+
+            <a href="tel:+5551982323232"><button type="text" class="botao__telefone__rodape">
+                    <p class="botao__telefone__rodape_texto">Ligue Agora</p>
+                </button></a>
+            <a href="https://api.whatsapp.com/send/?phone=5551982323232&text&type=phone_number&app_absent=0"><button
+                    type="text" class="botao__whatsapp__rodape">
+                    <p class="botao__whatsapp__rodape_texto">Mande Uma Mensagem</p>
+                </button></a>
+            <div class="pagamento__container">
+                <p class="pagamento__texto">Aceitamos as principais formas de pagamento:</p>
+                <img src="./assets/img/pagamento.png" class="pagamento__img">
+            </div>
+        </section>
+
+        <section class="copyright">
+            <p>© Abriu Chaveiro - Todos os Direitos Reservados</p>
+            <p>Desenvolvido por guifer.3097@hotmail.com</p>
+        </section>
+    </footer>
+</body>
+
+</html>

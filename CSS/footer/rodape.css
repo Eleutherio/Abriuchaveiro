@@ -1,0 +1,233 @@
+
+/* rodapé */
+.rodape__container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  
+  background: rgb(49, 49, 49);
+  border-style: solid;
+  border-color: goldenrod;
+  border-width:  0 0 6px 0;
+  
+  bottom: 0 !important;
+  width: 100%;
+  height: 50vh;
+}
+.pagamento__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 0.5em;
+}
+
+.pagamento__texto {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: goldenrod;
+}
+.pagamento__img {
+  width: 100%;
+  padding-top: 2.5%;
+}
+
+.botao__telefone__rodape {
+   margin-top: 15%;
+  width: 20vw;
+  height: 8vh;
+  background: rgb(255 70 0);
+  border: transparent;
+  border-radius: 4em;
+  box-shadow: 0px 0px 30px rgba(255, 68, 0, 0.74);
+}
+.botao__telefone__rodape_texto {
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.5vw;
+}
+.botao__whatsapp__rodape {
+
+  width: 20vw;
+  height: 8vh;
+  background: rgb(52, 175, 35);
+
+  border: transparent;
+  border-radius: 4em;
+  box-shadow: 0px 0px 30px rgba(52, 175, 35, 0.45); 
+}
+.botao__whatsapp__rodape_texto {
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.5vw;
+}
+
+.botao__telefone__rodape:hover,.botao__whatsapp__rodape:hover {
+  
+  filter: brightness(70%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* --------------------- */
+
+/* copyright no rodapé */
+.copyright {
+  
+  background: rgb(97, 97, 97);
+  
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding:1.5em;
+}
+.copyright p {
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  color: #000000;
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 2em;
+}
+/* ------------------- */
+/* MOBILE CELULARES*/
+@media only screen and (min-width:360px) and (max-width: 480px){ 
+/* Rodapé */
+.rodape__container {
+  height: auto;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.pagamento__texto {
+  font-size: 3.9vw;
+  font-weight: bold;
+  color: goldenrod;
+  
+}
+.pagamento__container {
+  order: 1;
+  width: 100%;
+  padding: 10% 0.5em 0 0.5em;
+  margin: 0;
+  justify-content: end;
+  flex-grow: 1;
+}
+.pagamento__img {
+
+  width: 100%;
+  margin: 5% 0 0 0;
+}
+
+.botao__telefone__rodape_texto {
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 4vw;
+}
+.botao__whatsapp__rodape_texto {
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 3.5vw;
+}
+.botao__telefone__rodape, .botao__whatsapp__rodape {
+  margin-top: 15%;
+  width: 45vw;
+  height: 8vh;
+}
+/* ---------- --*/
+
+/* Copyright */
+.copyright {
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+.copyright p {
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 2em;
+}
+/* ------------------- */
+}
+/* MOBILE TABLET*/
+@media only screen and (min-width:481px) and (max-width: 768px) {
+/* Rodapé */
+.rodape__container {
+  height: auto;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.pagamento__texto {
+  font-size: 3.9vw;
+  font-weight: bold;
+  color: goldenrod;
+  
+}
+.pagamento__container {
+  order: 1;
+  width: 100%;
+  padding: 10% 0.5em 0 0.5em;
+  margin: 0;
+  justify-content: end;
+  flex-grow: 1;
+}
+.pagamento__img {
+
+  width: 100%;
+  margin: 5% 0 0 0;
+}
+
+.botao__telefone__rodape_texto {
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 4vw;
+}
+.botao__whatsapp__rodape_texto {
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 4vw;
+}
+.botao__telefone__rodape, .botao__whatsapp__rodape {
+  margin-top: 15%;
+  width: 60vw;
+  height: 8vh;
+}
+/* ---------- --*/
+
+/* Copyright */
+.copyright {
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+.copyright p {
+  font-size: 3.2vw;
+  font-weight: bold;
+  line-height: 2em;
+}
+/* ------------------- */
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";       /* Define a codificação da folha de estilo para Unicode UTF-8 */
+@import url(../CSS/header/cabeçalho.css);
+@import url(../CSS/footer/rodape.css);
+
+* {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif; 
+    box-sizing: border-box;
+}
+
+main {
+    display: block;
+    width: 100%;
+    line-height: 100vh;
+    text-align: center;
+
+    background-color: rgb(233, 233, 233);
+}
+
+.error_container {
+
+    background-color: rgba(141, 141, 141, 0.432);
+    border: 10px solid transparent;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5em;
+}
