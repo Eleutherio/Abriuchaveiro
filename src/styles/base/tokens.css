@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+:root {
+  --font-family-base: "Open Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-xs: 0.78rem;
+  --font-size-sm: 0.9rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.22rem;
+  --font-size-xl: 1.6rem;
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.65;
+
+  --color-brand: #d69a13;
+  --color-brand-strong: #be8b18;
+  --color-brand-soft: rgba(214, 154, 19, 0.18);
+
+  --color-text-strong: #151515;
+  --color-text: #303030;
+  --color-text-soft: #4a4a4a;
+  --color-text-inverse: #f8f8f8;
+
+  --color-surface: rgba(255, 255, 255, 0.96);
+  --color-surface-soft: rgba(251, 248, 241, 0.93);
+  --color-dark-surface: rgba(17, 20, 26, 0.94);
+  --color-dark-surface-2: rgba(13, 16, 22, 0.96);
+  --color-page-bg: #d8dde5;
+
+  --space-2xs: 0.35rem;
+  --space-xs: 0.55rem;
+  --space-sm: 0.8rem;
+  --space-md: 1rem;
+  --space-lg: 1.4rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 10px 22px rgba(0, 0, 0, 0.14);
+  --shadow-md: 0 18px 34px rgba(35, 26, 6, 0.1);
+  --shadow-lg: 0 24px 44px rgba(35, 26, 6, 0.16);
+  --shadow-xl: 0 24px 80px rgba(0, 0, 0, 0.45);
+
+  --z-base: 1;
+  --z-overlay: 20;
+  --z-floating: 1000;
+  --z-consent: 1600;
+
+  --section-pad-block: clamp(2.9rem, 5.5vw, 5.1rem);
+  --section-container-width: min(1240px, 92vw);
+  --focus-ring-color: rgba(214, 154, 19, 0.62);
+}

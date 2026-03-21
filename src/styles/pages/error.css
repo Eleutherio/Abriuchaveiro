@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding: 7rem 1rem 3rem;
+  background-color: rgb(233, 233, 233);
+}
+
+.error_container {
+  background-color: rgba(141, 141, 141, 0.432);
+  border: 10px solid transparent;
+  border-radius: 10px;
+  padding: clamp(1.2rem, 6vw, 3rem);
+  font-size: clamp(1rem, 2.2vw, 2rem);
+  display: inline-grid;
+  gap: 0.8rem;
+  line-height: 1.5em;
+}
+
+.error_container a {
+  color: #b68512;
+}
+
+.error_container a:hover {
+  color: #8c660d;
+}

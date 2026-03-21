@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1100px) {
+  .titulo-principal__container {
+    margin-top: 20%;
+    padding: 3.2% 0;
+  }
+
+  .titulo__principal {
+    font-size: clamp(1.5rem, 4.8vw, 2.2rem);
+  }
+
+  .subtitulo__principal {
+    font-size: clamp(1rem, 3vw, 1.35rem);
+    line-height: 1.45;
+    padding: 0 1rem;
+  }
+
+  .secao-formulario__container {
+    width: min(92%, 760px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .titulo-principal__container {
+    margin-top: 28%;
+    padding: 4.2% 0;
+  }
+
+  .secao-formulario__container {
+    width: min(94%, 620px);
+    padding: 1rem;
+  }
+
+  .email-telefone__container,
+  .bairro-servicos__container {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .email-telefone__container p:first-child,
+  .bairro-servicos__container p:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .bairro-servicos__container input,
+  .bairro-servicos__container p select:nth-child(2) {
+    width: 100%;
+  }
+
+  .submit__container input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+
+  .formulario__marca {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .formulario__titulo h1,
+  .formulario__titulo h2,
+  .formulario__marca-titulo,
+  .formulario__marca-subtitulo {
+    line-height: 1.35;
+  }
+
+  .formulario__titulo h1,
+  .formulario__marca-titulo {
+    font-size: clamp(1.25rem, 5vw, 1.7rem);
+  }
+
+  .formulario__titulo h2,
+  .formulario__marca-subtitulo {
+    font-size: clamp(1rem, 4.2vw, 1.3rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo-principal__container {
+    margin-top: 33%;
+    padding: 5.2% 0;
+  }
+
+  .titulo__principal {
+    font-size: 1.35rem;
+    padding: 0 0.8rem;
+  }
+
+  .subtitulo__principal {
+    font-size: 0.95rem;
+  }
+
+  .secao-formulario__container {
+    width: 95%;
+    padding: 0.8rem;
+  }
+
+  fieldset {
+    padding: 0.95rem;
+  }
+
+  .label,
+  .mensagem__container {
+    font-size: 1rem;
+  }
+
+  .nome__container input,
+  .email-telefone__container input,
+  .bairro-servicos__container input,
+  .bairro-servicos__container p select:nth-child(2),
+  .mensagem__container textarea {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.reviews-section {
+  width: 100%;
+  padding: var(--section-pad-block) 0;
+  display: flex;
+  justify-content: center;
+  background:
+    linear-gradient(
+      165deg,
+      rgba(29, 34, 44, 0.94) 0%,
+      rgba(14, 18, 24, 0.95) 100%
+    ),
+    rgba(9, 12, 17, 0.94);
+}
+
+.google__reviews {
+  width: min(1220px, 100%);
+  height: auto;
+  max-height: none;
+  min-height: 0;
+  display: block;
+  overflow: visible;
+}
+
+.google__reviews > [class^="elfsight-app-"],
+.google__reviews > [data-elfsight-app-lazy] {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+}
+
+.google__reviews iframe {
+  width: 100% !important;
+  border: 0;
+}
+
+.google__reviews--consent {
+  position: relative;
+  min-height: clamp(360px, 48vw, 680px);
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 18% 18%,
+      rgba(255, 193, 74, 0.1) 0%,
+      transparent 34%
+    ),
+    linear-gradient(160deg, #1d222c 0%, #0f1318 100%);
+  box-shadow:
+    0 22px 48px rgba(18, 20, 24, 0.16),
+    0 1px 0 rgba(255, 255, 255, 0.04) inset;
+}
+
+.google__reviews__widget {
+  position: relative;
+  z-index: var(--z-base);
+  min-height: inherit;
+  opacity: 0;
+  transition: opacity 0.24s ease;
+}
+
+.google__reviews--consent.is-consented .google__reviews__widget {
+  opacity: 1;
+}
+
+.google__reviews__fallback {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-overlay);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: clamp(1.2rem, 2.5vw, 2rem);
+  background: linear-gradient(
+    145deg,
+    rgba(13, 17, 22, 0.94) 0%,
+    rgba(22, 25, 31, 0.96) 100%
+  );
+}
+
+.google__reviews--consent.is-consented .google__reviews__fallback {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.24s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .google__reviews {
+    width: min(1000px, 96%);
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .google__reviews {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .google__reviews {
+    width: 98%;
+  }
+}

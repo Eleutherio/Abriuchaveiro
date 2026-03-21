@@ -1,0 +1,38 @@
+# Dependências e binários
+/vendor/
+/vendor-bin/
+/composer.phar
+
+# Ambiente e segredos
+/.env
+.env.*
+!/.env.exemple
+
+# Cache e logs
+*.log
+/.phpunit.result.cache
+/tmp/
+/cache/
+
+# Builds e artefatos
+/dist/
+/build/
+/coverage/
+/.nyc_output/
+
+# Node (caso use ferramentas)
+/node_modules/
+
+# IDE/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# Outros temporários
+*.swp
+*.swo
+*.tmp

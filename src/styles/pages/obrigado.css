@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(180deg, #efefef 0%, #e0e0e0 100%);
+  color: rgb(32, 33, 36);
+  font-family: "Noto Sans", sans-serif;
+}
+
+.obrigado {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 8rem 1.5rem 3rem;
+}
+
+.obrigado__card {
+  width: min(100%, 42rem);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(218, 165, 32, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.obrigado__titulo {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.obrigado__texto {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.obrigado__link {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  background: goldenrod;
+  color: #111;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.obrigado__link:hover {
+  background: rgb(180, 136, 24);
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .obrigado {
+    padding-top: 6rem;
+  }
+
+  .obrigado__card {
+    padding: 2rem 1.2rem;
+  }
+
+  .obrigado__texto {
+    font-size: 1rem;
+  }
+}

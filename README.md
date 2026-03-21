@@ -1,80 +1,113 @@
-# 🔐 Abriu Chaveiro
+# Abriu Chaveiro
 
-Sistema web para registro e análise de pedidos de um chaveiro local. O objetivo é criar uma solução completa — do formulário de pedidos até relatórios estratégicos — utilizando HTML, CSS, JavaScript, Python (Flask) e SQLite.
+Website institucional para a marca Abriu Chaveiro.  
+O objetivo deste projeto é criar uma solução completa para o cliente, da landing page institucional ao SEO estratégico e à segurança da informação, buscando o máximo de desempenho possível.
 
-🔗 [Acesse o site](https://eleutherio.github.io/Abriuchaveiro/)
-🔗 [Link alternativo](https://abriuchaveiroapp.vercel.app/)
+Direitos de marca foram previamente concedidos a mim para a finalidade de portfólio. Após finalizado, o projeto será destinado integralmente à Abriu Chaveiro.
+
+- Acesse o site: https://eleutherio.github.io/Abriuchaveiro/
+- Link alternativo: https://abriuchaveiroapp.vercel.app/
 
 ---
-Antes de começar:
 
-1 - Este é o meu primeiro projeto e feito totalmente por mim. Foi pensado como um projeto único em que eu pudesse aplicar todos os conhecimentos adiquiridos em cursos e na minha atual graduação, o conceito principal foi unificar aprendizado e trabalho.
+## Antes de comecar
 
-1.1 - É um projeto idealizado tanto para o cliente quanto para a empresa, onde me desafiei também a reformular a estética pré existente e aplicar meus conhecimentos, recursos e tecnologias da atualidade.
-
-1.2 - Ao analisar esse projeto, tenha em mente que irá conter erros. Até que o projeto esteja em produção o intuito aqui é servir de laboratório de aprendizagem.
-
-1.3 Os erros nem sempre condizem com minha capacidade atual de desenvolvimento, por se tratar de um projeto extenso eu opto sempre por trabalhar partes isoladas do código, e isso pode demorar. 
-
-2 - Qualquer sugestão ou duvida entre em contato comigo na seção "Contato" no final desta documentação, serei grato em responder!
+1. Este é o meu primeiro projeto e foi feito exclusivamente por mim. Foi pensado como um projeto único em que eu pudesse aplicar os conhecimentos adquiridos em cursos e na minha graduação. O conceito principal foi unificar aprendizado e portfólio profissional.
+2. Este projeto foi construído 100% sob demanda do cliente. Também me foi solicitado recriar a logo, mantendo a identidade visual da marca.
+3. Ao analisar este projeto, tenha em mente que ele ainda pode conter erros.
+4. Qualquer sugestão ou dúvida, entre em contato comigo na seção "Contato", no final desta documentacao.
 
 ---
 
 ## Objetivo
 
-Este projeto foi desenvolvido como laboratório de aprendizado em desenvolvimento (fullstack), com foco em resolver um problema real de pequenos negócios: o registro e análise de serviços prestados bem como criar uma presença profissional online.
+Este projeto foi desenvolvido como laboratório de aprendizado em desenvolvimento fullstack, com foco em resolver um problema real de pequenos negócios: registro e análise de serviços prestados, além de criar uma presença profissional online.
 
-Além do cadastro de pedidos via formulário, a aplicação vai fornecer ao cliente:
-- Visualização de serviços prestados
-- fácil acesso às formas de contato e de pagamento dos serviços
-- Blog com dicas de segurança, cuidados e muito mais
-- Google maps integrado no site com a localização exata da empresa
-- Pagina dedicada sobre a empresa.
+### Valor para o cliente
 
-Além de receber os pedidos via formulário, a aplicação vai fornecer para o empresário:
-- Visualização de perfis de clientes
-- Relatórios de serviços mais solicitados
-- Horários e bairros de maior demanda
-- Exportação de dados
-- contato direto no WhatsApp
+- Visualização de avaliações reais.
+- Visualização de serviços prestados.
+- Fácil acesso às formas de contato e pagamento.
+- Google Maps integrado no site, com localização exata da empresa
+- Página dedicada à empresa.
+- Política de cookies clara e opcional para o cliente.
+
+### Valor para o empresario
+
+- Formulário de contato anti-bot.
+- Contato direto via WhatsApp
+- CTA em diversos locais da pagina
+- SEO configurado
+- Desempenho e rápido carregamento.
+
 ---
 
-## Tecnologias Utilizadas
+## Diferenciais do Projeto
 
-**Front-End:**
+- Mobile first: experiência priorizada para telas menores, com navegação otimizada no menu hambúrguer e ações rápidas.
+- Avaliacoes em destaque: secoes dedicadas ao reforco de prova social e confianca.
+- Protecao anti-bot no formulario, com reCAPTCHA no fluxo de contato.
+- Integracao com Google Maps para localizacao precisa da empresa.
+- Acesso rapido por WhatsApp e telefone em diferentes pontos da interface.
+- Estrutura com parciais reutilizaveis (header, footer e blocos), para manutencao mais eficiente.
+- Presenca online com deploy ativo em mais de um ambiente.
+
+---
+
+### Tecnologias Utilizadas
+
 - HTML5
 - CSS3
 - JavaScript (Fetch API)
 
-**Back-End (em desenvolvimento):**
-- Python + Flask
-- Flask-SQLAlchemy (ORM)
-- SQLite3 (banco local, com futura migração para PostgreSQL)
+### Outros
 
-**Outros:**
 - Git e GitHub
-- Deploy front-end via GitHub Pages
+- Deploy via GitHub Pages e Vercel
+
+---
+
+## Stack de Desenvolvimento
+
+### Camada de interface
+
+- HTML semantico
+- CSS modular por pastas (`base`, `layout`, `components`, `sections`, `pages`)
+- JavaScript para interacoes, navegacao e carregamento de parciais
+
+### Camada de servico e dados
+
+- API serverless para envio de contato
+- Integracao com servicos externos (ex.: formulario e mapas)
+- Planejamento de evolucao para backend Flask, com persistencia relacional
+
+### Operacao e entrega
+
+- Versionamento com Git/GitHub
+- Publicacao em ambiente estatico e em ambiente alternativo de hospedagem
 
 ---
 
 ## Conceitos Aplicados
 
-- POO com Python e Javascript
+- POO com JavaScript
 - Estrutura MVC aplicada
-- Análise de requisitos
-- Diagramação UML
+- Analise de requisitos
+- Diagramacao UML
 - Principios de acessibilidade digital
 - Arquitetura em camadas
 - Clean Code
-- Metodologias ágeis (Scrum pessoal)
 
 ---
 
 ## Contato
-Feito por Guilherme Ferreira Eleuthério
-📍 Porto Alegre - RS
-📧 eleutherio.profissional@gmail.com
-📱 Fale comigo no WhatsApp: 51994055984
 
-Este projeto é parte do meu portfólio como estudante de Análise e Desenvolvimento de Sistemas, com foco em construir soluções completas e aplicáveis ao mundo real.
-Direitos de marca foram previamente concedidos a mim para a finalidade de estudo. O projeto após finalizado será destinado integralmente ao detentor da dos direitos da marca.
+Se voce quiser contribuir com feedback tecnico, revisar codigo, discutir arquitetura ou trocar ideia sobre oportunidades, vamos conversar.
+
+- Portfolio/projeto: https://eleutherio.github.io/Abriuchaveiro/
+- GitHub: https://github.com/Eleutherio
+- E-mail: contato@guifer.tech
+- WhatsApp: 51994055984
+
+Guilherme Ferreira Eleutherio  
+Porto Alegre - RS

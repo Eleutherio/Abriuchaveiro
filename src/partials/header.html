@@ -1,0 +1,100 @@
+﻿<header id="cabecalho" class="cabecalho__container">
+  <section class="cabecalho__titulo__logo__container">
+    <a href="index.html" aria-label="Voltar para a página inicial">
+      <img
+        src="../assets/img/logo_cabecalho.png"
+        alt="Logo Abriu Chaveiro"
+        class="logo__cabecalho__img"
+      />
+
+      <div class="cabecalho__titulo__container">
+        <p class="cabecalho__titulo">Abriu Chaveiro - 24h</p>
+      </div>
+    </a>
+  </section>
+
+  <nav class="container__menu__navegacao" aria-label="Navegação principal">
+    <ul class="container__menu__navegacao__lista">
+      <li class="container__menu__navegacao__lista--indices" id="menu__dropdown">
+        <a href="index.html" class="dropdown--hover"
+          >Início
+          <img
+            src="../assets/img/dropdown.svg"
+            alt="Ícone do menu"
+            class="dropdown--arrow"
+          />
+        </a>
+        <ul class="container__dropdown">
+          <li><a href="index.html#referencia-de-navegacao--orcamento">Orçamento</a></li>
+          <li><a href="index.html#referencia-de-navegacao--avaliacao">Avaliações</a></li>
+          <li>
+            <a href="index.html#referencia-de-navegacao--localizacao">Localização</a>
+          </li>
+        </ul>
+      </li>
+      <li class="container__menu__navegacao__lista--indices">
+        <a href="index.html#referencia-de-navegacao--servicos">Serviços</a>
+      </li>
+      <li class="container__menu__navegacao__lista--indices">
+        <a href="contato.html">Contato</a>
+      </li>
+      <li class="container__menu__navegacao__lista--indices">
+        <a href="sobre.html">Sobre</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="mobile-header__quick-actions" aria-label="Ações rápidas">
+    <button
+      type="button"
+      class="mobile-header__toggle"
+      aria-label="Abrir menu"
+      aria-controls="mobile-menu-panel"
+      aria-expanded="false"
+    >
+      <span class="mobile-header__toggle-line"></span>
+      <span class="mobile-header__toggle-line"></span>
+      <span class="mobile-header__toggle-line"></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu-panel" hidden>
+  <button
+    type="button"
+    class="mobile-menu__backdrop"
+    data-mobile-menu-close
+    aria-label="Fechar menu"
+  ></button>
+
+  <nav class="mobile-menu__panel" aria-label="Navegação mobile">
+    <button
+      type="button"
+      class="mobile-menu__cookie-action"
+      data-cookie-settings
+      aria-label="Abrir preferências de cookies"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M21.5 13.1a7.9 7.9 0 0 1-7.88 8.4A8.12 8.12 0 0 1 5.5 13.3c0-4.44 3.6-8.06 8.06-8.06h.39a3.47 3.47 0 0 0 4.9 4.9h.2c1.4 0 2.56 1.13 2.45 2.56v.41ZM9 11a1.25 1.25 0 1 0 0 2.5A1.25 1.25 0 0 0 9 11Zm3.9 3.6a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm2.35-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-6.7-2.05a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"
+        />
+      </svg>
+      <span>Preferências de cookies</span>
+    </button>
+
+    <div class="mobile-menu__group mobile-menu__group--sections">
+      <p class="mobile-menu__group-title">Seções da página</p>
+      <ul class="mobile-menu__list" data-mobile-sections></ul>
+    </div>
+
+    <div class="mobile-menu__group mobile-menu__group--pages">
+      <p class="mobile-menu__group-title">Outras páginas</p>
+      <ul class="mobile-menu__list mobile-menu__list--pages">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

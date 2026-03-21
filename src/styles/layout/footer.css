@@ -1,0 +1,493 @@
+﻿.site-footer {
+  position: relative;
+  z-index: 1200;
+  width: 100%;
+  color: rgba(245, 245, 245, 0.9);
+  background: linear-gradient(
+    180deg,
+    #1c2533 0%,
+    #16212f 58%,
+    #3a434d 58%,
+    #333b45 100%
+  );
+  border-top: 1px solid var(--color-brand);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.25;
+  background-image:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%);
+  background-size: 18px 18px;
+  background-position: 0 0, 9px 9px;
+}
+
+.rodape__container {
+  position: relative;
+  z-index: 1;
+  width: min(1240px, 92vw);
+  margin: 0 auto;
+  padding: clamp(1.4rem, 2.8vw, 2.4rem) 0 clamp(1rem, 2vw, 1.4rem);
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr 1fr;
+  grid-template-areas:
+    "identidade atalhos acao"
+    "pagamento pagamento pagamento";
+  gap: clamp(0.95rem, 1.9vw, 1.45rem);
+}
+
+.rodape__coluna {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+.rodape__coluna--identidade,
+.rodape__coluna--atalhos,
+.rodape__coluna--acao {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: linear-gradient(
+    165deg,
+    rgba(31, 43, 61, 0.34),
+    rgba(15, 22, 31, 0.26)
+  );
+  padding: clamp(0.95rem, 1.8vw, 1.2rem);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.rodape__coluna--identidade {
+  grid-area: identidade;
+  gap: 0.62rem;
+}
+
+.rodape__coluna--atalhos {
+  grid-area: atalhos;
+  gap: 0.72rem;
+}
+
+.rodape__coluna--atalhos .rodape__titulo {
+  letter-spacing: 0.04em;
+}
+
+.rodape__coluna--acao {
+  grid-area: acao;
+  gap: 0.7rem;
+}
+
+.rodape__coluna--pagamento {
+  grid-area: pagamento;
+  gap: 0.72rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  align-items: center;
+}
+
+.rodape__marca {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.rodape__logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.rodape__empresa {
+  margin: 0;
+  color: var(--color-brand);
+  font-size: clamp(1rem, 1.08vw, 1.18rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.rodape__dados {
+  margin: 0;
+  font-style: normal;
+  display: grid;
+  gap: 0.14rem;
+}
+
+.rodape__linha {
+  margin: 0;
+  color: rgba(241, 241, 241, 0.88);
+  font-size: clamp(0.82rem, 0.9vw, 0.95rem);
+  line-height: 1.45;
+}
+
+.rodape__linha--cnpj {
+  color: rgba(233, 233, 233, 0.8);
+  font-weight: 600;
+}
+
+.rodape__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.rodape__social-link {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(248, 248, 248, 0.92);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.5rem 0.78rem;
+  cursor: pointer;
+}
+
+.rodape__social-link:hover {
+  border-color: var(--color-brand);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-brand);
+}
+
+.rodape__social-button {
+  font-family: inherit;
+}
+
+.rodape__titulo {
+  margin: 0;
+  color: var(--color-brand);
+  font-size: clamp(0.9rem, 0.96vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.rodape__telefone {
+  margin: 0;
+  color: #f4f4f4;
+  font-size: clamp(0.9rem, 0.98vw, 1rem);
+  font-weight: 600;
+}
+
+.rodape__acoes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.48rem;
+}
+
+.rodape__acao-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao__telefone__rodape,
+.botao__whatsapp__rodape {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 0 0.92rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.botao__telefone__rodape {
+  background: rgba(255, 112, 62, 0.9);
+  border-color: rgba(255, 150, 110, 0.44);
+}
+
+.botao__whatsapp__rodape {
+  background: rgba(35, 173, 77, 0.9);
+  border-color: rgba(93, 224, 134, 0.34);
+}
+
+.botao__telefone__rodape:hover,
+.botao__whatsapp__rodape:hover {
+  transform: translateY(-1px);
+}
+
+.botao__telefone__rodape_texto,
+.botao__whatsapp__rodape_texto {
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.rodape__atalhos-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.38rem 0.48rem;
+}
+
+.rodape__coluna--atalhos .rodape__atalhos-lista a {
+  display: inline-block;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-family: var(--font-family-base);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+}
+
+.rodape__coluna--atalhos .rodape__atalhos-lista a:link,
+.rodape__coluna--atalhos .rodape__atalhos-lista a:visited {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.rodape__coluna--atalhos .rodape__atalhos-lista a:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  opacity: 0.88;
+}
+
+.rodape__coluna--atalhos .rodape__atalhos-lista a:active,
+.rodape__coluna--atalhos .rodape__atalhos-lista a:focus-visible {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.pagamento__texto {
+  margin: 0;
+  color: var(--color-brand);
+  font-size: clamp(0.88rem, 0.95vw, 0.98rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.pagamento__lista {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.62rem;
+}
+
+.pagamento__item {
+  width: 120px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagamento__logo {
+  width: 100%;
+  max-width: 100%;
+  max-height: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.copyright {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: min(1240px, 92vw);
+  margin: 0 auto;
+  padding: 0.78rem 0 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.copyright p {
+  margin: 0;
+  color: rgba(231, 231, 231, 0.8);
+  font-size: clamp(0.72rem, 0.8vw, 0.84rem);
+  line-height: 1.4;
+}
+
+.copyright a {
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.botao__flutuante__whatsapp {
+  --floating-whatsapp-bottom: 1.2rem;
+  position: fixed;
+  z-index: 1000;
+  width: clamp(56px, 4vw, 72px);
+  right: 1rem;
+  bottom: calc(
+    var(--floating-whatsapp-bottom) + var(--footer-overlap-offset, 0px)
+  );
+}
+
+.botao__voltar__topo {
+  --floating-top-bottom: clamp(5.6rem, 9vw, 6.5rem);
+  position: fixed;
+  right: 1.06rem;
+  bottom: calc(var(--floating-top-bottom) + var(--footer-overlap-offset, 0px));
+  z-index: 999;
+  min-height: 2rem;
+  padding: 0.32rem 0.66rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(10, 12, 17, 0.34);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-decoration: none;
+  color: rgba(246, 246, 246, 0.92);
+  font-size: 0.74rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.botao__voltar__topo.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.botao__voltar__topo:hover {
+  background: rgba(20, 23, 30, 0.45);
+  border-color: rgba(255, 255, 255, 0.34);
+}
+
+.botao__voltar__topo__icone {
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
+.botao__voltar__topo__texto {
+  line-height: 1;
+}
+
+@media screen and (max-width: 1080px) {
+  .rodape__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "identidade acao"
+      "atalhos atalhos"
+      "pagamento pagamento";
+  }
+
+  .rodape__atalhos-lista {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pagamento__item {
+    width: 112px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .rodape__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "identidade"
+      "acao"
+      "atalhos"
+      "pagamento";
+    gap: 0.8rem;
+    padding: 1rem 0 0.8rem;
+  }
+
+  .rodape__coluna--identidade,
+  .rodape__coluna--atalhos,
+  .rodape__coluna--acao {
+    padding: 0.85rem;
+  }
+
+  .rodape__atalhos-lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pagamento__item {
+    width: 104px;
+    min-height: 50px;
+  }
+
+  .copyright {
+    justify-content: center;
+    text-align: center;
+    padding: 0.72rem 0 0.9rem;
+  }
+
+  .botao__flutuante__whatsapp {
+    --floating-whatsapp-bottom: 0.95rem;
+    width: 56px;
+    right: 0.7rem;
+  }
+
+  .botao__voltar__topo {
+    --floating-top-bottom: 5rem;
+    right: 0.72rem;
+    min-height: 1.9rem;
+    padding: 0.29rem 0.56rem;
+    font-size: 0.67rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .rodape__atalhos-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .pagamento__item {
+    width: 96px;
+    min-height: 46px;
+  }
+
+  .pagamento__logo {
+    max-height: 24px;
+    height: 24px;
+  }
+
+  .botao__flutuante__whatsapp {
+    width: 54px;
+    right: 0.64rem;
+  }
+
+  .botao__voltar__topo {
+    right: 0.64rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .site-footer {
+    background:
+      linear-gradient(180deg, #1c2533 0%, #16212f 100%),
+      #16212f;
+  }
+}
+
+
+
+
+
+
+

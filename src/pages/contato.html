@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contato da Abriu Chaveiro 24h em Porto Alegre. Orçamento rápido para serviços residenciais, comerciais e veiculares."
+    />
+    <meta
+      name="recaptcha-site-key"
+      content="6Ldn45EsAAAAAN-6fJ0mfqE3oGxyo90Gd-Na88SZ"
+    />
+    <link rel="canonical" href="https://abriuchaveiroapp.vercel.app/contato.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contato | Abriu Chaveiro 24h" />
+    <meta
+      property="og:description"
+      content="Solicite atendimento 24h da Abriu Chaveiro em Porto Alegre com retorno em poucos minutos."
+    />
+    <meta property="og:url" content="https://abriuchaveiroapp.vercel.app/contato.html" />
+    <meta property="og:image" content="../assets/img/logo_cabecalho.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contato | Abriu Chaveiro 24h" />
+    <meta
+      name="twitter:description"
+      content="Solicite atendimento 24h da Abriu Chaveiro em Porto Alegre com retorno em poucos minutos."
+    />
+    <meta name="twitter:image" content="../assets/img/logo_cabecalho.png" />
+    <title>Abriu Chaveiro - Contato</title>
+
+    <script type="module" src="../scripts/validacao.js"></script>
+    <script src="../scripts/incluir-header-footer.js" defer></script>
+    <script src="../scripts/cookie-consent.js" defer></script>
+
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo_cabecalho.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/base/reset.css" />
+    <link rel="stylesheet" href="../styles/layout/header.css" />
+    <link rel="stylesheet" href="../styles/layout/footer.css" />
+    <link rel="stylesheet" href="../styles/base/tokens.css" />
+    <link rel="stylesheet" href="../styles/components/ui.css" />
+    <link rel="stylesheet" href="../styles/base/cookie-consent.css" />
+    <link rel="stylesheet" href="../styles/pages/contato.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 800px)"
+      href="../styles/pages/contato-mobile.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="secao-titulo-principal">
+        <img
+          src="../assets/img/background.jpg"
+          alt="Fundo de banner da página de contato"
+          class="secao-titulo-principal__background"
+        />
+        <div class="titulo-principal__container">
+          <h1 class="titulo__principal">Precisa de um chaveiro agora?</h1>
+          <h2 class="subtitulo__principal">
+            Chaveiro residencial, automotivo e comercial. Orçamento sem
+            compromisso em poucos minutos.
+          </h2>
+        </div>
+      </section>
+
+      <section class="secao-formulario">
+        <div class="secao-formulario__container">
+          <form
+            action="/api/contato"
+            method="post"
+            id="form"
+            accept-charset="UTF-8"
+            data-success-url="./obrigado.html"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Novo contato do site - Abriu Chaveiro"
+            />
+            <fieldset>
+              <legend class="formulario__titulo">
+                <div class="formulario__marca">
+                  <img
+                    src="../assets/img/logo_cabecalho.png"
+                    alt="Logo Abriu Chaveiro"
+                    class="formulario__logo"
+                  />
+                  <p class="formulario__marca-titulo">Abriu Chaveiro - 24h</p>
+                </div>
+                <p class="formulario__marca-subtitulo">
+                  Atendimento 24h em Porto Alegre
+                </p>
+              </legend>
+
+              <input
+                type="text"
+                name="_gotcha"
+                class="campo__honeypot"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+
+              <p class="nome__container">
+                <label for="input--nome" class="label">Nome</label>
+                <input
+                  type="text"
+                  id="input--nome"
+                  name="nome"
+                  required
+                  placeholder="Informe o seu nome"
+                />
+                <div id="tooltip-nome" class="tooltip">
+                  Informe um nome com pelo menos 3 caracteres.
+                </div>
+              </p>
+
+              <div class="email-telefone__container">
+                <p>
+                  <label for="input--email" class="label">E-mail</label>
+                  <input
+                    type="email"
+                    id="input--email"
+                    name="email"
+                    required
+                    placeholder="exemplo@gmail.com"
+                    maxlength="30"
+                    autocomplete="email"
+                  />
+                </p>
+                <p>
+                  <label for="input--telefone" class="label">Telefone</label>
+                  <input
+                    type="tel"
+                    id="input--telefone"
+                    name="telefone"
+                    required
+                    placeholder="(51) xxxxx-xxxx"
+                    inputmode="tel"
+                  />
+                </p>
+              </div>
+
+              <div class="bairro-servicos__container">
+                <p>
+                  <label for="input--bairro" class="label">Bairro</label>
+                  <input
+                    type="text"
+                    id="input--bairro"
+                    name="bairro"
+                    required
+                    placeholder="Informe o seu bairro"
+                  />
+                </p>
+                <p>
+                  <label for="select" class="label">Tipo de serviço:</label>
+                  <select id="select" name="tipo_servico" form="form">
+                    <option value="0" disabled selected>Selecione</option>
+                    <option value="Residencial">Residencial</option>
+                    <option value="Empresa">Empresa</option>
+                    <option value="Escola">Escola</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </p>
+              </div>
+
+              <div class="textarea-submit__container">
+                <p class="mensagem__container">
+                  Como posso te ajudar? (inclua detalhes)
+                  <textarea
+                    name="mensagem"
+                    cols="50"
+                    rows="10"
+                    placeholder="Escreva sua mensagem..."
+                  ></textarea>
+                </p>
+
+                <p class="submit__container">
+                  <input type="submit" value="Enviar" id="submit" form="form" />
+                </p>
+                <p id="form-status" aria-live="polite"></p>
+
+                <p class="recaptcha__aviso">
+                  Este site é protegido por reCAPTCHA e a Política de Privacidade
+                  e os Termos de Serviço do Google se aplicam.
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                    >Política de Privacidade</a
+                  >
+                  e
+                  <a
+                    href="https://policies.google.com/terms"
+                    target="_blank"
+                    rel="noopener noreferrer external"
+                    >Termos de Serviço</a
+                  >.
+                </p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

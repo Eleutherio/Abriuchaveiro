@@ -1,0 +1,21 @@
+{
+  "name": "abriuchaveiro",
+  "version": "1.0.0",
+  "description": "Sistema web para registro e análise de pedidos de um chaveiro local. O objetivo é criar uma solução completa — do formulário de pedidos até relatórios estratégicos — utilizando HTML, CSS, JavaScript, Python (Flask) e SQLite.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eleutherio/Abriuchaveiro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Eleutherio/Abriuchaveiro/issues"
+  },
+  "homepage": "https://github.com/Eleutherio/Abriuchaveiro#readme"
+}
