@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/src/pages/index.html"
+    },
+    {
+      "source": "/(index|sobre|contato|obrigado|error).html",
+      "destination": "/src/pages/$1.html"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/src/assets/$1"
+    },
+    {
+      "source": "/styles/(.*)",
+      "destination": "/src/styles/$1"
+    },
+    {
+      "source": "/scripts/(.*)",
+      "destination": "/src/scripts/$1"
+    },
+    {
+      "source": "/partials/(.*)",
+      "destination": "/src/partials/$1"
+    }
+  ]
+}
