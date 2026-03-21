@@ -97,9 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       window.location.href = form.dataset.successUrl || "./obrigado.html";
     } catch (error) {
+      const serverMessage = String(error?.message || "").trim();
+
       if (error?.message === RECAPTCHA_NOT_CONFIGURED) {
         formStatus.textContent =
           "ReCAPTCHA não configurado. Defina sua Site Key no meta recaptcha-site-key.";
+      } else if (serverMessage && serverMessage !== "FORM_SUBMIT_FAILED") {
+        formStatus.textContent = serverMessage;
       } else {
         formStatus.textContent =
           "Não foi possível enviar. Tente novamente em alguns instantes.";

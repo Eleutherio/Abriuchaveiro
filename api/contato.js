@@ -26,14 +26,14 @@ function isValidEmail(value) {
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
-    return res.status(405).json({ message: "Método não permitido." });
+    return res.status(405).json({ message: "Metodo nao permitido." });
   }
 
   const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY;
   if (!recaptchaSecret) {
     return res
       .status(500)
-      .json({ message: "RECAPTCHA_SECRET_KEY não configurada no servidor." });
+      .json({ message: "RECAPTCHA_SECRET_KEY nao configurada no servidor." });
   }
 
   const body = asObject(req.body);
@@ -47,7 +47,8 @@ module.exports = async (req, res) => {
   const subject =
     sanitizeText(body._subject, 180) || "Novo contato do site - Abriu Chaveiro";
 
-  const recaptchaToken = sanitizeText(body.recaptchaToken, 2048);
+  const recaptchaToken =
+    typeof body.recaptchaToken === "string" ? body.recaptchaToken.trim() : "";
   const honeypot = sanitizeText(body.honeypot, 120);
 
   if (honeypot) {
@@ -60,9 +61,10 @@ module.exports = async (req, res) => {
     telefone.replace(/\D/g, "").length < 10 ||
     bairro.length < 3 ||
     !tipoServico ||
-    !recaptchaToken
+    !recaptchaToken ||
+    recaptchaToken.length < 20
   ) {
-    return res.status(400).json({ message: "Dados inválidos no formulário." });
+    return res.status(400).json({ message: "Dados invalidos no formulario." });
   }
 
   try {
@@ -86,22 +88,52 @@ module.exports = async (req, res) => {
     });
 
     if (!verifyResponse.ok) {
-      return res.status(502).json({ message: "Falha na validação do reCAPTCHA." });
+      return res.status(502).json({ message: "Falha na validacao do reCAPTCHA." });
     }
 
     const verifyResult = await verifyResponse.json();
     const minScore = Number(process.env.RECAPTCHA_MIN_SCORE || "0.5");
 
+    const recaptchaSuccess = verifyResult?.success === true;
+    const recaptchaActionOk = verifyResult?.action === RECAPTCHA_EXPECTED_ACTION;
+    const recaptchaScoreOk =
+      typeof verifyResult?.score === "number" && verifyResult.score >= minScore;
+
     const recaptchaValido =
-      verifyResult?.success === true &&
-      verifyResult?.action === RECAPTCHA_EXPECTED_ACTION &&
-      typeof verifyResult?.score === "number" &&
-      verifyResult.score >= minScore;
+      recaptchaSuccess && recaptchaActionOk && recaptchaScoreOk;
 
     if (!recaptchaValido) {
-      return res
-        .status(403)
-        .json({ message: "Falha na verificação humana do reCAPTCHA." });
+      const errorCodes = Array.isArray(verifyResult?.["error-codes"])
+        ? verifyResult["error-codes"]
+        : [];
+      const reason = !recaptchaSuccess
+        ? "recaptcha_failed"
+        : !recaptchaActionOk
+          ? "action_mismatch"
+          : !recaptchaScoreOk
+            ? "score_too_low"
+            : "unknown";
+
+      console.warn("reCAPTCHA validation failed", {
+        reason,
+        success: verifyResult?.success,
+        action: verifyResult?.action,
+        score: verifyResult?.score,
+        minScore,
+        errorCodes,
+      });
+
+      return res.status(403).json({
+        message: "Falha na verificacao humana do reCAPTCHA.",
+        reason,
+        expectedAction: RECAPTCHA_EXPECTED_ACTION,
+        receivedAction: verifyResult?.action || null,
+        minScore,
+        receivedScore:
+          typeof verifyResult?.score === "number" ? verifyResult.score : null,
+        errorCodes,
+        tokenLength: recaptchaToken.length,
+      });
     }
 
     const formspreeEndpoint =
