@@ -1,6 +1,9 @@
+<img width="1902" height="808" alt="image" src="https://github.com/user-attachments/assets/12f35f56-4481-4a07-bcd5-9a5bdbeddb04" />
+
 # Abriu Chaveiro
 
-Website institucional para a marca Abriu Chaveiro.  
+Website institucional para a marca Abriu Chaveiro. 
+
 O objetivo deste projeto é criar uma solução completa para o cliente, da landing page institucional ao SEO estratégico e à segurança da informação, buscando o máximo de desempenho possível.
 
 Direitos de marca foram previamente concedidos a mim para a finalidade de portfólio. Após finalizado, o projeto será destinado integralmente à Abriu Chaveiro.
