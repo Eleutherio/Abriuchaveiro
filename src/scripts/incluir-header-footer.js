@@ -128,6 +128,26 @@
     );
   }
 
+  const ANO_INICIO_MERCADO = 2002;
+  const FORMATOS_ANOS_MERCADO = {
+    anos: (anos) => `${anos} anos`,
+    "ha-anos": (anos) => `Há ${anos} anos`,
+    "anos-mercado": (anos) => `${anos} anos de mercado`,
+  };
+
+  const obterAnosMercado = () =>
+    Math.max(1, new Date().getFullYear() - ANO_INICIO_MERCADO);
+
+  const atualizarAnosMercado = () => {
+    const anos = obterAnosMercado();
+    document.querySelectorAll("[data-market-years-format]").forEach((el) => {
+      const format = el.getAttribute("data-market-years-format") || "anos";
+      const formatar =
+        FORMATOS_ANOS_MERCADO[format] || FORMATOS_ANOS_MERCADO.anos;
+      el.textContent = formatar(anos);
+    });
+  };
+
   (async () => {
     try {
       await Promise.all([
@@ -139,6 +159,7 @@
         }),
       ]);
       await inserirParciaisDeclarativas();
+      atualizarAnosMercado();
       document.dispatchEvent(new CustomEvent("partials:ready"));
 
     const ajustarOffsetBotoesFlutuantes = () => {
