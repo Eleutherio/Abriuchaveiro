@@ -8,8 +8,7 @@ O objetivo deste projeto é criar uma solução completa para o cliente, da land
 
 Direitos de marca foram previamente concedidos a mim para a finalidade de portfólio. Após finalizado, o projeto será destinado integralmente à Abriu Chaveiro.
 
-- Acesse o site: https://eleutherio.github.io/Abriuchaveiro/
-- Link alternativo: https://abriuchaveiroapp.vercel.app/
+- Acesse o site: [https://eleutherio.github.io/Abriuchaveiro/](https://abriuchaveiro.vercel.app/)
 
 ---
 
