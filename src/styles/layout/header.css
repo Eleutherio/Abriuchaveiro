@@ -96,7 +96,16 @@
 }
 
 #menu__dropdown {
-  overflow: hidden;
+  overflow: visible;
+}
+
+#menu__dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max(100%, 11.5rem);
+  height: 0.7rem;
 }
 
 .dropdown--hover {

@@ -191,41 +191,6 @@
       }, 3000);
     }
 
-    const dropdown = document.querySelector("#menu__dropdown");
-    const dropdownList = document.querySelector(".container__dropdown");
-    let mouseInsideDropdown = false;
-    let mouseInsideList = false;
-
-    const showDropdown = () => {
-      if (dropdown) dropdown.style.overflow = "visible";
-    };
-
-    const hideDropdown = () => {
-      if (dropdown) dropdown.style.overflow = "hidden";
-    };
-
-    if (dropdown && dropdownList) {
-      dropdown.addEventListener("mouseenter", () => {
-        mouseInsideDropdown = true;
-        showDropdown();
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-        mouseInsideDropdown = false;
-        if (!mouseInsideList) hideDropdown();
-      });
-
-      dropdownList.addEventListener("mouseenter", () => {
-        mouseInsideList = true;
-        showDropdown();
-      });
-
-      dropdownList.addEventListener("mouseleave", () => {
-        mouseInsideList = false;
-        if (!mouseInsideDropdown) hideDropdown();
-      });
-    }
-
     const cabecalhoContainer = document.querySelector(".cabecalho__container");
     if (
       cabecalhoContainer &&
