@@ -79,12 +79,12 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
-.container__menu__navegacao__lista a.active {
+.container__menu__navegacao__lista > .container__menu__navegacao__lista--indices > a.active {
   position: relative;
   color: #f3f3f3;
 }
 
-.container__menu__navegacao__lista a.active::after {
+.container__menu__navegacao__lista > .container__menu__navegacao__lista--indices > a.active::after {
   content: "";
   position: absolute;
   left: 0.8rem;

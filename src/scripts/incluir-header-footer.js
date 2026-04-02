@@ -206,20 +206,33 @@
       return file.toLowerCase();
     };
 
+    const hasHashFragment = (value) => (value || "").includes("#");
+
     const currentPath = normalizePath(window.location.pathname);
-    const desktopAndMobilePageLinks = document.querySelectorAll(
-      ".container__menu__navegacao__lista a[href], .mobile-menu__list--pages a[href]",
+    const desktopPageLinks = document.querySelectorAll(
+      ".container__menu__navegacao__lista > .container__menu__navegacao__lista--indices > a[href]",
+    );
+    const mobilePageLinks = document.querySelectorAll(
+      ".mobile-menu__list--pages a[href]",
     );
 
-    desktopAndMobilePageLinks.forEach((link) => {
+    desktopPageLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!href) return;
+      if (hasHashFragment(href)) return;
+
+      if (normalizePath(href) === currentPath) {
+        link.classList.add("active");
+      }
+    });
+
+    mobilePageLinks.forEach((link) => {
       const href = link.getAttribute("href");
       if (!href) return;
 
       if (normalizePath(href) === currentPath) {
         link.classList.add("active");
-        if (link.closest(".mobile-menu__list--pages")) {
-          link.classList.add("is-current");
-        }
+        link.classList.add("is-current");
       }
     });
 
